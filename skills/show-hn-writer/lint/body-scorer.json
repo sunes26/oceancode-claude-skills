@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "model": "naive_bayes_log_odds",
+  "training": {
+    "success_n": 112,
+    "failed_n": 116,
+    "min_feature_freq": 3,
+    "alpha": 1.0,
+    "per_feature_cap": 1.5,
+    "total_logodds_cap": 3.0,
+    "feature_count_kept": 15,
+    "intercept": -0.0348
+  },
+  "caveats": [
+    "Body-only signal. Trained on 112 success + 116 failed bodies — small sample, treat as directional.",
+    "Success = top-1% Show HN (>=262pts). Failed = random <=5pt sample.",
+    "Output is a relative confidence (0-100), NOT a quality guarantee.",
+    "Structural features (STRUCT_*) are more reliable than token unigrams at this sample size."
+  ],
+  "weights": {
+    "STRUCT_self_hosted": {
+      "log_odds": 1.5,
+      "raw_log_odds": 1.8262,
+      "success_count": 5,
+      "failed_count": 0
+    },
+    "STRUCT_free_open_source": {
+      "log_odds": 1.4208,
+      "raw_log_odds": 1.4208,
+      "success_count": 7,
+      "failed_count": 1
+    },
+    "STRUCT_long": {
+      "log_odds": 1.1796,
+      "raw_log_odds": 1.1796,
+      "success_count": 21,
+      "failed_count": 6
+    },
+    "STRUCT_mentions_pricing_or_oss": {
+      "log_odds": 1.163,
+      "raw_log_odds": 1.163,
+      "success_count": 33,
+      "failed_count": 10
+    },
+    "STRUCT_has_github_link": {
+      "log_odds": 0.7848,
+      "raw_log_odds": 0.7848,
+      "success_count": 35,
+      "failed_count": 16
+    },
+    "STRUCT_has_any_link": {
+      "log_odds": 0.6763,
+      "raw_log_odds": 0.6763,
+      "success_count": 75,
+      "failed_count": 39
+    },
+    "STRUCT_very_short": {
+      "log_odds": -0.6587,
+      "raw_log_odds": -0.6587,
+      "success_count": 5,
+      "failed_count": 11
+    },
+    "STRUCT_short": {
+      "log_odds": -0.6367,
+      "raw_log_odds": -0.6367,
+      "success_count": 22,
+      "failed_count": 44
+    },
+    "STRUCT_explicit_feedback_request": {
+      "log_odds": 0.6143,
+      "raw_log_odds": 0.6143,
+      "success_count": 24,
+      "failed_count": 13
+    },
+    "STRUCT_one_question": {
+      "log_odds": 0.4619,
+      "raw_log_odds": 0.4619,
+      "success_count": 22,
+      "failed_count": 14
+    },
+    "STRUCT_multiple_questions": {
+      "log_odds": 0.3529,
+      "raw_log_odds": 0.3529,
+      "success_count": 10,
+      "failed_count": 7
+    },
+    "STRUCT_mentions_docker": {
+      "log_odds": 0.2576,
+      "raw_log_odds": 0.2576,
+      "success_count": 4,
+      "failed_count": 3
+    },
+    "STRUCT_personal_story": {
+      "log_odds": 0.1321,
+      "raw_log_odds": 0.1321,
+      "success_count": 42,
+      "failed_count": 38
+    },
+    "STRUCT_has_demo": {
+      "log_odds": -0.0709,
+      "raw_log_odds": -0.0709,
+      "success_count": 17,
+      "failed_count": 19
+    },
+    "STRUCT_asks_feedback": {
+      "log_odds": 0.0345,
+      "raw_log_odds": 0.0345,
+      "success_count": 43,
+      "failed_count": 43
+    }
+  }
+}

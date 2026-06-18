@@ -433,6 +433,44 @@
         "unlock value"
       ],
       "fix": "Drop the phrase. State what the user actually does with the product in one verb."
+    },
+    {
+      "id": "fc-too-short",
+      "severity": "warn",
+      "scope": "first_comment",
+      "description": "First comment under 30 words",
+      "rationale": "Corpus analysis (104 success first comments, 2026-06-18): very short first comments (<20 words) appear in 17% of lower-scoring success posts and 0% of higher-scoring ones. Average word count: top posts 133 words, lower posts 100 words. A first comment shorter than a tweet signals nothing worth saying — extend the body instead or skip the comment entirely.",
+      "check": "word_count(first_comment) < 30",
+      "fix": "Add the technical detail, cost figure, or backstory you cut from the body. Or omit the first comment entirely — silence beats a one-liner."
+    },
+    {
+      "id": "fc-bare-link-dump",
+      "severity": "warn",
+      "scope": "first_comment",
+      "description": "First comment is mostly links with under 15 words of prose",
+      "rationale": "Corpus analysis (2026-06-18): within success posts, bare GitHub/link drops appear 2.3x more in lower-scoring vs higher-scoring posts. A labeled resource list (Repo: ..., Docs: ..., Demo: ...) does better than an unlabeled URL. If all you have is a link, put it in the body.",
+      "check": "link_count(first_comment) >= 1 AND non_link_word_count(first_comment) < 15",
+      "fix": "Either add prose context (what each link is, why it matters) or remove the comment and add the link to the body's resource section."
+    },
+    {
+      "id": "fc-gratitude-only",
+      "severity": "warn",
+      "scope": "first_comment",
+      "description": "First comment is only thanks, excitement, or gratitude with no project information",
+      "rationale": "Patterns like 'Thanks so much for the warm reception!' or 'Wow, HN is amazing!' add nothing. The top-performing first comments deliver technical context, a backstory beat, or an explicit AMA. Pure gratitude belongs in a later reply, not the seeding comment.",
+      "blocklist": [
+        "thanks for the warm",
+        "didn't expect this to hit",
+        "blown away by",
+        "amazed by the response",
+        "hn is amazing",
+        "the hn community is",
+        "so grateful",
+        "thanks everyone",
+        "thank you all",
+        "you are all so kind"
+      ],
+      "fix": "Lead with technical substance. Move any gratitude to a sentence at the end, not the opener."
     }
   ]
 }

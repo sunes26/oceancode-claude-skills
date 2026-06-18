@@ -74,6 +74,25 @@ Length: 80-150 words. Shorter than the body.
 
 Post the comment within 5 minutes of the story. Threads that go cold for the first 10 minutes are harder to recover. Keep the comment composed before you submit the story — paste it in immediately.
 
+## Data-driven findings (2026-06-18)
+
+Source: 104 author first comments fetched from `corpus.json` (success = ≥262 pts). Compared top-30 vs bottom-30 within the success set.
+
+| Signal | Top-30 (avg 665 pts) | Bottom-30 (avg 285 pts) | Delta |
+|---|---|---|---|
+| Has backstory ("I built / started / spent") | 43% | 27% | +16pp |
+| Very short (<20 words) | 0% | 17% | -17pp |
+| Has GitHub link | 10% | 23% | -13pp |
+| Has any link | 30% | 40% | -10pp |
+| Asks for feedback | 43% | 37% | +6pp |
+| Average word count | 133 | 100 | +33 |
+
+Key takeaways:
+- **Write more, not less.** Top-30 average is 133 words. Under 30 words is a warning signal.
+- **Backstory beats links.** "I built this because…" correlates more strongly with high-scoring threads than dropping a repo link. The link belongs in the body; the backstory belongs in the first comment.
+- **Bare GitHub link drops hurt.** A raw URL without context is associated with lower-scoring posts. If you link, label it (what it is, why it's relevant).
+- **Feedback requests are neutral to slightly positive.** "Happy to answer questions / AMA" works; "please give feedback" is neutral.
+
 ## Output from this skill
 
 When the skill produces a Show HN draft, it MAY also output a first-comment block if:

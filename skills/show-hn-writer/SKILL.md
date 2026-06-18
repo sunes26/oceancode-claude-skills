@@ -1,6 +1,6 @@
 ---
 name: show-hn-writer
-description: Draft Show HN posts grounded in the full historical Show HN corpus (196,847 posts, 2009-2026). Produces 3 title variants from distinct proven formulas, a 4-section body, an optional author first-comment block, a Naive-Bayes title signal score (0-100), and a 30-rule lint pass (em-dash / AI saturation / hype words / HN-tone offenses / domain-conditional blocklists). Use when the user wants to launch a project on Hacker News, asks for Show HN title variants, or wants help drafting an HN submission.
+description: Draft Show HN posts grounded in the full historical Show HN corpus (196,847 posts, 2009-2026). Produces 3 title variants from distinct proven formulas, a 4-section body, an optional author first-comment block, a Naive-Bayes title signal score (0-100) + a body structure score, and a 33-rule lint pass (em-dash / AI saturation / hype words / HN-tone offenses / domain-conditional blocklists / first-comment quality rules). Use when the user wants to launch a project on Hacker News, asks for Show HN title variants, or wants help drafting an HN submission.
 ---
 
 # show-hn-writer
@@ -90,6 +90,25 @@ Follow `patterns/body-structure.md` exactly:
 
 Total: 120-250 words. Longer reads as marketing.
 
+### Step 3.5 — Body structure score
+
+After drafting the body, evaluate it against `lint/body-scorer.json` structural features:
+
+- GitHub link present → +0.78
+- Mentions open-source or pricing (honestly) → +1.16
+- Mentions self-hosted → +1.50
+- Body ≥ 150 words (long) → +1.18
+- Body < 80 words (short) → -0.64
+- Body < 30 words (very short) → -0.66
+
+Sum the applicable feature log-odds + intercept, sigmoid → 0-100 score. Display as:
+
+```
+- body structure score: <N>/100 (<label>)
+```
+
+Score bands match title scorer (75-100 strong, 50-74 mixed, 25-49 loser-leaning, 0-24 weak). Note the caveat: body scorer trained on n=112 success / n=116 failed — structural signals only, no token model.
+
 ### Step 4 — Draft first comment (conditional)
 
 Generate an author first-comment block ONLY if any of these triggers fire:
@@ -100,15 +119,23 @@ Generate an author first-comment block ONLY if any of these triggers fire:
 
 If a trigger fires, load `patterns/first-comment.md`, follow the template, and append the output. Otherwise skip this step and let the pre-publish checklist remind the user that the first comment is optional.
 
-### Step 5 — Lint title and body
+### Step 5 — Lint title, body, and first comment
 
-Run every rule in `lint/anti-patterns.json` against BOTH each title variant AND the body. Report per-variant:
+Run every rule in `lint/anti-patterns.json` against the appropriate scope:
+
+- `scope: title` or `scope: both` → each title variant
+- `scope: body` or `scope: both` → the body draft
+- `scope: first_comment` → the first comment block (only if one was generated)
+
+Report per-variant:
 
 - `✓ passes` — no hits
 - `⚠ warning: <rule_id>` — soft anti-pattern, explain
 - `✗ reject: <rule_id>` — hard violation, must fix before posting
 
 If a hard violation exists in all 3 titles, regenerate.
+
+First-comment lint rules (`fc-too-short`, `fc-bare-link-dump`, `fc-gratitude-only`) fire on the generated first comment only — they do not apply to the body.
 
 ### Step 6 — Output format
 
@@ -182,7 +209,10 @@ Reject-level rules are not overridable. Warn-level rules are conversational: the
 - `failed-corpus.json` (failed, 5,000 entries): random sample (seed=20260618) of ≤5 point posts. 74.3% of all Show HN posts land in this bucket — this is the modal outcome.
 - `top-100.json` (top 100 by points, cutoff ~930pt): example reference.
 
-Refresh pipeline: `fetch-corpus-full.py` → `fetch-truncated.py` → `build-corpora.py` → `train-scorer.py`. Run quarterly.
+- `patterns/bodies-success.json` (112 entries) / `patterns/bodies-failed.json` (116 entries): body text fetched via HN Firebase API from sampled corpus/failed-corpus entries. Source for body scorer.
+- `patterns/first-comments-success.json` (104 entries): author first comments from success posts.
+
+Refresh pipeline: `fetch-corpus-full.py` → `fetch-truncated.py` → `build-corpora.py` → `train-scorer.py` → `fetch-bodies-comments.py` → `train-body-scorer.py`. Run quarterly.
 
 ## Anti-bloat rules for the skill itself
 
