@@ -42,7 +42,7 @@ oceancode-claude-skills/
 Clone or symlink the `skills/<skill-name>/` directory into `~/.claude/skills/`:
 
 ```
-git clone https://github.com/oceancode/oceancode-claude-skills.git
+git clone https://github.com/sunes26/oceancode-claude-skills.git
 ln -s "$(pwd)/oceancode-claude-skills/skills/show-hn-writer" ~/.claude/skills/show-hn-writer
 ```
 
