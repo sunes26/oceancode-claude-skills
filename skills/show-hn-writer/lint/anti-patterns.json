@@ -1,0 +1,403 @@
+{
+  "version": "1.0.0",
+  "corpus_size": 999,
+  "generated_at": "2026-06-18",
+  "rules": [
+    {
+      "id": "title-too-long",
+      "severity": "reject",
+      "scope": "title",
+      "description": "Title body over 60 chars",
+      "rationale": "Median in corpus is 50 chars; 90th percentile is 68. Over 60 = below P75.",
+      "check": "len(title_body) > 60"
+    },
+    {
+      "id": "title-too-many-words",
+      "severity": "warn",
+      "scope": "title",
+      "description": "Title body over 10 words",
+      "rationale": "Median is 8 words. Over 10 reads as cramming.",
+      "check": "word_count(title_body) > 10"
+    },
+    {
+      "id": "missing-show-hn-prefix",
+      "severity": "reject",
+      "scope": "title",
+      "description": "Title does not start with 'Show HN:' exactly",
+      "rationale": "HN moderators may remove the [Show HN] tag if prefix is malformed.",
+      "check": "not title.startswith('Show HN:')"
+    },
+    {
+      "id": "emoji",
+      "severity": "reject",
+      "scope": "both",
+      "description": "Any emoji character",
+      "rationale": "0 out of 999 top Show HN posts use emoji.",
+      "check": "matches(/[\\u{1F300}-\\u{1FAFF}\\u{2600}-\\u{27BF}]/u)"
+    },
+    {
+      "id": "em-dash",
+      "severity": "reject",
+      "scope": "both",
+      "description": "Em-dash (—, U+2014) used anywhere",
+      "rationale": "Em-dash is the dominant tell of AI-generated text. En-dash (–) is the HN convention for title separators.",
+      "check": "contains('\\u2014')"
+    },
+    {
+      "id": "multiple-exclamation",
+      "severity": "reject",
+      "scope": "both",
+      "description": "More than 1 exclamation mark in title, or any in body",
+      "rationale": "Hype signal. Top posts use 0 or 1 in title, almost never in body.",
+      "check": "title: count('!') > 1; body: count('!') > 0"
+    },
+    {
+      "id": "hype-words",
+      "severity": "reject",
+      "scope": "both",
+      "description": "Marketing vocabulary present",
+      "rationale": "HN crowd downvotes promotional language reflexively.",
+      "blocklist": [
+        "revolutionary", "game-changing", "game-changer", "next-generation",
+        "cutting-edge", "world-class", "best-in-class", "industry-leading",
+        "unprecedented", "groundbreaking", "amazing", "incredible",
+        "awesome", "epic", "powerful", "robust", "seamless", "delightful",
+        "leverage", "leveraging", "empowers", "empowering", "supercharge",
+        "unlock", "transform", "elevate", "blazing-fast", "blazing fast",
+        "lightning-fast", "lightning fast", "buttery smooth"
+      ]
+    },
+    {
+      "id": "weak-ask",
+      "severity": "warn",
+      "scope": "body",
+      "description": "Generic feedback request at end",
+      "rationale": "Specific asks get more responses than generic ones.",
+      "blocklist": [
+        "let me know what you think",
+        "feedback welcome",
+        "hope you like it",
+        "would appreciate any thoughts",
+        "dm me",
+        "thanks for reading"
+      ]
+    },
+    {
+      "id": "url-missing",
+      "severity": "warn",
+      "scope": "submission",
+      "description": "No URL in title link or body",
+      "rationale": "Show HN without a live demo or repo significantly underperforms. Acceptable only for hardware demos with video.",
+      "check": "no url provided in inputs"
+    },
+    {
+      "id": "metrics-flex",
+      "severity": "warn",
+      "scope": "both",
+      "description": "Mentions revenue, users, or growth numbers in title",
+      "rationale": "Show HN is for showing the thing, not the metrics. Save for Ask HN or later updates.",
+      "pattern": "/\\$\\d+[kKmM]?|[0-9]+[kKmM]?\\+? users|grew \\d+/"
+    },
+    {
+      "id": "all-caps-emphasis",
+      "severity": "reject",
+      "scope": "both",
+      "description": "ALL CAPS words used for emphasis (not product/acronym)",
+      "rationale": "19% of corpus has all-caps tokens, but ONLY for product names or acronyms (API, CLI, HN, etc.). Emphasis caps are downvote bait.",
+      "check": "all-caps word > 2 chars that is not in known_acronyms or product_name"
+    },
+    {
+      "id": "we-without-team",
+      "severity": "warn",
+      "scope": "body",
+      "description": "'we' used by stated solo founder",
+      "rationale": "Top performers either use 'I' (215 hits) or no pronoun. 'We' for solo work reads as posturing.",
+      "check": "input.team_size == 1 and body.contains('we ')"
+    },
+    {
+      "id": "question-title",
+      "severity": "warn",
+      "scope": "title",
+      "description": "Title ends with question mark",
+      "rationale": "1.6% of corpus only. Underperforms on Show HN (better fit for Ask HN).",
+      "check": "title.endswith('?')"
+    },
+    {
+      "id": "no-context-link",
+      "severity": "warn",
+      "scope": "body",
+      "description": "Body contains no URL despite repo or demo existing",
+      "rationale": "Even if the submission URL exists, mentioning repo separately in body gives a second click point.",
+      "check": "input.repo_url provided but not present in body"
+    },
+    {
+      "id": "title-case-everything",
+      "severity": "warn",
+      "scope": "title",
+      "description": "Every word in title body is Capitalized",
+      "rationale": "Reads like a press release. Top posts use sentence case after Show HN:.",
+      "check": "all(w[0].isupper() for w in title_body.split() if len(w)>2)"
+    },
+    {
+      "id": "body-too-long",
+      "severity": "warn",
+      "scope": "body",
+      "description": "Body over 280 words",
+      "rationale": "Median body ~180 words. Over 280 reads as wall of text on mobile.",
+      "check": "word_count(body) > 280"
+    },
+    {
+      "id": "body-too-short",
+      "severity": "warn",
+      "scope": "body",
+      "description": "Body under 100 words",
+      "rationale": "Under 100 leaves the reader without enough context to engage in comments.",
+      "check": "word_count(body) < 100"
+    },
+    {
+      "id": "competitor-callout",
+      "severity": "warn",
+      "scope": "both",
+      "description": "Names a specific commercial competitor",
+      "rationale": "Calling out a named competitor (e.g. 'alternative to Foo', 'better than Bar') is legal but invites a flame war if competitor employees see it. Reframe around what your project does, not what theirs does not.",
+      "patterns": [
+        "/\\balternative to [A-Z][A-Za-z]+/",
+        "/\\bbetter than [A-Z][A-Za-z]+/",
+        "/\\bunlike [A-Z][A-Za-z]+/",
+        "/\\bvs\\.? [A-Z][A-Za-z]+/i"
+      ],
+      "fix": "Replace 'alternative to X' with the capability ('self-hosted LLM observability'). Save the comparison for the first author comment if asked."
+    },
+    {
+      "id": "non-english-content",
+      "severity": "reject",
+      "scope": "both",
+      "description": "Non-ASCII letters outside of code blocks, URLs, or known proper nouns",
+      "rationale": "HN is English-only. Korean/Japanese/Chinese/Cyrillic in the title or body gets flagged within minutes. Skill must translate to English at draft time per SKILL.md output-language rule.",
+      "check": "matches(/[^\\x00-\\x7F]/) outside of fenced code blocks and bracketed URL paths, excluding allowed Unicode (en-dash U+2013 for title separator)"
+    },
+    {
+      "id": "ai-saturation",
+      "severity": "warn",
+      "scope": "title",
+      "description": "Standalone AI / LLM / GPT / ChatGPT / AGI token in title",
+      "rationale": "Negative-corpus analysis (failure-signals.md, 2026-06-18): titles with these tokens are 4.7x more common in failed posts (21.4% failed vs 4.5% success). HN front page is AI-saturated; novelty bar is high. Lead with what the product does, not the underlying tech.",
+      "patterns": [
+        "/\\b(AI|LLM|GPT|ChatGPT|AGI)\\b/"
+      ],
+      "fix": "Replace 'an AI X' with what the X does. Example: 'an AI that journals' becomes 'a journal that auto-summarizes'. AI mention belongs in the body's 'How it works' section, not the title."
+    },
+    {
+      "id": "buzzword-stack-2026",
+      "severity": "warn",
+      "scope": "title",
+      "description": "2026-era trend words: agentic, RAG, LLM-native, AI-powered, AI-first, vibe-coded",
+      "rationale": "These specific terms appear 6-7x more in failed posts. Marker of trend-chasing without a concrete artifact.",
+      "blocklist": [
+        "agentic",
+        "agent-powered",
+        "RAG-powered",
+        "LLM-native",
+        "AI-powered",
+        "AI-first",
+        "AI-driven",
+        "vibe-coded",
+        "vibe coding"
+      ],
+      "fix": "Remove the trend word. Describe the actual mechanism in plain language."
+    },
+    {
+      "id": "concept-without-product-name",
+      "severity": "warn",
+      "scope": "title",
+      "description": "Title has no product name (capitalized noun) and no first-person verb",
+      "rationale": "Failed-corpus pattern: 'Local personal data redaction for any AI tools' type titles. Concept without an anchor. Successful titles either name a product or claim authorship ('I built X').",
+      "check": "no token matches /^[A-Z][a-zA-Z0-9-]+$/ that is not at sentence start AND title does not contain 'I built|I made|I created|I wrote|My weekend|My side'",
+      "fix": "Name the product (even a placeholder), or convert to Formula 1 ('I built ...')."
+    },
+    {
+      "id": "upvote-begging",
+      "severity": "reject",
+      "scope": "both",
+      "description": "Asks for upvotes, support, or any form of vote rallying",
+      "rationale": "Vote rallying is the single most reliable way to get a Show HN flagged and the account shadowbanned. HN guidelines explicitly prohibit it. Mods watch for it.",
+      "blocklist": [
+        "please upvote",
+        "please vote",
+        "upvote if",
+        "would mean a lot",
+        "means a lot to me",
+        "support this",
+        "show your support",
+        "give it a vote",
+        "give us a vote",
+        "vote me up",
+        "rally support",
+        "boost this",
+        "needs your support"
+      ],
+      "fix": "Remove the sentence entirely. HN's etiquette is that the work speaks for itself. Stating the value-prop concretely earns votes; asking for them costs them."
+    },
+    {
+      "id": "apology-self-promo",
+      "severity": "reject",
+      "scope": "body",
+      "description": "Apologizes for self-promotion or for posting on HN",
+      "rationale": "Show HN exists precisely so builders can post their work. Apologizing reads as someone who knows they are pushing a marketing post past the rules. Top performers state and ship.",
+      "blocklist": [
+        "sorry for self",
+        "sorry for the self-promotion",
+        "sorry for posting",
+        "hope this is allowed",
+        "not sure if this fits",
+        "not sure if this belongs",
+        "apologies in advance",
+        "hope this isn't spam",
+        "hope it's okay to post"
+      ],
+      "fix": "Delete the apology line entirely. If the post is genuinely on-topic for Show HN (artifact you built, demo or repo link), no apology is needed."
+    },
+    {
+      "id": "lurker-coming-out",
+      "severity": "warn",
+      "scope": "body",
+      "description": "First-time poster or long-time-lurker disclosure",
+      "rationale": "Common pattern in failed posts. Adds zero information about the project; signals nervousness; invites scrutiny of post karma instead of the work.",
+      "blocklist": [
+        "first time posting",
+        "first time on HN",
+        "long-time lurker",
+        "longtime lurker",
+        "long time lurker",
+        "first post here",
+        "first show hn"
+      ],
+      "fix": "Delete the disclosure. Open with the project itself."
+    },
+    {
+      "id": "preemptive-praise",
+      "severity": "warn",
+      "scope": "body",
+      "description": "Self-congratulation or hyperbolic claims about own work",
+      "rationale": "Phrases like 'I'm super proud', 'really excited to share', 'beautiful UI' read as marketing. HN crowd discounts the claim and the project together.",
+      "blocklist": [
+        "super proud",
+        "really excited to share",
+        "thrilled to share",
+        "stoked to share",
+        "beautiful ui",
+        "beautiful design",
+        "lovingly crafted",
+        "carefully designed",
+        "pixel-perfect",
+        "labor of love"
+      ],
+      "fix": "Show the artifact and let the reader judge. Excitement about your own work belongs in the first comment if anywhere."
+    },
+    {
+      "id": "meta-narrative",
+      "severity": "warn",
+      "scope": "body",
+      "description": "Comments on the post itself instead of the project",
+      "rationale": "'This is my first Show HN', 'I rewrote this post three times', 'sorry for the long post' break the fourth wall and waste reader attention.",
+      "blocklist": [
+        "long post",
+        "wall of text",
+        "tldr",
+        "tl;dr",
+        "tl,dr",
+        "sorry this is",
+        "i rewrote this",
+        "this post is",
+        "if you read this far"
+      ],
+      "fix": "Cut the meta-commentary. If the post is too long, shorten it; do not announce the length."
+    },
+    {
+      "id": "hype-words-ai",
+      "severity": "warn",
+      "scope": "both",
+      "description": "AI/LLM-domain hype vocabulary",
+      "rationale": "Loaded vocabulary specific to the AI/LLM space. Tracked separately from generic hype-words so the list can evolve with the field.",
+      "blocklist": [
+        "AI-powered",
+        "AI-first",
+        "AI-driven",
+        "AI-native",
+        "LLM-native",
+        "LLM-powered",
+        "agentic",
+        "agent-powered",
+        "RAG-powered",
+        "RAG-enabled",
+        "GPT-powered",
+        "intelligent automation",
+        "smart agent",
+        "autonomous agent",
+        "self-improving",
+        "self-learning",
+        "context-aware AI",
+        "next-gen AI",
+        "AGI-level",
+        "human-level",
+        "superhuman",
+        "outperforms GPT",
+        "beats GPT",
+        "beats Claude"
+      ],
+      "fix": "Describe the mechanism. 'AI-powered code review' becomes 'an LLM reads diffs and flags X'. The latter is concrete; the former is marketing."
+    },
+    {
+      "id": "hype-words-devtool",
+      "severity": "warn",
+      "scope": "both",
+      "description": "Dev-tool hype vocabulary",
+      "rationale": "Words that signal SaaS marketing pages, not engineering work. HN engineers downvote reflexively.",
+      "blocklist": [
+        "developer productivity",
+        "dev productivity",
+        "10x developer",
+        "10x productivity",
+        "blazingly fast",
+        "lightning fast",
+        "buttery smooth",
+        "zero config",
+        "zero-config",
+        "frictionless",
+        "delightful developer experience",
+        "best DX",
+        "first-class DX",
+        "out of the box magic",
+        "just works",
+        "magic"
+      ],
+      "fix": "Quantify. 'Blazingly fast' becomes 'P95 12ms on 10k req/s'. 'Just works' becomes 'one binary, no config file'."
+    },
+    {
+      "id": "hype-words-saas",
+      "severity": "warn",
+      "scope": "both",
+      "description": "Generic SaaS marketing vocabulary",
+      "rationale": "Common on landing pages and press releases. Reads as if a marketer wrote the post.",
+      "blocklist": [
+        "end-to-end solution",
+        "all-in-one",
+        "one-stop shop",
+        "comprehensive platform",
+        "enterprise-grade",
+        "production-ready",
+        "battle-tested",
+        "mission-critical",
+        "actionable insights",
+        "drive growth",
+        "supercharge",
+        "elevate your",
+        "transform your workflow",
+        "streamline your",
+        "boost productivity",
+        "unlock value"
+      ],
+      "fix": "Drop the phrase. State what the user actually does with the product in one verb."
+    }
+  ]
+}

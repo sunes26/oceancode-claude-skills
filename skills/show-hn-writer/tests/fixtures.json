@@ -1,0 +1,157 @@
+{
+  "description": "Test fixtures for lint rules. Each fixture asserts that running the full lint pass produces a specific set of rule hits. Rules with blocklist or regex are tested automatically; rules with natural-language `check` get a 'manual' marker.\n\nNotes on expected hits:\n- Short body fixtures expect body-too-short alongside the rule under test (intentional — real bodies need ≥100 words).\n- 'clean' body fixtures are padded to ~110 words to avoid body-too-short noise.\n- Title fixtures intentionally compose multiple violations to catch interaction bugs.",
+  "cases": [
+    {
+      "name": "clean-formula-1-title",
+      "scope": "title",
+      "input": "Show HN: I built a self-hosted cost tracker (MIT)",
+      "expect_hits": []
+    },
+    {
+      "name": "clean-formula-2-title",
+      "scope": "title",
+      "input": "Show HN: Pico – a tiny static site generator in Rust",
+      "expect_hits": []
+    },
+    {
+      "name": "ai-tool-honest-mention",
+      "scope": "title",
+      "input": "Show HN: I built a self-hosted LLM cost tracker (MIT)",
+      "expect_hits": ["ai-saturation"],
+      "note": "Legitimate LLM-tool title hits ai-saturation as a warn — user decides if the tradeoff is worth it. Rule is warn, not reject."
+    },
+    {
+      "name": "title-too-long",
+      "scope": "title",
+      "input": "Show HN: An incredibly comprehensive end-to-end observability platform for modern distributed engineering teams",
+      "expect_hits": ["title-too-long", "title-too-many-words"]
+    },
+    {
+      "name": "emoji-rejected",
+      "scope": "title",
+      "input": "Show HN: 🚀 Foo, a faster bar",
+      "expect_hits": ["emoji"]
+    },
+    {
+      "name": "em-dash-rejected",
+      "scope": "title",
+      "input": "Show HN: Foo — a tiny thing",
+      "expect_hits": ["em-dash"]
+    },
+    {
+      "name": "missing-prefix",
+      "scope": "title",
+      "input": "show hn: foo",
+      "expect_hits": ["missing-show-hn-prefix"]
+    },
+    {
+      "name": "multiple-exclamation-title",
+      "scope": "title",
+      "input": "Show HN: Foo!! The new thing!!",
+      "expect_hits": ["multiple-exclamation"]
+    },
+    {
+      "name": "hype-words-generic",
+      "scope": "title",
+      "input": "Show HN: Foo – a revolutionary seamless solution",
+      "expect_hits": ["hype-words"]
+    },
+    {
+      "name": "ai-saturation",
+      "scope": "title",
+      "input": "Show HN: An AI tool that helps developers",
+      "expect_hits": ["ai-saturation"]
+    },
+    {
+      "name": "buzzword-stack-2026",
+      "scope": "title",
+      "input": "Show HN: Foo – agentic RAG-powered LLM-native workflows",
+      "expect_hits": ["buzzword-stack-2026", "ai-saturation", "hype-words-ai"]
+    },
+    {
+      "name": "upvote-begging-body",
+      "scope": "body",
+      "input": "I built this last weekend. Please upvote if you find it useful, it would mean a lot.",
+      "expect_hits": ["upvote-begging", "body-too-short"]
+    },
+    {
+      "name": "apology-self-promo",
+      "scope": "body",
+      "input": "Sorry for the self-promotion, but I built a thing. Hope this is allowed.",
+      "expect_hits": ["apology-self-promo", "body-too-short"]
+    },
+    {
+      "name": "lurker-coming-out",
+      "scope": "body",
+      "input": "Long-time lurker, first time posting on HN. I made this tool that does X.",
+      "expect_hits": ["lurker-coming-out", "body-too-short"]
+    },
+    {
+      "name": "preemptive-praise",
+      "scope": "body",
+      "input": "Super proud to share this beautiful UI I lovingly crafted over six months.",
+      "expect_hits": ["preemptive-praise", "body-too-short"]
+    },
+    {
+      "name": "meta-narrative",
+      "scope": "body",
+      "input": "TL;DR: sorry this is a long post. If you read this far, the tool is at foo.com.",
+      "expect_hits": ["meta-narrative", "body-too-short"]
+    },
+    {
+      "name": "weak-ask-body",
+      "scope": "body",
+      "input": "Built this over the weekend. Let me know what you think! Feedback welcome.",
+      "expect_hits": ["weak-ask", "multiple-exclamation", "body-too-short"]
+    },
+    {
+      "name": "hype-saas-body",
+      "scope": "body",
+      "input": "Our enterprise-grade end-to-end solution helps teams streamline their workflow and unlock value.",
+      "expect_hits": ["hype-words", "hype-words-saas", "body-too-short"]
+    },
+    {
+      "name": "hype-devtool-body",
+      "scope": "body",
+      "input": "Zero-config, buttery smooth, blazingly fast. Just works.",
+      "expect_hits": ["hype-words", "hype-words-devtool", "body-too-short"]
+    },
+    {
+      "name": "competitor-callout",
+      "scope": "title",
+      "input": "Show HN: Foo – open-source alternative to Bar",
+      "expect_hits": ["competitor-callout"]
+    },
+    {
+      "name": "question-title",
+      "scope": "title",
+      "input": "Show HN: Why is Postgres slow on writes?",
+      "expect_hits": ["question-title"]
+    },
+    {
+      "name": "non-english-content",
+      "scope": "body",
+      "input": "이 도구는 LLM 비용을 추적합니다.",
+      "expect_hits": ["non-english-content", "body-too-short"]
+    },
+    {
+      "name": "title-case-everything",
+      "scope": "title",
+      "input": "Show HN: A New Way To Build Better Software Faster",
+      "expect_hits": ["title-case-everything"],
+      "manual_only": true
+    },
+    {
+      "name": "clean-body-with-specific-ask",
+      "scope": "body",
+      "input": "I built a self-hosted cost tracker for API calls. One line change to your OpenAI client and every request shows up in a dashboard with the cost calculated per model. It runs as one Docker container, uses ClickHouse for storage, and the proxy adds under 5 milliseconds on the hot path. MIT licensed. The repo has the full schema documented if anyone wants to fork it. Curious which providers you would want supported next. Bedrock and Vertex are first in the queue, plus a few smaller ones if there is demand. Happy to dive into the cost calculation edge cases for fine-tuned models, cached prompts, and image inputs.",
+      "expect_hits": []
+    },
+    {
+      "name": "metrics-flex-title",
+      "scope": "title",
+      "input": "Show HN: How I got 10000 users in 6 months",
+      "expect_hits": ["metrics-flex"]
+    }
+  ]
+}

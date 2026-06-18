@@ -1,0 +1,33 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "oceancode-claude-skills",
+  "description": "Claude Code skills authored from real datasets, not vibes. Each skill ships with the corpus it was derived from, a refresh script, and lint test fixtures so rule changes do not silently regress.",
+  "owner": {
+    "name": "oceancode"
+  },
+  "plugins": [
+    {
+      "name": "show-hn-writer",
+      "source": "./",
+      "description": "Drafts Show HN posts grounded in 999 high-scoring submissions plus an 862-post failure corpus. Generates 3 title variants from distinct proven formulas, drafts a 4-section body, runs 30 lint rules (including 2026-era AI/buzzword detectors and HN-tone offenses), and optionally drafts a first-comment block.",
+      "version": "0.1.0",
+      "author": {
+        "name": "oceancode"
+      },
+      "license": "MIT",
+      "keywords": [
+        "show-hn",
+        "hacker-news",
+        "launch",
+        "writing",
+        "marketing"
+      ],
+      "category": "writing",
+      "tags": [
+        "show-hn",
+        "launch",
+        "writing"
+      ]
+    }
+  ]
+}

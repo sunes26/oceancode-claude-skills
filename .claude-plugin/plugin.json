@@ -1,0 +1,18 @@
+{
+  "name": "oceancode-claude-skills",
+  "version": "0.1.0",
+  "description": "Claude Code skills authored from real datasets. Currently ships show-hn-writer — drafts Show HN posts grounded in 999 high-scoring + 862 failed HN submissions, with 30 lint rules and fixture-tested regression coverage.",
+  "author": {
+    "name": "oceancode"
+  },
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "skills",
+    "show-hn",
+    "hacker-news",
+    "launch",
+    "marketing",
+    "writing"
+  ]
+}
