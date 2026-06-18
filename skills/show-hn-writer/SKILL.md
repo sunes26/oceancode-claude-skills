@@ -15,7 +15,7 @@ Skip if the user wants generic launch copy, Reddit, dev.to, or non-HN channels. 
 
 ## Inputs required
 
-Ask once at the start, batched:
+Target fields (auto-detected from codebase where possible — see Step 0):
 
 1. `product_name` — exact casing as it should appear
 2. `one_liner` — what it does, in plain language (no marketing)
@@ -26,7 +26,7 @@ Ask once at the start, batched:
 7. `target_audience` — who would use it
 8. `constraints` — optional, things like "built in a weekend", "self-hosted", "MIT licensed"
 
-If the user already supplied some of these in the conversation, do not re-ask. Confirm and proceed.
+**Do not ask for all 8 upfront.** Run Step 0 first. Ask only for fields that could not be auto-detected. If the user already supplied some in the conversation, do not re-ask.
 
 ## Domain detection (for conditional lint rules)
 
@@ -49,6 +49,62 @@ Always English regardless of input language. Hacker News is an English-speaking 
 Exception: code blocks, command examples, URL paths stay verbatim.
 
 ## Workflow
+
+### Step 0 — Auto-detect from codebase
+
+Before asking the user anything, attempt to populate the input fields automatically. Read in this priority order — stop reading a source once a field is filled:
+
+#### 0a. Read project files (in order)
+
+1. **`CLAUDE.md`** (current working directory or repo root) — richest source. Extract:
+   - `product_name`: project name in the first heading or "프로젝트" section
+   - `one_liner`: tagline or first description sentence
+   - `tech_stack`: stack line (e.g., "Next.js 14 + Hono + Supabase + TypeScript")
+   - `target_audience`: who the tool is for ("LLM 개발자", "developer", etc.)
+   - `constraints`: self-hosted, MIT, Docker, open-source mentions
+   - `repo_url`: any GitHub URL
+
+2. **`README.md`** — fallback if CLAUDE.md absent or sparse. Same fields.
+
+3. **`package.json`** (root) — extract:
+   - `product_name`: `name` field (strip scope prefix `@org/`)
+   - `one_liner`: `description` field
+   - `tech_stack`: infer from `dependencies` keys (e.g., `next`, `hono`, `@supabase/supabase-js`, `clickhouse` → "Next.js + Hono + Supabase + ClickHouse")
+   - `repo_url`: `repository.url` field
+
+#### 0b. Fetch landing page (if `url` provided or found)
+
+If a live URL was found or supplied, use `WebFetch` to GET it. Extract:
+- `one_liner`: hero headline or meta description (first non-nav text block)
+- `constraints`: "open-source", "self-hosted", "free tier", "MIT" if present on page
+
+Skip `WebFetch` if: URL is localhost, the user said the page isn't ready, or the fetch errors.
+
+#### 0c. Confirm and gap-fill
+
+After reading, show the user a one-block summary:
+
+```
+Detected from codebase:
+- product_name: Spanlens
+- one_liner: LLM observability — log requests, track cost, trace agents
+- tech_stack: Next.js 14 + Hono + Supabase + ClickHouse + TypeScript
+- target_audience: LLM developers
+- repo_url: https://github.com/spanlens/spanlens
+- constraints: MIT, self-hosted
+
+Still needed:
+- url: live demo or landing page URL
+- why_built: the itch that started it (1-2 sentences)
+```
+
+Ask only for the "Still needed" fields in a single message. If all 8 are filled, skip the question and proceed directly to Step 1.
+
+**Extraction rules:**
+- If CLAUDE.md is in Korean, translate to English during extraction (output is always English)
+- `product_name` casing: preserve exactly as written in the file
+- For `one_liner`: strip marketing words on extraction (e.g., "revolutionary" → drop; "baseURL 1줄 교체로 LLM 요청 로깅" → "log LLM requests by swapping one baseURL")
+- If `tech_stack` from package.json has >5 items, keep only the most HN-relevant (DB, framework, language — skip testing/linting deps)
 
 ### Step 1 — Retrieve patterns
 
