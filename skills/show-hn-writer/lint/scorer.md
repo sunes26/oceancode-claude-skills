@@ -53,11 +53,18 @@ When showing the score to the user, pair it with a one-line interpretation:
 
 | Score | Interpretation to display |
 |---|---|
-| 90-100 | Token signal aligns strongly with the winner corpus |
-| 70-89 | Above-median winner signal |
-| 50-69 | Mixed signal, no strong push either way |
-| 30-49 | Below-median signal, contains some loser patterns |
-| 0-29 | Title carries multiple known loser patterns |
+| 80-95 | Token signal aligns strongly with the winner corpus |
+| 60-79 | Above-median winner signal |
+| 40-59 | Mixed signal, no strong push either way |
+| 20-39 | Below-median, contains some loser patterns |
+| 5-19 | Multiple loser patterns |
+
+The bands shift in this skill version (post 2026-06-18) because of:
+1. Per-feature log-odds cap of ±1.5 (prevents single features from saturating)
+2. Total log-odds cap of ±3.0 (bounds output to ~5-95 range)
+3. Intercept reflects the true base rate (1945 success vs 5000 failed → negative intercept, "lean failure" prior)
+
+So a "neutral" title now scores around 30-40, not 50, because the prior probability of being in the success class is roughly 28% in the training set. This is honest; the old model's 50-point midpoint implied a 50/50 prior that did not match reality.
 
 Never display the score without one of these labels. A bare "73" reads as a probability and is misleading.
 

@@ -6,6 +6,8 @@
     "failed_n": 5000,
     "min_feature_freq": 5,
     "alpha": 1.0,
+    "per_feature_cap": 1.5,
+    "total_logodds_cap": 3.0,
     "feature_count_kept": 800,
     "intercept": -0.9439
   },
@@ -16,4003 +18,4803 @@
     "Refresh when corpora are refreshed; trend words shift annually."
   ],
   "weights": {
-    "i've_been": {
-      "log_odds": 3.1408,
-      "success_count": 8,
-      "failed_count": 0
-    },
-    "browser_automation": {
-      "log_odds": 3.023,
-      "success_count": 7,
-      "failed_count": 0
-    },
-    "spent_years": {
-      "log_odds": 3.023,
-      "success_count": 7,
-      "failed_count": 0
-    },
-    "any_website": {
-      "log_odds": 3.023,
-      "success_count": 7,
-      "failed_count": 0
-    },
     "ai_agents": {
-      "log_odds": -2.9277,
+      "log_odds": -1.5,
+      "raw_log_odds": -2.9277,
       "success_count": 0,
       "failed_count": 47
     },
-    "from_scratch": {
-      "log_odds": 2.8895,
-      "success_count": 13,
-      "failed_count": 1
+    "marketplace": {
+      "log_odds": -1.5,
+      "raw_log_odds": -1.829,
+      "success_count": 0,
+      "failed_count": 15
     },
-    "year-old": {
-      "log_odds": 2.7353,
+    "bootstrap": {
+      "log_odds": 1.5,
+      "raw_log_odds": 1.6367,
       "success_count": 5,
-      "failed_count": 0
-    },
-    "remotely": {
-      "log_odds": 2.7353,
-      "success_count": 5,
-      "failed_count": 0
-    },
-    "been_working": {
-      "log_odds": 2.7353,
-      "success_count": 5,
-      "failed_count": 0
-    },
-    "after_years": {
-      "log_odds": 2.7353,
-      "success_count": 5,
-      "failed_count": 0
-    },
-    "put": {
-      "log_odds": 2.7353,
-      "success_count": 5,
-      "failed_count": 0
-    },
-    "screen_sharing": {
-      "log_odds": 2.7353,
-      "success_count": 5,
-      "failed_count": 0
-    },
-    "laptop": {
-      "log_odds": 2.7353,
-      "success_count": 5,
-      "failed_count": 0
+      "failed_count": 2
     },
     "bytes": {
-      "log_odds": 2.7353,
+      "log_odds": 1.5,
+      "raw_log_odds": 2.7353,
       "success_count": 5,
       "failed_count": 0
     },
-    "its": {
-      "log_odds": 2.553,
-      "success_count": 9,
-      "failed_count": 1
+    "instagram": {
+      "log_odds": -1.5,
+      "raw_log_odds": -1.7645,
+      "success_count": 0,
+      "failed_count": 14
     },
-    "scratch": {
-      "log_odds": 2.484,
-      "success_count": 13,
+    "obsidian": {
+      "log_odds": 1.5,
+      "raw_log_odds": 1.6367,
+      "success_count": 5,
       "failed_count": 2
-    },
-    "spent": {
-      "log_odds": 2.484,
-      "success_count": 13,
-      "failed_count": 2
-    },
-    "hn_hn": {
-      "log_odds": 2.4476,
-      "success_count": 8,
-      "failed_count": 1
-    },
-    "editor_for": {
-      "log_odds": 2.4476,
-      "success_count": 8,
-      "failed_count": 1
-    },
-    "hn_spent": {
-      "log_odds": 2.4476,
-      "success_count": 8,
-      "failed_count": 1
-    },
-    "plugin": {
-      "log_odds": -2.4237,
-      "success_count": 0,
-      "failed_count": 28
-    },
-    "years": {
-      "log_odds": 2.4195,
-      "success_count": 34,
-      "failed_count": 7
-    },
-    "agents": {
-      "log_odds": -2.3523,
-      "success_count": 2,
-      "failed_count": 80
-    },
-    "hn_this": {
-      "log_odds": 2.3298,
-      "success_count": 7,
-      "failed_count": 1
-    },
-    "beta": {
-      "log_odds": -2.2345,
-      "success_count": 0,
-      "failed_count": 23
-    },
-    "for_ios": {
-      "log_odds": -2.1919,
-      "success_count": 0,
-      "failed_count": 22
     },
     "wrote_book": {
-      "log_odds": 2.1475,
+      "log_odds": 1.5,
+      "raw_log_odds": 2.1475,
       "success_count": 9,
       "failed_count": 2
     },
-    "for_ai": {
-      "log_odds": -2.1245,
-      "success_count": 1,
-      "failed_count": 42
+    "ms": {
+      "log_odds": 1.5,
+      "raw_log_odds": 1.5313,
+      "success_count": 8,
+      "failed_count": 4
     },
-    "storage": {
-      "log_odds": -2.101,
+    "launched": {
+      "log_odds": -1.5,
+      "raw_log_odds": -1.5414,
       "success_count": 0,
-      "failed_count": 20
+      "failed_count": 11
     },
-    "seconds": {
-      "log_odds": -2.101,
-      "success_count": 0,
-      "failed_count": 20
-    },
-    "crypto": {
-      "log_odds": -2.0522,
-      "success_count": 0,
-      "failed_count": 19
-    },
-    "ebook": {
-      "log_odds": 2.0422,
-      "success_count": 5,
-      "failed_count": 1
-    },
-    "guitar": {
-      "log_odds": 2.0422,
-      "success_count": 5,
+    "hn_sql": {
+      "log_odds": 1.5,
+      "raw_log_odds": 1.8598,
+      "success_count": 4,
       "failed_count": 1
     },
     "of_hacker": {
-      "log_odds": 2.0422,
+      "log_odds": 1.5,
+      "raw_log_odds": 2.0422,
       "success_count": 5,
       "failed_count": 1
     },
-    "realistic": {
-      "log_odds": 2.0422,
-      "success_count": 5,
-      "failed_count": 1
-    },
-    "debugger": {
-      "log_odds": 2.0422,
-      "success_count": 5,
-      "failed_count": 1
-    },
-    "robot": {
-      "log_odds": 2.0422,
-      "success_count": 5,
-      "failed_count": 1
-    },
-    "handbook": {
-      "log_odds": 2.0422,
-      "success_count": 5,
-      "failed_count": 1
-    },
-    "been": {
-      "log_odds": 2.0422,
-      "success_count": 11,
-      "failed_count": 3
-    },
-    "in_browser": {
-      "log_odds": 2.0422,
-      "success_count": 5,
-      "failed_count": 1
-    },
-    "mapped": {
-      "log_odds": 2.0422,
-      "success_count": 5,
-      "failed_count": 1
-    },
-    "send": {
-      "log_odds": -2.0009,
-      "success_count": 1,
-      "failed_count": 37
-    },
-    "browse": {
-      "log_odds": 1.9551,
-      "success_count": 10,
-      "failed_count": 3
-    },
-    "review": {
-      "log_odds": -1.9468,
+    "crypto": {
+      "log_odds": -1.5,
+      "raw_log_odds": -2.0522,
       "success_count": 0,
-      "failed_count": 17
+      "failed_count": 19
     },
-    "deploy": {
-      "log_odds": -1.9468,
-      "success_count": 0,
-      "failed_count": 17
-    },
-    "in_seconds": {
-      "log_odds": -1.9468,
-      "success_count": 0,
-      "failed_count": 17
-    },
-    "searchable": {
-      "log_odds": 1.9244,
-      "success_count": 7,
-      "failed_count": 2
-    },
-    "solution": {
-      "log_odds": -1.8897,
-      "success_count": 0,
-      "failed_count": 16
-    },
-    "half": {
-      "log_odds": 1.8598,
-      "success_count": 4,
-      "failed_count": 1
-    },
-    "open_sourced": {
-      "log_odds": 1.8598,
-      "success_count": 4,
-      "failed_count": 1
-    },
-    "on_for": {
-      "log_odds": 1.8598,
-      "success_count": 4,
-      "failed_count": 1
-    },
-    "mini": {
-      "log_odds": 1.8598,
-      "success_count": 4,
-      "failed_count": 1
-    },
-    "daughter": {
-      "log_odds": 1.8598,
-      "success_count": 4,
-      "failed_count": 1
-    },
-    "city": {
-      "log_odds": 1.8598,
-      "success_count": 4,
-      "failed_count": 1
-    },
-    "had": {
-      "log_odds": 1.8598,
-      "success_count": 4,
-      "failed_count": 1
-    },
-    "google_search": {
-      "log_odds": 1.8598,
-      "success_count": 4,
-      "failed_count": 1
-    },
-    "hn_sql": {
-      "log_odds": 1.8598,
-      "success_count": 4,
-      "failed_count": 1
-    },
-    "for_building": {
-      "log_odds": 1.8598,
-      "success_count": 4,
-      "failed_count": 1
-    },
-    "regular": {
-      "log_odds": 1.8598,
-      "success_count": 4,
-      "failed_count": 1
-    },
-    "front_page": {
-      "log_odds": 1.8598,
-      "success_count": 4,
-      "failed_count": 1
-    },
-    "is_hiring": {
-      "log_odds": 1.8598,
-      "success_count": 4,
-      "failed_count": 1
-    },
-    "messages": {
-      "log_odds": -1.829,
-      "success_count": 0,
-      "failed_count": 15
-    },
-    "marketplace": {
-      "log_odds": -1.829,
-      "success_count": 0,
-      "failed_count": 15
-    },
-    "reverse": {
-      "log_odds": 1.7908,
-      "success_count": 6,
-      "failed_count": 2
-    },
-    "latency": {
-      "log_odds": 1.7908,
-      "success_count": 6,
-      "failed_count": 2
-    },
-    "finally": {
-      "log_odds": 1.7908,
-      "success_count": 6,
-      "failed_count": 2
-    },
-    "uses": {
-      "log_odds": 1.7908,
-      "success_count": 6,
-      "failed_count": 2
-    },
-    "sheet": {
-      "log_odds": 1.7908,
-      "success_count": 6,
-      "failed_count": 2
-    },
-    "of_ai": {
-      "log_odds": -1.7645,
-      "success_count": 0,
-      "failed_count": 14
-    },
-    "integration": {
-      "log_odds": -1.7645,
-      "success_count": 0,
-      "failed_count": 14
-    },
-    "instagram": {
-      "log_odds": -1.7645,
-      "success_count": 0,
-      "failed_count": 14
-    },
-    "openclaw": {
-      "log_odds": -1.7645,
-      "success_count": 0,
-      "failed_count": 14
-    },
-    "year": {
-      "log_odds": 1.7545,
+    "hn_spent": {
+      "log_odds": 1.5,
+      "raw_log_odds": 2.4476,
       "success_count": 8,
-      "failed_count": 3
+      "failed_count": 1
     },
-    "everything": {
-      "log_odds": 1.7545,
-      "success_count": 8,
-      "failed_count": 3
-    },
-    "sqlite": {
-      "log_odds": 1.7545,
-      "success_count": 17,
-      "failed_count": 7
-    },
-    "telegram": {
-      "log_odds": -1.6955,
+    "for_ios": {
+      "log_odds": -1.5,
+      "raw_log_odds": -2.1919,
       "success_count": 0,
-      "failed_count": 13
-    },
-    "mcp": {
-      "log_odds": -1.6955,
-      "success_count": 2,
-      "failed_count": 41
-    },
-    "wrapper": {
-      "log_odds": -1.6955,
-      "success_count": 0,
-      "failed_count": 13
-    },
-    "an_open-source": {
-      "log_odds": 1.6718,
-      "success_count": 28,
-      "failed_count": 13
-    },
-    "ai-powered": {
-      "log_odds": -1.6714,
-      "success_count": 2,
-      "failed_count": 40
-    },
-    "make_your": {
-      "log_odds": 1.6367,
-      "success_count": 7,
-      "failed_count": 3
-    },
-    "movies": {
-      "log_odds": 1.6367,
-      "success_count": 7,
-      "failed_count": 3
-    },
-    "gaussian": {
-      "log_odds": 1.6367,
-      "success_count": 5,
-      "failed_count": 2
-    },
-    "hn_hacker": {
-      "log_odds": 1.6367,
-      "success_count": 13,
-      "failed_count": 6
-    },
-    "web_server": {
-      "log_odds": 1.6367,
-      "success_count": 5,
-      "failed_count": 2
-    },
-    "sourced": {
-      "log_odds": 1.6367,
-      "success_count": 5,
-      "failed_count": 2
-    },
-    "scanned": {
-      "log_odds": 1.6367,
-      "success_count": 5,
-      "failed_count": 2
-    },
-    "bootstrap": {
-      "log_odds": 1.6367,
-      "success_count": 5,
-      "failed_count": 2
-    },
-    "the_terminal": {
-      "log_odds": 1.6367,
-      "success_count": 5,
-      "failed_count": 2
-    },
-    "personal_website": {
-      "log_odds": 1.6367,
-      "success_count": 5,
-      "failed_count": 2
-    },
-    "clock": {
-      "log_odds": 1.6367,
-      "success_count": 5,
-      "failed_count": 2
-    },
-    "open-sourced": {
-      "log_odds": 1.6367,
-      "success_count": 7,
-      "failed_count": 3
-    },
-    "map_of": {
-      "log_odds": 1.6367,
-      "success_count": 7,
-      "failed_count": 3
-    },
-    "on_an": {
-      "log_odds": 1.6367,
-      "success_count": 5,
-      "failed_count": 2
-    },
-    "entire": {
-      "log_odds": 1.6367,
-      "success_count": 7,
-      "failed_count": 3
-    },
-    "obsidian": {
-      "log_odds": 1.6367,
-      "success_count": 5,
-      "failed_count": 2
-    },
-    "for_hacker": {
-      "log_odds": 1.6367,
-      "success_count": 5,
-      "failed_count": 2
-    },
-    "web_framework": {
-      "log_odds": 1.6367,
-      "success_count": 7,
-      "failed_count": 3
-    },
-    "an_api": {
-      "log_odds": 1.6367,
-      "success_count": 5,
-      "failed_count": 2
-    },
-    "solver": {
-      "log_odds": -1.6214,
-      "success_count": 0,
-      "failed_count": 12
-    },
-    "and_more": {
-      "log_odds": -1.6214,
-      "success_count": 0,
-      "failed_count": 12
-    },
-    "marketing": {
-      "log_odds": -1.6214,
-      "success_count": 0,
-      "failed_count": 12
-    },
-    "wordpress": {
-      "log_odds": -1.6214,
-      "success_count": 0,
-      "failed_count": 12
-    },
-    "converter": {
-      "log_odds": -1.6214,
-      "success_count": 0,
-      "failed_count": 12
-    },
-    "cloud": {
-      "log_odds": -1.6214,
-      "success_count": 2,
-      "failed_count": 38
-    },
-    "another": {
-      "log_odds": -1.6214,
-      "success_count": 0,
-      "failed_count": 12
-    },
-    "utility": {
-      "log_odds": -1.6214,
-      "success_count": 0,
-      "failed_count": 12
-    },
-    "message": {
-      "log_odds": -1.6214,
-      "success_count": 0,
-      "failed_count": 12
-    },
-    "platform_to": {
-      "log_odds": -1.6214,
-      "success_count": 0,
-      "failed_count": 12
-    },
-    "alternative_to": {
-      "log_odds": 1.5922,
-      "success_count": 43,
       "failed_count": 22
     },
-    "launched": {
-      "log_odds": -1.5414,
+    "platform_to": {
+      "log_odds": -1.5,
+      "raw_log_odds": -1.6214,
       "success_count": 0,
-      "failed_count": 11
-    },
-    "client-side": {
-      "log_odds": -1.5414,
-      "success_count": 0,
-      "failed_count": 11
+      "failed_count": 12
     },
     "ios": {
-      "log_odds": -1.5414,
+      "log_odds": -1.5,
+      "raw_log_odds": -1.5414,
       "success_count": 5,
       "failed_count": 71
     },
-    "hn_send": {
-      "log_odds": -1.5414,
+    "solver": {
+      "log_odds": -1.5,
+      "raw_log_odds": -1.6214,
+      "success_count": 0,
+      "failed_count": 12
+    },
+    "spreadsheet": {
+      "log_odds": 1.5,
+      "raw_log_odds": 1.5313,
+      "success_count": 8,
+      "failed_count": 4
+    },
+    "in_browser": {
+      "log_odds": 1.5,
+      "raw_log_odds": 2.0422,
+      "success_count": 5,
+      "failed_count": 1
+    },
+    "seconds": {
+      "log_odds": -1.5,
+      "raw_log_odds": -2.101,
+      "success_count": 0,
+      "failed_count": 20
+    },
+    "message": {
+      "log_odds": -1.5,
+      "raw_log_odds": -1.6214,
+      "success_count": 0,
+      "failed_count": 12
+    },
+    "scanned": {
+      "log_odds": 1.5,
+      "raw_log_odds": 1.6367,
+      "success_count": 5,
+      "failed_count": 2
+    },
+    "searchable": {
+      "log_odds": 1.5,
+      "raw_log_odds": 1.9244,
+      "success_count": 7,
+      "failed_count": 2
+    },
+    "editor_for": {
+      "log_odds": 1.5,
+      "raw_log_odds": 2.4476,
+      "success_count": 8,
+      "failed_count": 1
+    },
+    "client-side": {
+      "log_odds": -1.5,
+      "raw_log_odds": -1.5414,
       "success_count": 0,
       "failed_count": 11
     },
-    "launch": {
-      "log_odds": -1.5414,
+    "integration": {
+      "log_odds": -1.5,
+      "raw_log_odds": -1.7645,
       "success_count": 0,
-      "failed_count": 11
+      "failed_count": 14
     },
     "dynamic": {
-      "log_odds": -1.5414,
-      "success_count": 0,
-      "failed_count": 11
-    },
-    "hn_add": {
-      "log_odds": -1.5414,
+      "log_odds": -1.5,
+      "raw_log_odds": -1.5414,
       "success_count": 0,
       "failed_count": 11
     },
     "before": {
-      "log_odds": -1.5414,
+      "log_odds": -1.5,
+      "raw_log_odds": -1.5414,
       "success_count": 0,
       "failed_count": 11
     },
-    "for_claude": {
-      "log_odds": -1.5414,
+    "hn_this": {
+      "log_odds": 1.5,
+      "raw_log_odds": 2.3298,
+      "success_count": 7,
+      "failed_count": 1
+    },
+    "realistic": {
+      "log_odds": 1.5,
+      "raw_log_odds": 2.0422,
+      "success_count": 5,
+      "failed_count": 1
+    },
+    "uses": {
+      "log_odds": 1.5,
+      "raw_log_odds": 1.7908,
+      "success_count": 6,
+      "failed_count": 2
+    },
+    "agents": {
+      "log_odds": -1.5,
+      "raw_log_odds": -2.3523,
+      "success_count": 2,
+      "failed_count": 80
+    },
+    "been_working": {
+      "log_odds": 1.5,
+      "raw_log_odds": 2.7353,
+      "success_count": 5,
+      "failed_count": 0
+    },
+    "finally": {
+      "log_odds": 1.5,
+      "raw_log_odds": 1.7908,
+      "success_count": 6,
+      "failed_count": 2
+    },
+    "launch": {
+      "log_odds": -1.5,
+      "raw_log_odds": -1.5414,
       "success_count": 0,
       "failed_count": 11
+    },
+    "web_framework": {
+      "log_odds": 1.5,
+      "raw_log_odds": 1.6367,
+      "success_count": 7,
+      "failed_count": 3
+    },
+    "entire": {
+      "log_odds": 1.5,
+      "raw_log_odds": 1.6367,
+      "success_count": 7,
+      "failed_count": 3
+    },
+    "everything": {
+      "log_odds": 1.5,
+      "raw_log_odds": 1.7545,
+      "success_count": 8,
+      "failed_count": 3
+    },
+    "papers": {
+      "log_odds": 1.5,
+      "raw_log_odds": 1.5032,
+      "success_count": 6,
+      "failed_count": 3
+    },
+    "scratch": {
+      "log_odds": 1.5,
+      "raw_log_odds": 2.484,
+      "success_count": 13,
+      "failed_count": 2
+    },
+    "utility": {
+      "log_odds": -1.5,
+      "raw_log_odds": -1.6214,
+      "success_count": 0,
+      "failed_count": 12
+    },
+    "google_search": {
+      "log_odds": 1.5,
+      "raw_log_odds": 1.8598,
+      "success_count": 4,
+      "failed_count": 1
+    },
+    "year": {
+      "log_odds": 1.5,
+      "raw_log_odds": 1.7545,
+      "success_count": 8,
+      "failed_count": 3
+    },
+    "half": {
+      "log_odds": 1.5,
+      "raw_log_odds": 1.8598,
+      "success_count": 4,
+      "failed_count": 1
+    },
+    "hn_add": {
+      "log_odds": -1.5,
+      "raw_log_odds": -1.5414,
+      "success_count": 0,
+      "failed_count": 11
+    },
+    "openclaw": {
+      "log_odds": -1.5,
+      "raw_log_odds": -1.7645,
+      "success_count": 0,
+      "failed_count": 14
+    },
+    "spent_years": {
+      "log_odds": 1.5,
+      "raw_log_odds": 3.023,
+      "success_count": 7,
+      "failed_count": 0
+    },
+    "solution": {
+      "log_odds": -1.5,
+      "raw_log_odds": -1.8897,
+      "success_count": 0,
+      "failed_count": 16
+    },
+    "web_server": {
+      "log_odds": 1.5,
+      "raw_log_odds": 1.6367,
+      "success_count": 5,
+      "failed_count": 2
+    },
+    "had": {
+      "log_odds": 1.5,
+      "raw_log_odds": 1.8598,
+      "success_count": 4,
+      "failed_count": 1
+    },
+    "review": {
+      "log_odds": -1.5,
+      "raw_log_odds": -1.9468,
+      "success_count": 0,
+      "failed_count": 17
+    },
+    "map_of": {
+      "log_odds": 1.5,
+      "raw_log_odds": 1.6367,
+      "success_count": 7,
+      "failed_count": 3
+    },
+    "city": {
+      "log_odds": 1.5,
+      "raw_log_odds": 1.8598,
+      "success_count": 4,
+      "failed_count": 1
     },
     "working_on": {
-      "log_odds": 1.5313,
+      "log_odds": 1.5,
+      "raw_log_odds": 1.5313,
       "success_count": 8,
       "failed_count": 4
     },
-    "ms": {
-      "log_odds": 1.5313,
-      "success_count": 8,
-      "failed_count": 4
+    "telegram": {
+      "log_odds": -1.5,
+      "raw_log_odds": -1.6955,
+      "success_count": 0,
+      "failed_count": 13
     },
-    "spreadsheet": {
-      "log_odds": 1.5313,
-      "success_count": 8,
-      "failed_count": 4
+    "browse": {
+      "log_odds": 1.5,
+      "raw_log_odds": 1.9551,
+      "success_count": 10,
+      "failed_count": 3
+    },
+    "marketing": {
+      "log_odds": -1.5,
+      "raw_log_odds": -1.6214,
+      "success_count": 0,
+      "failed_count": 12
+    },
+    "years": {
+      "log_odds": 1.5,
+      "raw_log_odds": 2.4195,
+      "success_count": 34,
+      "failed_count": 7
+    },
+    "open-sourced": {
+      "log_odds": 1.5,
+      "raw_log_odds": 1.6367,
+      "success_count": 7,
+      "failed_count": 3
     },
     "wrote": {
-      "log_odds": 1.5141,
+      "log_odds": 1.5,
+      "raw_log_odds": 1.5141,
       "success_count": 22,
       "failed_count": 12
     },
-    "papers": {
-      "log_odds": 1.5032,
+    "hn_hn": {
+      "log_odds": 1.5,
+      "raw_log_odds": 2.4476,
+      "success_count": 8,
+      "failed_count": 1
+    },
+    "movies": {
+      "log_odds": 1.5,
+      "raw_log_odds": 1.6367,
+      "success_count": 7,
+      "failed_count": 3
+    },
+    "on_for": {
+      "log_odds": 1.5,
+      "raw_log_odds": 1.8598,
+      "success_count": 4,
+      "failed_count": 1
+    },
+    "ebook": {
+      "log_odds": 1.5,
+      "raw_log_odds": 2.0422,
+      "success_count": 5,
+      "failed_count": 1
+    },
+    "another": {
+      "log_odds": -1.5,
+      "raw_log_odds": -1.6214,
+      "success_count": 0,
+      "failed_count": 12
+    },
+    "ai-powered": {
+      "log_odds": -1.5,
+      "raw_log_odds": -1.6714,
+      "success_count": 2,
+      "failed_count": 40
+    },
+    "make_your": {
+      "log_odds": 1.5,
+      "raw_log_odds": 1.6367,
+      "success_count": 7,
+      "failed_count": 3
+    },
+    "is_hiring": {
+      "log_odds": 1.5,
+      "raw_log_odds": 1.8598,
+      "success_count": 4,
+      "failed_count": 1
+    },
+    "beta": {
+      "log_odds": -1.5,
+      "raw_log_odds": -2.2345,
+      "success_count": 0,
+      "failed_count": 23
+    },
+    "personal_finance": {
+      "log_odds": 1.5,
+      "raw_log_odds": 1.5032,
+      "success_count": 6,
+      "failed_count": 3
+    },
+    "debugger": {
+      "log_odds": 1.5,
+      "raw_log_odds": 2.0422,
+      "success_count": 5,
+      "failed_count": 1
+    },
+    "guitar": {
+      "log_odds": 1.5,
+      "raw_log_odds": 2.0422,
+      "success_count": 5,
+      "failed_count": 1
+    },
+    "deploy": {
+      "log_odds": -1.5,
+      "raw_log_odds": -1.9468,
+      "success_count": 0,
+      "failed_count": 17
+    },
+    "sheet": {
+      "log_odds": 1.5,
+      "raw_log_odds": 1.7908,
+      "success_count": 6,
+      "failed_count": 2
+    },
+    "clock": {
+      "log_odds": 1.5,
+      "raw_log_odds": 1.6367,
+      "success_count": 5,
+      "failed_count": 2
+    },
+    "browser_automation": {
+      "log_odds": 1.5,
+      "raw_log_odds": 3.023,
+      "success_count": 7,
+      "failed_count": 0
+    },
+    "sourced": {
+      "log_odds": 1.5,
+      "raw_log_odds": 1.6367,
+      "success_count": 5,
+      "failed_count": 2
+    },
+    "plugin": {
+      "log_odds": -1.5,
+      "raw_log_odds": -2.4237,
+      "success_count": 0,
+      "failed_count": 28
+    },
+    "sqlite": {
+      "log_odds": 1.5,
+      "raw_log_odds": 1.7545,
+      "success_count": 17,
+      "failed_count": 7
+    },
+    "wordpress": {
+      "log_odds": -1.5,
+      "raw_log_odds": -1.6214,
+      "success_count": 0,
+      "failed_count": 12
+    },
+    "hn_send": {
+      "log_odds": -1.5,
+      "raw_log_odds": -1.5414,
+      "success_count": 0,
+      "failed_count": 11
+    },
+    "send": {
+      "log_odds": -1.5,
+      "raw_log_odds": -2.0009,
+      "success_count": 1,
+      "failed_count": 37
+    },
+    "mini": {
+      "log_odds": 1.5,
+      "raw_log_odds": 1.8598,
+      "success_count": 4,
+      "failed_count": 1
+    },
+    "front_page": {
+      "log_odds": 1.5,
+      "raw_log_odds": 1.8598,
+      "success_count": 4,
+      "failed_count": 1
+    },
+    "latency": {
+      "log_odds": 1.5,
+      "raw_log_odds": 1.7908,
+      "success_count": 6,
+      "failed_count": 2
+    },
+    "cloud": {
+      "log_odds": -1.5,
+      "raw_log_odds": -1.6214,
+      "success_count": 2,
+      "failed_count": 38
+    },
+    "from_scratch": {
+      "log_odds": 1.5,
+      "raw_log_odds": 2.8895,
+      "success_count": 13,
+      "failed_count": 1
+    },
+    "laptop": {
+      "log_odds": 1.5,
+      "raw_log_odds": 2.7353,
+      "success_count": 5,
+      "failed_count": 0
+    },
+    "year-old": {
+      "log_odds": 1.5,
+      "raw_log_odds": 2.7353,
+      "success_count": 5,
+      "failed_count": 0
+    },
+    "an_open-source": {
+      "log_odds": 1.5,
+      "raw_log_odds": 1.6718,
+      "success_count": 28,
+      "failed_count": 13
+    },
+    "screen_sharing": {
+      "log_odds": 1.5,
+      "raw_log_odds": 2.7353,
+      "success_count": 5,
+      "failed_count": 0
+    },
+    "open_sourced": {
+      "log_odds": 1.5,
+      "raw_log_odds": 1.8598,
+      "success_count": 4,
+      "failed_count": 1
+    },
+    "an_api": {
+      "log_odds": 1.5,
+      "raw_log_odds": 1.6367,
+      "success_count": 5,
+      "failed_count": 2
+    },
+    "daughter": {
+      "log_odds": 1.5,
+      "raw_log_odds": 1.8598,
+      "success_count": 4,
+      "failed_count": 1
+    },
+    "of_ai": {
+      "log_odds": -1.5,
+      "raw_log_odds": -1.7645,
+      "success_count": 0,
+      "failed_count": 14
+    },
+    "put": {
+      "log_odds": 1.5,
+      "raw_log_odds": 2.7353,
+      "success_count": 5,
+      "failed_count": 0
+    },
+    "robot": {
+      "log_odds": 1.5,
+      "raw_log_odds": 2.0422,
+      "success_count": 5,
+      "failed_count": 1
+    },
+    "spent": {
+      "log_odds": 1.5,
+      "raw_log_odds": 2.484,
+      "success_count": 13,
+      "failed_count": 2
+    },
+    "messages": {
+      "log_odds": -1.5,
+      "raw_log_odds": -1.829,
+      "success_count": 0,
+      "failed_count": 15
+    },
+    "remotely": {
+      "log_odds": 1.5,
+      "raw_log_odds": 2.7353,
+      "success_count": 5,
+      "failed_count": 0
+    },
+    "wrapper": {
+      "log_odds": -1.5,
+      "raw_log_odds": -1.6955,
+      "success_count": 0,
+      "failed_count": 13
+    },
+    "i've_been": {
+      "log_odds": 1.5,
+      "raw_log_odds": 3.1408,
+      "success_count": 8,
+      "failed_count": 0
+    },
+    "for_claude": {
+      "log_odds": -1.5,
+      "raw_log_odds": -1.5414,
+      "success_count": 0,
+      "failed_count": 11
+    },
+    "in_seconds": {
+      "log_odds": -1.5,
+      "raw_log_odds": -1.9468,
+      "success_count": 0,
+      "failed_count": 17
+    },
+    "second": {
+      "log_odds": 1.5,
+      "raw_log_odds": 1.5032,
       "success_count": 6,
       "failed_count": 3
     },
     "car": {
-      "log_odds": 1.5032,
+      "log_odds": 1.5,
+      "raw_log_odds": 1.5032,
       "success_count": 6,
       "failed_count": 3
     },
-    "second": {
-      "log_odds": 1.5032,
-      "success_count": 6,
+    "regular": {
+      "log_odds": 1.5,
+      "raw_log_odds": 1.8598,
+      "success_count": 4,
+      "failed_count": 1
+    },
+    "been": {
+      "log_odds": 1.5,
+      "raw_log_odds": 2.0422,
+      "success_count": 11,
       "failed_count": 3
     },
-    "personal_finance": {
-      "log_odds": 1.5032,
+    "gaussian": {
+      "log_odds": 1.5,
+      "raw_log_odds": 1.6367,
+      "success_count": 5,
+      "failed_count": 2
+    },
+    "after_years": {
+      "log_odds": 1.5,
+      "raw_log_odds": 2.7353,
+      "success_count": 5,
+      "failed_count": 0
+    },
+    "converter": {
+      "log_odds": -1.5,
+      "raw_log_odds": -1.6214,
+      "success_count": 0,
+      "failed_count": 12
+    },
+    "and_more": {
+      "log_odds": -1.5,
+      "raw_log_odds": -1.6214,
+      "success_count": 0,
+      "failed_count": 12
+    },
+    "for_hacker": {
+      "log_odds": 1.5,
+      "raw_log_odds": 1.6367,
+      "success_count": 5,
+      "failed_count": 2
+    },
+    "alternative_to": {
+      "log_odds": 1.5,
+      "raw_log_odds": 1.5922,
+      "success_count": 43,
+      "failed_count": 22
+    },
+    "mapped": {
+      "log_odds": 1.5,
+      "raw_log_odds": 2.0422,
+      "success_count": 5,
+      "failed_count": 1
+    },
+    "hn_hacker": {
+      "log_odds": 1.5,
+      "raw_log_odds": 1.6367,
+      "success_count": 13,
+      "failed_count": 6
+    },
+    "personal_website": {
+      "log_odds": 1.5,
+      "raw_log_odds": 1.6367,
+      "success_count": 5,
+      "failed_count": 2
+    },
+    "any_website": {
+      "log_odds": 1.5,
+      "raw_log_odds": 3.023,
+      "success_count": 7,
+      "failed_count": 0
+    },
+    "on_an": {
+      "log_odds": 1.5,
+      "raw_log_odds": 1.6367,
+      "success_count": 5,
+      "failed_count": 2
+    },
+    "for_building": {
+      "log_odds": 1.5,
+      "raw_log_odds": 1.8598,
+      "success_count": 4,
+      "failed_count": 1
+    },
+    "its": {
+      "log_odds": 1.5,
+      "raw_log_odds": 2.553,
+      "success_count": 9,
+      "failed_count": 1
+    },
+    "storage": {
+      "log_odds": -1.5,
+      "raw_log_odds": -2.101,
+      "success_count": 0,
+      "failed_count": 20
+    },
+    "for_ai": {
+      "log_odds": -1.5,
+      "raw_log_odds": -2.1245,
+      "success_count": 1,
+      "failed_count": 42
+    },
+    "handbook": {
+      "log_odds": 1.5,
+      "raw_log_odds": 2.0422,
+      "success_count": 5,
+      "failed_count": 1
+    },
+    "the_terminal": {
+      "log_odds": 1.5,
+      "raw_log_odds": 1.6367,
+      "success_count": 5,
+      "failed_count": 2
+    },
+    "reverse": {
+      "log_odds": 1.5,
+      "raw_log_odds": 1.7908,
       "success_count": 6,
-      "failed_count": 3
+      "failed_count": 2
+    },
+    "mcp": {
+      "log_odds": -1.5,
+      "raw_log_odds": -1.6955,
+      "success_count": 2,
+      "failed_count": 41
     },
     "editor": {
       "log_odds": 1.4969,
+      "raw_log_odds": 1.4969,
       "success_count": 39,
       "failed_count": 22
     },
     "twitter": {
       "log_odds": -1.4842,
+      "raw_log_odds": -1.4842,
       "success_count": 2,
       "failed_count": 33
     },
-    "hit": {
-      "log_odds": 1.4544,
-      "success_count": 4,
-      "failed_count": 2
-    },
-    "web_pages": {
-      "log_odds": 1.4544,
-      "success_count": 4,
-      "failed_count": 2
-    },
-    "md": {
-      "log_odds": 1.4544,
-      "success_count": 4,
-      "failed_count": 2
-    },
-    "who_is": {
-      "log_odds": 1.4544,
-      "success_count": 4,
-      "failed_count": 2
-    },
-    "logos": {
-      "log_odds": 1.4544,
-      "success_count": 4,
-      "failed_count": 2
-    },
     "arxiv": {
       "log_odds": 1.4544,
+      "raw_log_odds": 1.4544,
+      "success_count": 4,
+      "failed_count": 2
+    },
+    "pipes": {
+      "log_odds": 1.4544,
+      "raw_log_odds": 1.4544,
       "success_count": 4,
       "failed_count": 2
     },
     "illustrations": {
       "log_odds": 1.4544,
+      "raw_log_odds": 1.4544,
       "success_count": 4,
       "failed_count": 2
-    },
-    "diagram": {
-      "log_odds": 1.4544,
-      "success_count": 4,
-      "failed_count": 2
-    },
-    "internal": {
-      "log_odds": 1.4544,
-      "success_count": 4,
-      "failed_count": 2
-    },
-    "hn_wrote": {
-      "log_odds": 1.4544,
-      "success_count": 19,
-      "failed_count": 11
     },
     "i've": {
       "log_odds": 1.4544,
+      "raw_log_odds": 1.4544,
       "success_count": 14,
       "failed_count": 8
     },
-    "pipes": {
+    "web_pages": {
       "log_odds": 1.4544,
+      "raw_log_odds": 1.4544,
       "success_count": 4,
       "failed_count": 2
     },
-    "ambient": {
+    "hit": {
       "log_odds": 1.4544,
-      "success_count": 4,
-      "failed_count": 2
-    },
-    "years_of": {
-      "log_odds": 1.4544,
-      "success_count": 4,
-      "failed_count": 2
-    },
-    "web_browser": {
-      "log_odds": 1.4544,
-      "success_count": 4,
-      "failed_count": 2
-    },
-    "hn_is": {
-      "log_odds": 1.4544,
-      "success_count": 4,
-      "failed_count": 2
-    },
-    "databases": {
-      "log_odds": 1.4544,
-      "success_count": 4,
-      "failed_count": 2
-    },
-    "ocr": {
-      "log_odds": 1.4544,
-      "success_count": 4,
-      "failed_count": 2
-    },
-    "webgpu": {
-      "log_odds": 1.4544,
-      "success_count": 4,
-      "failed_count": 2
-    },
-    "machines": {
-      "log_odds": 1.4544,
-      "success_count": 4,
-      "failed_count": 2
-    },
-    "web_design": {
-      "log_odds": 1.4544,
-      "success_count": 4,
-      "failed_count": 2
-    },
-    "switch": {
-      "log_odds": 1.4544,
+      "raw_log_odds": 1.4544,
       "success_count": 4,
       "failed_count": 2
     },
     "almost": {
       "log_odds": 1.4544,
+      "raw_log_odds": 1.4544,
+      "success_count": 4,
+      "failed_count": 2
+    },
+    "ocr": {
+      "log_odds": 1.4544,
+      "raw_log_odds": 1.4544,
       "success_count": 4,
       "failed_count": 2
     },
     "game_engine": {
       "log_odds": 1.4544,
+      "raw_log_odds": 1.4544,
       "success_count": 4,
       "failed_count": 2
     },
-    "hn_css": {
+    "machines": {
       "log_odds": 1.4544,
+      "raw_log_odds": 1.4544,
+      "success_count": 4,
+      "failed_count": 2
+    },
+    "web_browser": {
+      "log_odds": 1.4544,
+      "raw_log_odds": 1.4544,
+      "success_count": 4,
+      "failed_count": 2
+    },
+    "internal": {
+      "log_odds": 1.4544,
+      "raw_log_odds": 1.4544,
+      "success_count": 4,
+      "failed_count": 2
+    },
+    "switch": {
+      "log_odds": 1.4544,
+      "raw_log_odds": 1.4544,
+      "success_count": 4,
+      "failed_count": 2
+    },
+    "databases": {
+      "log_odds": 1.4544,
+      "raw_log_odds": 1.4544,
+      "success_count": 4,
+      "failed_count": 2
+    },
+    "md": {
+      "log_odds": 1.4544,
+      "raw_log_odds": 1.4544,
+      "success_count": 4,
+      "failed_count": 2
+    },
+    "hn_wrote": {
+      "log_odds": 1.4544,
+      "raw_log_odds": 1.4544,
+      "success_count": 19,
+      "failed_count": 11
+    },
+    "web_design": {
+      "log_odds": 1.4544,
+      "raw_log_odds": 1.4544,
+      "success_count": 4,
+      "failed_count": 2
+    },
+    "diagram": {
+      "log_odds": 1.4544,
+      "raw_log_odds": 1.4544,
       "success_count": 4,
       "failed_count": 2
     },
     "source_alternative": {
       "log_odds": 1.4544,
+      "raw_log_odds": 1.4544,
+      "success_count": 4,
+      "failed_count": 2
+    },
+    "hn_is": {
+      "log_odds": 1.4544,
+      "raw_log_odds": 1.4544,
+      "success_count": 4,
+      "failed_count": 2
+    },
+    "who_is": {
+      "log_odds": 1.4544,
+      "raw_log_odds": 1.4544,
+      "success_count": 4,
+      "failed_count": 2
+    },
+    "ambient": {
+      "log_odds": 1.4544,
+      "raw_log_odds": 1.4544,
+      "success_count": 4,
+      "failed_count": 2
+    },
+    "years_of": {
+      "log_odds": 1.4544,
+      "raw_log_odds": 1.4544,
+      "success_count": 4,
+      "failed_count": 2
+    },
+    "webgpu": {
+      "log_odds": 1.4544,
+      "raw_log_odds": 1.4544,
+      "success_count": 4,
+      "failed_count": 2
+    },
+    "hn_css": {
+      "log_odds": 1.4544,
+      "raw_log_odds": 1.4544,
+      "success_count": 4,
+      "failed_count": 2
+    },
+    "logos": {
+      "log_odds": 1.4544,
+      "raw_log_odds": 1.4544,
       "success_count": 4,
       "failed_count": 2
     },
     "free_alternative": {
       "log_odds": 1.4544,
+      "raw_log_odds": 1.4544,
       "success_count": 4,
       "failed_count": 2
     },
-    "next_js": {
-      "log_odds": -1.4543,
-      "success_count": 0,
-      "failed_count": 10
-    },
     "profile": {
       "log_odds": -1.4543,
-      "success_count": 0,
-      "failed_count": 10
-    },
-    "click": {
-      "log_odds": -1.4543,
-      "success_count": 0,
-      "failed_count": 10
-    },
-    "alerts": {
-      "log_odds": -1.4543,
-      "success_count": 0,
-      "failed_count": 10
-    },
-    "event": {
-      "log_odds": -1.4543,
-      "success_count": 0,
-      "failed_count": 10
-    },
-    "skill": {
-      "log_odds": -1.4543,
-      "success_count": 0,
-      "failed_count": 10
-    },
-    "workflows": {
-      "log_odds": -1.4543,
-      "success_count": 0,
-      "failed_count": 10
-    },
-    "movie": {
-      "log_odds": -1.4543,
-      "success_count": 0,
-      "failed_count": 10
-    },
-    "quick": {
-      "log_odds": -1.4543,
-      "success_count": 0,
-      "failed_count": 10
-    },
-    "validate": {
-      "log_odds": -1.4543,
-      "success_count": 0,
-      "failed_count": 10
-    },
-    "ai_powered": {
-      "log_odds": -1.4543,
+      "raw_log_odds": -1.4543,
       "success_count": 0,
       "failed_count": 10
     },
     "need": {
       "log_odds": -1.4543,
+      "raw_log_odds": -1.4543,
+      "success_count": 0,
+      "failed_count": 10
+    },
+    "alerts": {
+      "log_odds": -1.4543,
+      "raw_log_odds": -1.4543,
+      "success_count": 0,
+      "failed_count": 10
+    },
+    "workflows": {
+      "log_odds": -1.4543,
+      "raw_log_odds": -1.4543,
+      "success_count": 0,
+      "failed_count": 10
+    },
+    "click": {
+      "log_odds": -1.4543,
+      "raw_log_odds": -1.4543,
+      "success_count": 0,
+      "failed_count": 10
+    },
+    "ai_powered": {
+      "log_odds": -1.4543,
+      "raw_log_odds": -1.4543,
+      "success_count": 0,
+      "failed_count": 10
+    },
+    "skill": {
+      "log_odds": -1.4543,
+      "raw_log_odds": -1.4543,
+      "success_count": 0,
+      "failed_count": 10
+    },
+    "validate": {
+      "log_odds": -1.4543,
+      "raw_log_odds": -1.4543,
+      "success_count": 0,
+      "failed_count": 10
+    },
+    "next_js": {
+      "log_odds": -1.4543,
+      "raw_log_odds": -1.4543,
+      "success_count": 0,
+      "failed_count": 10
+    },
+    "quick": {
+      "log_odds": -1.4543,
+      "raw_log_odds": -1.4543,
+      "success_count": 0,
+      "failed_count": 10
+    },
+    "movie": {
+      "log_odds": -1.4543,
+      "raw_log_odds": -1.4543,
+      "success_count": 0,
+      "failed_count": 10
+    },
+    "event": {
+      "log_odds": -1.4543,
+      "raw_log_odds": -1.4543,
       "success_count": 0,
       "failed_count": 10
     },
     "hacker_news": {
       "log_odds": 1.4456,
+      "raw_log_odds": 1.4456,
       "success_count": 37,
       "failed_count": 22
     },
     "sql": {
       "log_odds": 1.436,
+      "raw_log_odds": 1.436,
       "success_count": 17,
       "failed_count": 10
     },
     "open-source_alternative": {
       "log_odds": 1.4136,
+      "raw_log_odds": 1.4136,
       "success_count": 7,
       "failed_count": 4
     },
     "llama": {
       "log_odds": 1.4136,
+      "raw_log_odds": 1.4136,
       "success_count": 7,
       "failed_count": 4
     },
     "template": {
       "log_odds": -1.4078,
+      "raw_log_odds": -1.4078,
       "success_count": 1,
       "failed_count": 20
     },
     "hn_open": {
       "log_odds": 1.3854,
+      "raw_log_odds": 1.3854,
       "success_count": 13,
       "failed_count": 8
     },
     "i'm": {
       "log_odds": 1.371,
+      "raw_log_odds": 1.371,
       "success_count": 22,
       "failed_count": 14
     },
     "css": {
       "log_odds": 1.3604,
+      "raw_log_odds": 1.3604,
       "success_count": 43,
       "failed_count": 28
     },
-    "semantic": {
-      "log_odds": -1.359,
-      "success_count": 1,
-      "failed_count": 19
-    },
     "coding_agents": {
       "log_odds": -1.359,
-      "success_count": 0,
-      "failed_count": 9
-    },
-    "requests": {
-      "log_odds": -1.359,
-      "success_count": 0,
-      "failed_count": 9
-    },
-    "pull": {
-      "log_odds": -1.359,
-      "success_count": 0,
-      "failed_count": 9
-    },
-    "share_your": {
-      "log_odds": -1.359,
-      "success_count": 0,
-      "failed_count": 9
-    },
-    "simplify": {
-      "log_odds": -1.359,
-      "success_count": 0,
-      "failed_count": 9
-    },
-    "hn_ios": {
-      "log_odds": -1.359,
+      "raw_log_odds": -1.359,
       "success_count": 0,
       "failed_count": 9
     },
     "box": {
       "log_odds": -1.359,
-      "success_count": 0,
-      "failed_count": 9
-    },
-    "plugin_for": {
-      "log_odds": -1.359,
-      "success_count": 0,
-      "failed_count": 9
-    },
-    "awesome": {
-      "log_odds": -1.359,
-      "success_count": 0,
-      "failed_count": 9
-    },
-    "newsletter": {
-      "log_odds": -1.359,
-      "success_count": 1,
-      "failed_count": 19
-    },
-    "information": {
-      "log_odds": -1.359,
-      "success_count": 0,
-      "failed_count": 9
-    },
-    "your_friends": {
-      "log_odds": -1.359,
-      "success_count": 0,
-      "failed_count": 9
-    },
-    "saas": {
-      "log_odds": -1.359,
-      "success_count": 2,
-      "failed_count": 29
-    },
-    "redis": {
-      "log_odds": -1.359,
-      "success_count": 0,
-      "failed_count": 9
-    },
-    "search_and": {
-      "log_odds": -1.359,
-      "success_count": 0,
-      "failed_count": 9
-    },
-    "feed": {
-      "log_odds": -1.359,
-      "success_count": 1,
-      "failed_count": 19
-    },
-    "hn_generate": {
-      "log_odds": -1.359,
-      "success_count": 1,
-      "failed_count": 19
-    },
-    "status": {
-      "log_odds": -1.359,
+      "raw_log_odds": -1.359,
       "success_count": 0,
       "failed_count": 9
     },
     "feature": {
       "log_odds": -1.359,
+      "raw_log_odds": -1.359,
       "success_count": 0,
       "failed_count": 9
     },
     "cli_to": {
       "log_odds": -1.359,
+      "raw_log_odds": -1.359,
       "success_count": 0,
       "failed_count": 9
     },
-    "codebase": {
-      "log_odds": 1.349,
-      "success_count": 5,
-      "failed_count": 3
+    "share_your": {
+      "log_odds": -1.359,
+      "raw_log_odds": -1.359,
+      "success_count": 0,
+      "failed_count": 9
     },
-    "pdfs": {
-      "log_odds": 1.349,
-      "success_count": 5,
-      "failed_count": 3
+    "saas": {
+      "log_odds": -1.359,
+      "raw_log_odds": -1.359,
+      "success_count": 2,
+      "failed_count": 29
     },
-    "torrent": {
-      "log_odds": 1.349,
-      "success_count": 5,
-      "failed_count": 3
+    "awesome": {
+      "log_odds": -1.359,
+      "raw_log_odds": -1.359,
+      "success_count": 0,
+      "failed_count": 9
     },
-    "ide_for": {
-      "log_odds": 1.349,
-      "success_count": 5,
-      "failed_count": 3
+    "plugin_for": {
+      "log_odds": -1.359,
+      "raw_log_odds": -1.359,
+      "success_count": 0,
+      "failed_count": 9
     },
-    "hn_i'm": {
-      "log_odds": 1.349,
-      "success_count": 20,
-      "failed_count": 13
+    "information": {
+      "log_odds": -1.359,
+      "raw_log_odds": -1.359,
+      "success_count": 0,
+      "failed_count": 9
     },
-    "site_that": {
-      "log_odds": 1.349,
-      "success_count": 8,
-      "failed_count": 5
+    "pull": {
+      "log_odds": -1.359,
+      "raw_log_odds": -1.359,
+      "success_count": 0,
+      "failed_count": 9
+    },
+    "your_friends": {
+      "log_odds": -1.359,
+      "raw_log_odds": -1.359,
+      "success_count": 0,
+      "failed_count": 9
+    },
+    "semantic": {
+      "log_odds": -1.359,
+      "raw_log_odds": -1.359,
+      "success_count": 1,
+      "failed_count": 19
+    },
+    "search_and": {
+      "log_odds": -1.359,
+      "raw_log_odds": -1.359,
+      "success_count": 0,
+      "failed_count": 9
+    },
+    "simplify": {
+      "log_odds": -1.359,
+      "raw_log_odds": -1.359,
+      "success_count": 0,
+      "failed_count": 9
+    },
+    "hn_generate": {
+      "log_odds": -1.359,
+      "raw_log_odds": -1.359,
+      "success_count": 1,
+      "failed_count": 19
+    },
+    "requests": {
+      "log_odds": -1.359,
+      "raw_log_odds": -1.359,
+      "success_count": 0,
+      "failed_count": 9
+    },
+    "status": {
+      "log_odds": -1.359,
+      "raw_log_odds": -1.359,
+      "success_count": 0,
+      "failed_count": 9
+    },
+    "feed": {
+      "log_odds": -1.359,
+      "raw_log_odds": -1.359,
+      "success_count": 1,
+      "failed_count": 19
+    },
+    "newsletter": {
+      "log_odds": -1.359,
+      "raw_log_odds": -1.359,
+      "success_count": 1,
+      "failed_count": 19
+    },
+    "hn_ios": {
+      "log_odds": -1.359,
+      "raw_log_odds": -1.359,
+      "success_count": 0,
+      "failed_count": 9
+    },
+    "redis": {
+      "log_odds": -1.359,
+      "raw_log_odds": -1.359,
+      "success_count": 0,
+      "failed_count": 9
     },
     "hn_write": {
       "log_odds": 1.349,
+      "raw_log_odds": 1.349,
+      "success_count": 5,
+      "failed_count": 3
+    },
+    "gb": {
+      "log_odds": 1.349,
+      "raw_log_odds": 1.349,
       "success_count": 5,
       "failed_count": 3
     },
     "hacker": {
       "log_odds": 1.349,
+      "raw_log_odds": 1.349,
       "success_count": 38,
       "failed_count": 25
     },
-    "visa": {
+    "codebase": {
       "log_odds": 1.349,
+      "raw_log_odds": 1.349,
       "success_count": 5,
       "failed_count": 3
     },
-    "book_about": {
+    "site_that": {
       "log_odds": 1.349,
-      "success_count": 5,
-      "failed_count": 3
-    },
-    "website_to": {
-      "log_odds": 1.349,
+      "raw_log_odds": 1.349,
       "success_count": 8,
       "failed_count": 5
     },
-    "gb": {
+    "website_to": {
       "log_odds": 1.349,
+      "raw_log_odds": 1.349,
+      "success_count": 8,
+      "failed_count": 5
+    },
+    "book_about": {
+      "log_odds": 1.349,
+      "raw_log_odds": 1.349,
       "success_count": 5,
       "failed_count": 3
     },
     "simulator": {
       "log_odds": 1.349,
+      "raw_log_odds": 1.349,
       "success_count": 14,
       "failed_count": 9
     },
+    "hn_i'm": {
+      "log_odds": 1.349,
+      "raw_log_odds": 1.349,
+      "success_count": 20,
+      "failed_count": 13
+    },
+    "torrent": {
+      "log_odds": 1.349,
+      "raw_log_odds": 1.349,
+      "success_count": 5,
+      "failed_count": 3
+    },
+    "pdfs": {
+      "log_odds": 1.349,
+      "raw_log_odds": 1.349,
+      "success_count": 5,
+      "failed_count": 3
+    },
+    "ide_for": {
+      "log_odds": 1.349,
+      "raw_log_odds": 1.349,
+      "success_count": 5,
+      "failed_count": 3
+    },
+    "visa": {
+      "log_odds": 1.349,
+      "raw_log_odds": 1.349,
+      "success_count": 5,
+      "failed_count": 3
+    },
     "alternative": {
       "log_odds": 1.323,
+      "raw_log_odds": 1.323,
       "success_count": 75,
       "failed_count": 51
     },
     "self-hosted": {
       "log_odds": 1.323,
+      "raw_log_odds": 1.323,
       "success_count": 18,
       "failed_count": 12
     },
     "os": {
       "log_odds": 1.3182,
+      "raw_log_odds": 1.3182,
       "success_count": 15,
       "failed_count": 10
     },
     "STRUCT_self_hosted": {
       "log_odds": 1.3151,
+      "raw_log_odds": 1.3151,
       "success_count": 28,
       "failed_count": 19
     },
     "hn_i've": {
       "log_odds": 1.3002,
+      "raw_log_odds": 1.3002,
       "success_count": 9,
       "failed_count": 6
     },
     "linux": {
       "log_odds": 1.2884,
+      "raw_log_odds": 1.2884,
       "success_count": 23,
       "failed_count": 16
     },
     "fast_and": {
       "log_odds": 1.28,
+      "raw_log_odds": 1.28,
       "success_count": 6,
       "failed_count": 4
     },
     "free_and": {
       "log_odds": 1.28,
+      "raw_log_odds": 1.28,
       "success_count": 6,
       "failed_count": 4
     },
     "share": {
       "log_odds": -1.272,
+      "raw_log_odds": -1.272,
       "success_count": 5,
       "failed_count": 54
     },
-    "from_the": {
-      "log_odds": 1.262,
-      "success_count": 10,
-      "failed_count": 7
-    },
     "wikipedia": {
       "log_odds": 1.262,
+      "raw_log_odds": 1.262,
       "success_count": 10,
       "failed_count": 7
     },
     "decentralized": {
       "log_odds": 1.262,
+      "raw_log_odds": 1.262,
       "success_count": 10,
       "failed_count": 7
     },
-    "publishing": {
-      "log_odds": -1.2537,
-      "success_count": 0,
-      "failed_count": 8
-    },
-    "start": {
-      "log_odds": -1.2537,
-      "success_count": 0,
-      "failed_count": 8
-    },
-    "passwords": {
-      "log_odds": -1.2537,
-      "success_count": 0,
-      "failed_count": 8
+    "from_the": {
+      "log_odds": 1.262,
+      "raw_log_odds": 1.262,
+      "success_count": 10,
+      "failed_count": 7
     },
     "pr": {
       "log_odds": -1.2537,
-      "success_count": 0,
-      "failed_count": 8
-    },
-    "character": {
-      "log_odds": -1.2537,
-      "success_count": 0,
-      "failed_count": 8
-    },
-    "django": {
-      "log_odds": -1.2537,
-      "success_count": 0,
-      "failed_count": 8
-    },
-    "banana": {
-      "log_odds": -1.2537,
-      "success_count": 0,
-      "failed_count": 8
-    },
-    "them": {
-      "log_odds": -1.2537,
-      "success_count": 1,
-      "failed_count": 17
-    },
-    "proxy": {
-      "log_odds": -1.2537,
-      "success_count": 0,
-      "failed_count": 8
-    },
-    "for_teams": {
-      "log_odds": -1.2537,
-      "success_count": 0,
-      "failed_count": 8
-    },
-    "for_llm": {
-      "log_odds": -1.2537,
-      "success_count": 0,
-      "failed_count": 8
-    },
-    "benchmark": {
-      "log_odds": -1.2537,
+      "raw_log_odds": -1.2537,
       "success_count": 0,
       "failed_count": 8
     },
     "state": {
       "log_odds": -1.2537,
+      "raw_log_odds": -1.2537,
       "success_count": 0,
       "failed_count": 8
     },
-    "activity": {
+    "proxy": {
       "log_odds": -1.2537,
-      "success_count": 0,
-      "failed_count": 8
-    },
-    "starter": {
-      "log_odds": -1.2537,
-      "success_count": 0,
-      "failed_count": 8
-    },
-    "cache": {
-      "log_odds": -1.2537,
-      "success_count": 0,
-      "failed_count": 8
-    },
-    "workspace": {
-      "log_odds": -1.2537,
-      "success_count": 0,
-      "failed_count": 8
-    },
-    "to_send": {
-      "log_odds": -1.2537,
-      "success_count": 0,
-      "failed_count": 8
-    },
-    "ai_chat": {
-      "log_odds": -1.2537,
-      "success_count": 0,
-      "failed_count": 8
-    },
-    "cup": {
-      "log_odds": -1.2537,
-      "success_count": 0,
-      "failed_count": 8
-    },
-    "module": {
-      "log_odds": -1.2537,
-      "success_count": 0,
-      "failed_count": 8
-    },
-    "simple_tool": {
-      "log_odds": -1.2537,
-      "success_count": 0,
-      "failed_count": 8
-    },
-    "cluster": {
-      "log_odds": -1.2537,
+      "raw_log_odds": -1.2537,
       "success_count": 0,
       "failed_count": 8
     },
     "statistics": {
       "log_odds": -1.2537,
+      "raw_log_odds": -1.2537,
       "success_count": 0,
       "failed_count": 8
     },
-    "pieces": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
+    "starter": {
+      "log_odds": -1.2537,
+      "raw_log_odds": -1.2537,
+      "success_count": 0,
+      "failed_count": 8
     },
-    "hn_open-sourced": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
+    "for_llm": {
+      "log_odds": -1.2537,
+      "raw_log_odds": -1.2537,
+      "success_count": 0,
+      "failed_count": 8
     },
-    "leaderboard": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
+    "benchmark": {
+      "log_odds": -1.2537,
+      "raw_log_odds": -1.2537,
+      "success_count": 0,
+      "failed_count": 8
     },
-    "everywhere": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
+    "cluster": {
+      "log_odds": -1.2537,
+      "raw_log_odds": -1.2537,
+      "success_count": 0,
+      "failed_count": 8
     },
-    "past": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
+    "character": {
+      "log_odds": -1.2537,
+      "raw_log_odds": -1.2537,
+      "success_count": 0,
+      "failed_count": 8
     },
-    "route": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
+    "to_send": {
+      "log_odds": -1.2537,
+      "raw_log_odds": -1.2537,
+      "success_count": 0,
+      "failed_count": 8
     },
-    "speech-to-text": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
+    "django": {
+      "log_odds": -1.2537,
+      "raw_log_odds": -1.2537,
+      "success_count": 0,
+      "failed_count": 8
     },
-    "you_learn": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
+    "them": {
+      "log_odds": -1.2537,
+      "raw_log_odds": -1.2537,
+      "success_count": 1,
+      "failed_count": 17
     },
-    "tool_with": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
+    "start": {
+      "log_odds": -1.2537,
+      "raw_log_odds": -1.2537,
+      "success_count": 0,
+      "failed_count": 8
     },
-    "for_engineers": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
+    "publishing": {
+      "log_odds": -1.2537,
+      "raw_log_odds": -1.2537,
+      "success_count": 0,
+      "failed_count": 8
     },
-    "html_game": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
+    "cup": {
+      "log_odds": -1.2537,
+      "raw_log_odds": -1.2537,
+      "success_count": 0,
+      "failed_count": 8
     },
-    "engine_that": {
+    "activity": {
+      "log_odds": -1.2537,
+      "raw_log_odds": -1.2537,
+      "success_count": 0,
+      "failed_count": 8
+    },
+    "cache": {
+      "log_odds": -1.2537,
+      "raw_log_odds": -1.2537,
+      "success_count": 0,
+      "failed_count": 8
+    },
+    "banana": {
+      "log_odds": -1.2537,
+      "raw_log_odds": -1.2537,
+      "success_count": 0,
+      "failed_count": 8
+    },
+    "passwords": {
+      "log_odds": -1.2537,
+      "raw_log_odds": -1.2537,
+      "success_count": 0,
+      "failed_count": 8
+    },
+    "module": {
+      "log_odds": -1.2537,
+      "raw_log_odds": -1.2537,
+      "success_count": 0,
+      "failed_count": 8
+    },
+    "ai_chat": {
+      "log_odds": -1.2537,
+      "raw_log_odds": -1.2537,
+      "success_count": 0,
+      "failed_count": 8
+    },
+    "workspace": {
+      "log_odds": -1.2537,
+      "raw_log_odds": -1.2537,
+      "success_count": 0,
+      "failed_count": 8
+    },
+    "for_teams": {
+      "log_odds": -1.2537,
+      "raw_log_odds": -1.2537,
+      "success_count": 0,
+      "failed_count": 8
+    },
+    "simple_tool": {
+      "log_odds": -1.2537,
+      "raw_log_odds": -1.2537,
+      "success_count": 0,
+      "failed_count": 8
+    },
+    "video_game": {
       "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
       "success_count": 3,
       "failed_count": 2
     },
     "house": {
       "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
-    },
-    "to_compare": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
-    },
-    "that_makes": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
-    },
-    "webrtc": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
-    },
-    "window": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
-    },
-    "video_game": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
-    },
-    "voice_assistant": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
-    },
-    "designer": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
-    },
-    "driver": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
-    },
-    "to_watch": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
-    },
-    "tinder": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
-    },
-    "by_the": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
-    },
-    "that_uses": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
-    },
-    "for_research": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
-    },
-    "does_not": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
-    },
-    "in_webgl": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
-    },
-    "code_to": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
-    },
-    "latex": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
-    },
-    "tv_shows": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
-    },
-    "wanted": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
-    },
-    "hn_side": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
-    },
-    "down": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
-    },
-    "i've_built": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
-    },
-    "hn_self-hosted": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
-    },
-    "browsing": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
-    },
-    "whisper": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
-    },
-    "always": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
-    },
-    "deep_learning": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
-    },
-    "turned": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
-    },
-    "timelines": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
-    },
-    "look_like": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
-    },
-    "self-host": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
-    },
-    "the_command": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
-    },
-    "browse_and": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
-    },
-    "freelance": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
-    },
-    "visualizations": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
-    },
-    "game_that": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
-    },
-    "server_for": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
-    },
-    "not_exist": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
-    },
-    "component_library": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
-    },
-    "backgrounds": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
-    },
-    "for_hackers": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
-    },
-    "twitch": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
-    },
-    "exist": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
-    },
-    "markdown_files": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
-    },
-    "area": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
-    },
-    "gpus": {
-      "log_odds": 1.2312,
-      "success_count": 3,
-      "failed_count": 2
-    },
-    "database_of": {
-      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
       "success_count": 3,
       "failed_count": 2
     },
     "off": {
       "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
       "success_count": 3,
       "failed_count": 2
     },
-    "rails": {
-      "log_odds": -1.1965,
-      "success_count": 1,
-      "failed_count": 16
+    "speech-to-text": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "browse_and": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "for_engineers": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "tv_shows": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "hn_open-sourced": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "whisper": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "server_for": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "browsing": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "tinder": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "you_learn": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "markdown_files": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "in_webgl": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "driver": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "freelance": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "the_command": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "backgrounds": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "for_hackers": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "deep_learning": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "wanted": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "gpus": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "past": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "to_watch": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "timelines": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "look_like": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "leaderboard": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "window": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "route": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "hn_self-hosted": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "self-host": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "tool_with": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "down": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "not_exist": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "visualizations": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "exist": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "voice_assistant": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "hn_side": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "webrtc": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "to_compare": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "twitch": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "pieces": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "engine_that": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "code_to": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "by_the": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "html_game": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "component_library": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "does_not": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "turned": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "game_that": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "database_of": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "that_makes": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "for_research": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "that_uses": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "latex": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "always": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "designer": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "everywhere": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "area": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
+    },
+    "i've_built": {
+      "log_odds": 1.2312,
+      "raw_log_odds": 1.2312,
+      "success_count": 3,
+      "failed_count": 2
     },
     "post": {
       "log_odds": -1.1965,
+      "raw_log_odds": -1.1965,
+      "success_count": 1,
+      "failed_count": 16
+    },
+    "rails": {
+      "log_odds": -1.1965,
+      "raw_log_odds": -1.1965,
       "success_count": 1,
       "failed_count": 16
     },
     "track": {
       "log_odds": -1.1965,
+      "raw_log_odds": -1.1965,
       "success_count": 3,
       "failed_count": 33
     },
     "generative": {
       "log_odds": 1.1949,
+      "raw_log_odds": 1.1949,
       "success_count": 8,
       "failed_count": 6
     },
     "modern": {
       "log_odds": 1.1772,
+      "raw_log_odds": 1.1772,
       "success_count": 23,
       "failed_count": 18
     },
     "and_share": {
       "log_odds": -1.1767,
+      "raw_log_odds": -1.1767,
       "success_count": 2,
       "failed_count": 24
     },
-    "revenue": {
+    "let's": {
       "log_odds": 1.1667,
+      "raw_log_odds": 1.1667,
       "success_count": 4,
       "failed_count": 3
     },
     "physical": {
       "log_odds": 1.1667,
-      "success_count": 4,
-      "failed_count": 3
-    },
-    "the_web": {
-      "log_odds": 1.1667,
-      "success_count": 14,
-      "failed_count": 11
-    },
-    "trends": {
-      "log_odds": 1.1667,
-      "success_count": 4,
-      "failed_count": 3
-    },
-    "firebase": {
-      "log_odds": 1.1667,
-      "success_count": 4,
-      "failed_count": 3
-    },
-    "course": {
-      "log_odds": 1.1667,
-      "success_count": 9,
-      "failed_count": 7
-    },
-    "self_hosted": {
-      "log_odds": 1.1667,
-      "success_count": 4,
-      "failed_count": 3
-    },
-    "ollama": {
-      "log_odds": 1.1667,
-      "success_count": 4,
-      "failed_count": 3
-    },
-    "backend": {
-      "log_odds": 1.1667,
+      "raw_log_odds": 1.1667,
       "success_count": 4,
       "failed_count": 3
     },
     "archive": {
       "log_odds": 1.1667,
+      "raw_log_odds": 1.1667,
       "success_count": 4,
       "failed_count": 3
     },
-    "let's": {
+    "revenue": {
       "log_odds": 1.1667,
-      "success_count": 4,
-      "failed_count": 3
-    },
-    "an_online": {
-      "log_odds": 1.1667,
-      "success_count": 4,
-      "failed_count": 3
-    },
-    "esp": {
-      "log_odds": 1.1667,
-      "success_count": 4,
-      "failed_count": 3
-    },
-    "ago": {
-      "log_odds": 1.1667,
-      "success_count": 4,
-      "failed_count": 3
-    },
-    "ui_for": {
-      "log_odds": 1.1667,
-      "success_count": 9,
-      "failed_count": 7
-    },
-    "board_for": {
-      "log_odds": 1.1667,
-      "success_count": 4,
-      "failed_count": 3
-    },
-    "content": {
-      "log_odds": -1.1667,
-      "success_count": 3,
-      "failed_count": 32
-    },
-    "charts": {
-      "log_odds": 1.1667,
-      "success_count": 4,
-      "failed_count": 3
-    },
-    "implemented": {
-      "log_odds": 1.1667,
+      "raw_log_odds": 1.1667,
       "success_count": 4,
       "failed_count": 3
     },
     "for_personal": {
       "log_odds": 1.1667,
+      "raw_log_odds": 1.1667,
+      "success_count": 4,
+      "failed_count": 3
+    },
+    "trends": {
+      "log_odds": 1.1667,
+      "raw_log_odds": 1.1667,
+      "success_count": 4,
+      "failed_count": 3
+    },
+    "esp": {
+      "log_odds": 1.1667,
+      "raw_log_odds": 1.1667,
+      "success_count": 4,
+      "failed_count": 3
+    },
+    "ago": {
+      "log_odds": 1.1667,
+      "raw_log_odds": 1.1667,
       "success_count": 4,
       "failed_count": 3
     },
     "for_macos": {
       "log_odds": 1.1667,
+      "raw_log_odds": 1.1667,
+      "success_count": 9,
+      "failed_count": 7
+    },
+    "implemented": {
+      "log_odds": 1.1667,
+      "raw_log_odds": 1.1667,
+      "success_count": 4,
+      "failed_count": 3
+    },
+    "the_web": {
+      "log_odds": 1.1667,
+      "raw_log_odds": 1.1667,
+      "success_count": 14,
+      "failed_count": 11
+    },
+    "firebase": {
+      "log_odds": 1.1667,
+      "raw_log_odds": 1.1667,
+      "success_count": 4,
+      "failed_count": 3
+    },
+    "self_hosted": {
+      "log_odds": 1.1667,
+      "raw_log_odds": 1.1667,
+      "success_count": 4,
+      "failed_count": 3
+    },
+    "backend": {
+      "log_odds": 1.1667,
+      "raw_log_odds": 1.1667,
+      "success_count": 4,
+      "failed_count": 3
+    },
+    "ollama": {
+      "log_odds": 1.1667,
+      "raw_log_odds": 1.1667,
+      "success_count": 4,
+      "failed_count": 3
+    },
+    "charts": {
+      "log_odds": 1.1667,
+      "raw_log_odds": 1.1667,
+      "success_count": 4,
+      "failed_count": 3
+    },
+    "course": {
+      "log_odds": 1.1667,
+      "raw_log_odds": 1.1667,
+      "success_count": 9,
+      "failed_count": 7
+    },
+    "an_online": {
+      "log_odds": 1.1667,
+      "raw_log_odds": 1.1667,
+      "success_count": 4,
+      "failed_count": 3
+    },
+    "board_for": {
+      "log_odds": 1.1667,
+      "raw_log_odds": 1.1667,
+      "success_count": 4,
+      "failed_count": 3
+    },
+    "content": {
+      "log_odds": -1.1667,
+      "raw_log_odds": -1.1667,
+      "success_count": 3,
+      "failed_count": 32
+    },
+    "ui_for": {
+      "log_odds": 1.1667,
+      "raw_log_odds": 1.1667,
       "success_count": 9,
       "failed_count": 7
     },
     "open-source": {
       "log_odds": 1.1512,
+      "raw_log_odds": 1.1512,
       "success_count": 111,
       "failed_count": 90
     },
     "book": {
       "log_odds": 1.1483,
+      "raw_log_odds": 1.1483,
       "success_count": 26,
       "failed_count": 21
     },
-    "your_github": {
+    "multimodal": {
       "log_odds": -1.1359,
-      "success_count": 0,
-      "failed_count": 7
-    },
-    "semantic_search": {
-      "log_odds": -1.1359,
-      "success_count": 0,
-      "failed_count": 7
-    },
-    "updates": {
-      "log_odds": -1.1359,
-      "success_count": 0,
-      "failed_count": 7
-    },
-    "dependency": {
-      "log_odds": -1.1359,
-      "success_count": 0,
-      "failed_count": 7
-    },
-    "sports": {
-      "log_odds": -1.1359,
-      "success_count": 0,
-      "failed_count": 7
-    },
-    "releases": {
-      "log_odds": -1.1359,
-      "success_count": 0,
-      "failed_count": 7
-    },
-    "connecting": {
-      "log_odds": -1.1359,
-      "success_count": 0,
-      "failed_count": 7
-    },
-    "topic": {
-      "log_odds": -1.1359,
+      "raw_log_odds": -1.1359,
       "success_count": 0,
       "failed_count": 7
     },
     "release": {
       "log_odds": -1.1359,
-      "success_count": 0,
-      "failed_count": 7
-    },
-    "letter": {
-      "log_odds": -1.1359,
-      "success_count": 0,
-      "failed_count": 7
-    },
-    "nano": {
-      "log_odds": -1.1359,
-      "success_count": 0,
-      "failed_count": 7
-    },
-    "pytorch": {
-      "log_odds": -1.1359,
-      "success_count": 0,
-      "failed_count": 7
-    },
-    "codex": {
-      "log_odds": -1.1359,
-      "success_count": 0,
-      "failed_count": 7
-    },
-    "wrapper_for": {
-      "log_odds": -1.1359,
-      "success_count": 0,
-      "failed_count": 7
-    },
-    "printing": {
-      "log_odds": -1.1359,
-      "success_count": 0,
-      "failed_count": 7
-    },
-    "in_react": {
-      "log_odds": -1.1359,
-      "success_count": 0,
-      "failed_count": 7
-    },
-    "detection": {
-      "log_odds": -1.1359,
-      "success_count": 0,
-      "failed_count": 7
-    },
-    "brand": {
-      "log_odds": -1.1359,
-      "success_count": 0,
-      "failed_count": 7
-    },
-    "hn_share": {
-      "log_odds": -1.1359,
-      "success_count": 0,
-      "failed_count": 7
-    },
-    "devops": {
-      "log_odds": -1.1359,
-      "success_count": 0,
-      "failed_count": 7
-    },
-    "feedback": {
-      "log_odds": -1.1359,
-      "success_count": 3,
-      "failed_count": 31
-    },
-    "yaml": {
-      "log_odds": -1.1359,
-      "success_count": 0,
-      "failed_count": 7
-    },
-    "unicode": {
-      "log_odds": -1.1359,
-      "success_count": 0,
-      "failed_count": 7
-    },
-    "landing": {
-      "log_odds": -1.1359,
+      "raw_log_odds": -1.1359,
       "success_count": 0,
       "failed_count": 7
     },
     "snake": {
       "log_odds": -1.1359,
-      "success_count": 0,
-      "failed_count": 7
-    },
-    "latest": {
-      "log_odds": -1.1359,
-      "success_count": 0,
-      "failed_count": 7
-    },
-    "pipeline": {
-      "log_odds": -1.1359,
-      "success_count": 0,
-      "failed_count": 7
-    },
-    "observability": {
-      "log_odds": -1.1359,
-      "success_count": 0,
-      "failed_count": 7
-    },
-    "filtering": {
-      "log_odds": -1.1359,
-      "success_count": 0,
-      "failed_count": 7
-    },
-    "auth": {
-      "log_odds": -1.1359,
-      "success_count": 0,
-      "failed_count": 7
-    },
-    "hn_run": {
-      "log_odds": -1.1359,
-      "success_count": 0,
-      "failed_count": 7
-    },
-    "focused": {
-      "log_odds": -1.1359,
-      "success_count": 0,
-      "failed_count": 7
-    },
-    "multimodal": {
-      "log_odds": -1.1359,
-      "success_count": 0,
-      "failed_count": 7
-    },
-    "optimization": {
-      "log_odds": -1.1359,
-      "success_count": 0,
-      "failed_count": 7
-    },
-    "on_ios": {
-      "log_odds": -1.1359,
+      "raw_log_odds": -1.1359,
       "success_count": 0,
       "failed_count": 7
     },
     "hn_ai-powered": {
       "log_odds": -1.1359,
+      "raw_log_odds": -1.1359,
       "success_count": 0,
       "failed_count": 7
     },
-    "track_and": {
+    "codex": {
       "log_odds": -1.1359,
+      "raw_log_odds": -1.1359,
       "success_count": 0,
       "failed_count": 7
     },
-    "problem": {
+    "on_ios": {
       "log_odds": -1.1359,
-      "success_count": 0,
-      "failed_count": 7
-    },
-    "comment": {
-      "log_odds": -1.1359,
-      "success_count": 0,
-      "failed_count": 7
-    },
-    "records": {
-      "log_odds": -1.1359,
-      "success_count": 0,
-      "failed_count": 7
-    },
-    "yet_another": {
-      "log_odds": -1.1359,
-      "success_count": 0,
-      "failed_count": 7
-    },
-    "ai_image": {
-      "log_odds": -1.1359,
-      "success_count": 0,
-      "failed_count": 7
-    },
-    "idea": {
-      "log_odds": -1.1359,
-      "success_count": 1,
-      "failed_count": 15
-    },
-    "script_to": {
-      "log_odds": -1.1359,
-      "success_count": 0,
-      "failed_count": 7
-    },
-    "ease": {
-      "log_odds": -1.1359,
-      "success_count": 0,
-      "failed_count": 7
-    },
-    "to_turn": {
-      "log_odds": -1.1359,
-      "success_count": 0,
-      "failed_count": 7
-    },
-    "hn_check": {
-      "log_odds": -1.1359,
-      "success_count": 0,
-      "failed_count": 7
-    },
-    "service_for": {
-      "log_odds": -1.1359,
-      "success_count": 0,
-      "failed_count": 7
-    },
-    "async": {
-      "log_odds": -1.1359,
+      "raw_log_odds": -1.1359,
       "success_count": 0,
       "failed_count": 7
     },
     "flexible": {
       "log_odds": -1.1359,
-      "success_count": 0,
-      "failed_count": 7
-    },
-    "break": {
-      "log_odds": -1.1359,
-      "success_count": 0,
-      "failed_count": 7
-    },
-    "import": {
-      "log_odds": -1.1359,
+      "raw_log_odds": -1.1359,
       "success_count": 0,
       "failed_count": 7
     },
     "hn_making": {
       "log_odds": -1.1359,
+      "raw_log_odds": -1.1359,
+      "success_count": 0,
+      "failed_count": 7
+    },
+    "printing": {
+      "log_odds": -1.1359,
+      "raw_log_odds": -1.1359,
+      "success_count": 0,
+      "failed_count": 7
+    },
+    "hn_share": {
+      "log_odds": -1.1359,
+      "raw_log_odds": -1.1359,
+      "success_count": 0,
+      "failed_count": 7
+    },
+    "brand": {
+      "log_odds": -1.1359,
+      "raw_log_odds": -1.1359,
+      "success_count": 0,
+      "failed_count": 7
+    },
+    "updates": {
+      "log_odds": -1.1359,
+      "raw_log_odds": -1.1359,
       "success_count": 0,
       "failed_count": 7
     },
     "context": {
       "log_odds": -1.1359,
+      "raw_log_odds": -1.1359,
+      "success_count": 0,
+      "failed_count": 7
+    },
+    "ease": {
+      "log_odds": -1.1359,
+      "raw_log_odds": -1.1359,
+      "success_count": 0,
+      "failed_count": 7
+    },
+    "devops": {
+      "log_odds": -1.1359,
+      "raw_log_odds": -1.1359,
+      "success_count": 0,
+      "failed_count": 7
+    },
+    "observability": {
+      "log_odds": -1.1359,
+      "raw_log_odds": -1.1359,
+      "success_count": 0,
+      "failed_count": 7
+    },
+    "detection": {
+      "log_odds": -1.1359,
+      "raw_log_odds": -1.1359,
+      "success_count": 0,
+      "failed_count": 7
+    },
+    "async": {
+      "log_odds": -1.1359,
+      "raw_log_odds": -1.1359,
+      "success_count": 0,
+      "failed_count": 7
+    },
+    "break": {
+      "log_odds": -1.1359,
+      "raw_log_odds": -1.1359,
+      "success_count": 0,
+      "failed_count": 7
+    },
+    "pipeline": {
+      "log_odds": -1.1359,
+      "raw_log_odds": -1.1359,
+      "success_count": 0,
+      "failed_count": 7
+    },
+    "filtering": {
+      "log_odds": -1.1359,
+      "raw_log_odds": -1.1359,
+      "success_count": 0,
+      "failed_count": 7
+    },
+    "pytorch": {
+      "log_odds": -1.1359,
+      "raw_log_odds": -1.1359,
+      "success_count": 0,
+      "failed_count": 7
+    },
+    "to_turn": {
+      "log_odds": -1.1359,
+      "raw_log_odds": -1.1359,
+      "success_count": 0,
+      "failed_count": 7
+    },
+    "comment": {
+      "log_odds": -1.1359,
+      "raw_log_odds": -1.1359,
+      "success_count": 0,
+      "failed_count": 7
+    },
+    "connecting": {
+      "log_odds": -1.1359,
+      "raw_log_odds": -1.1359,
+      "success_count": 0,
+      "failed_count": 7
+    },
+    "yaml": {
+      "log_odds": -1.1359,
+      "raw_log_odds": -1.1359,
+      "success_count": 0,
+      "failed_count": 7
+    },
+    "track_and": {
+      "log_odds": -1.1359,
+      "raw_log_odds": -1.1359,
+      "success_count": 0,
+      "failed_count": 7
+    },
+    "letter": {
+      "log_odds": -1.1359,
+      "raw_log_odds": -1.1359,
+      "success_count": 0,
+      "failed_count": 7
+    },
+    "feedback": {
+      "log_odds": -1.1359,
+      "raw_log_odds": -1.1359,
+      "success_count": 3,
+      "failed_count": 31
+    },
+    "script_to": {
+      "log_odds": -1.1359,
+      "raw_log_odds": -1.1359,
+      "success_count": 0,
+      "failed_count": 7
+    },
+    "unicode": {
+      "log_odds": -1.1359,
+      "raw_log_odds": -1.1359,
+      "success_count": 0,
+      "failed_count": 7
+    },
+    "semantic_search": {
+      "log_odds": -1.1359,
+      "raw_log_odds": -1.1359,
+      "success_count": 0,
+      "failed_count": 7
+    },
+    "yet_another": {
+      "log_odds": -1.1359,
+      "raw_log_odds": -1.1359,
+      "success_count": 0,
+      "failed_count": 7
+    },
+    "releases": {
+      "log_odds": -1.1359,
+      "raw_log_odds": -1.1359,
       "success_count": 0,
       "failed_count": 7
     },
     "love": {
       "log_odds": -1.1359,
+      "raw_log_odds": -1.1359,
+      "success_count": 0,
+      "failed_count": 7
+    },
+    "optimization": {
+      "log_odds": -1.1359,
+      "raw_log_odds": -1.1359,
+      "success_count": 0,
+      "failed_count": 7
+    },
+    "records": {
+      "log_odds": -1.1359,
+      "raw_log_odds": -1.1359,
+      "success_count": 0,
+      "failed_count": 7
+    },
+    "import": {
+      "log_odds": -1.1359,
+      "raw_log_odds": -1.1359,
+      "success_count": 0,
+      "failed_count": 7
+    },
+    "problem": {
+      "log_odds": -1.1359,
+      "raw_log_odds": -1.1359,
+      "success_count": 0,
+      "failed_count": 7
+    },
+    "latest": {
+      "log_odds": -1.1359,
+      "raw_log_odds": -1.1359,
+      "success_count": 0,
+      "failed_count": 7
+    },
+    "landing": {
+      "log_odds": -1.1359,
+      "raw_log_odds": -1.1359,
+      "success_count": 0,
+      "failed_count": 7
+    },
+    "idea": {
+      "log_odds": -1.1359,
+      "raw_log_odds": -1.1359,
+      "success_count": 1,
+      "failed_count": 15
+    },
+    "dependency": {
+      "log_odds": -1.1359,
+      "raw_log_odds": -1.1359,
+      "success_count": 0,
+      "failed_count": 7
+    },
+    "sports": {
+      "log_odds": -1.1359,
+      "raw_log_odds": -1.1359,
+      "success_count": 0,
+      "failed_count": 7
+    },
+    "your_github": {
+      "log_odds": -1.1359,
+      "raw_log_odds": -1.1359,
+      "success_count": 0,
+      "failed_count": 7
+    },
+    "in_react": {
+      "log_odds": -1.1359,
+      "raw_log_odds": -1.1359,
+      "success_count": 0,
+      "failed_count": 7
+    },
+    "nano": {
+      "log_odds": -1.1359,
+      "raw_log_odds": -1.1359,
+      "success_count": 0,
+      "failed_count": 7
+    },
+    "ai_image": {
+      "log_odds": -1.1359,
+      "raw_log_odds": -1.1359,
+      "success_count": 0,
+      "failed_count": 7
+    },
+    "hn_check": {
+      "log_odds": -1.1359,
+      "raw_log_odds": -1.1359,
+      "success_count": 0,
+      "failed_count": 7
+    },
+    "focused": {
+      "log_odds": -1.1359,
+      "raw_log_odds": -1.1359,
+      "success_count": 0,
+      "failed_count": 7
+    },
+    "hn_run": {
+      "log_odds": -1.1359,
+      "raw_log_odds": -1.1359,
+      "success_count": 0,
+      "failed_count": 7
+    },
+    "service_for": {
+      "log_odds": -1.1359,
+      "raw_log_odds": -1.1359,
+      "success_count": 0,
+      "failed_count": 7
+    },
+    "auth": {
+      "log_odds": -1.1359,
+      "raw_log_odds": -1.1359,
+      "success_count": 0,
+      "failed_count": 7
+    },
+    "wrapper_for": {
+      "log_odds": -1.1359,
+      "raw_log_odds": -1.1359,
+      "success_count": 0,
+      "failed_count": 7
+    },
+    "topic": {
+      "log_odds": -1.1359,
+      "raw_log_odds": -1.1359,
       "success_count": 0,
       "failed_count": 7
     },
     "ai": {
       "log_odds": -1.1289,
+      "raw_log_odds": -1.1289,
       "success_count": 53,
       "failed_count": 428
     },
-    "font": {
-      "log_odds": 1.1259,
-      "success_count": 5,
-      "failed_count": 4
-    },
-    "remove": {
-      "log_odds": 1.1259,
-      "success_count": 5,
-      "failed_count": 4
-    },
-    "made_website": {
-      "log_odds": 1.1259,
-      "success_count": 5,
-      "failed_count": 4
-    },
-    "that_runs": {
-      "log_odds": 1.1259,
-      "success_count": 5,
-      "failed_count": 4
-    },
     "month": {
       "log_odds": 1.1259,
-      "success_count": 5,
-      "failed_count": 4
-    },
-    "built_the": {
-      "log_odds": 1.1259,
+      "raw_log_odds": 1.1259,
       "success_count": 5,
       "failed_count": 4
     },
     "tetris": {
       "log_odds": 1.1259,
+      "raw_log_odds": 1.1259,
       "success_count": 5,
       "failed_count": 4
     },
-    "puzzle_game": {
+    "built_the": {
       "log_odds": 1.1259,
+      "raw_log_odds": 1.1259,
+      "success_count": 5,
+      "failed_count": 4
+    },
+    "remove": {
+      "log_odds": 1.1259,
+      "raw_log_odds": 1.1259,
       "success_count": 5,
       "failed_count": 4
     },
     "ide": {
       "log_odds": 1.1259,
+      "raw_log_odds": 1.1259,
       "success_count": 11,
       "failed_count": 9
     },
     "visually": {
       "log_odds": 1.1259,
+      "raw_log_odds": 1.1259,
+      "success_count": 5,
+      "failed_count": 4
+    },
+    "made_website": {
+      "log_odds": 1.1259,
+      "raw_log_odds": 1.1259,
+      "success_count": 5,
+      "failed_count": 4
+    },
+    "font": {
+      "log_odds": 1.1259,
+      "raw_log_odds": 1.1259,
+      "success_count": 5,
+      "failed_count": 4
+    },
+    "that_runs": {
+      "log_odds": 1.1259,
+      "raw_log_odds": 1.1259,
+      "success_count": 5,
+      "failed_count": 4
+    },
+    "puzzle_game": {
+      "log_odds": 1.1259,
+      "raw_log_odds": 1.1259,
       "success_count": 5,
       "failed_count": 4
     },
     "hn_ai": {
       "log_odds": -1.1106,
+      "raw_log_odds": -1.1106,
       "success_count": 4,
       "failed_count": 38
     },
     "slack": {
       "log_odds": -1.1041,
+      "raw_log_odds": -1.1041,
       "success_count": 3,
       "failed_count": 30
     },
     "security": {
       "log_odds": -1.1041,
+      "raw_log_odds": -1.1041,
       "success_count": 3,
       "failed_count": 30
     },
-    "your_browser": {
-      "log_odds": 1.0977,
-      "success_count": 6,
-      "failed_count": 5
-    },
-    "side_project": {
-      "log_odds": 1.0977,
-      "success_count": 6,
-      "failed_count": 5
-    },
     "responsive": {
       "log_odds": 1.0977,
+      "raw_log_odds": 1.0977,
+      "success_count": 6,
+      "failed_count": 5
+    },
+    "your_browser": {
+      "log_odds": 1.0977,
+      "raw_log_odds": 1.0977,
       "success_count": 6,
       "failed_count": 5
     },
     "neural": {
       "log_odds": 1.0977,
+      "raw_log_odds": 1.0977,
       "success_count": 6,
       "failed_count": 5
     },
     "cli_tool": {
       "log_odds": 1.0977,
+      "raw_log_odds": 1.0977,
+      "success_count": 6,
+      "failed_count": 5
+    },
+    "side_project": {
+      "log_odds": 1.0977,
+      "raw_log_odds": 1.0977,
       "success_count": 6,
       "failed_count": 5
     },
     "via": {
       "log_odds": -1.0846,
+      "raw_log_odds": -1.0846,
       "success_count": 4,
       "failed_count": 37
     },
     "editing": {
       "log_odds": 1.0771,
+      "raw_log_odds": 1.0771,
       "success_count": 7,
       "failed_count": 6
     },
     "multiplayer": {
       "log_odds": 1.0771,
-      "success_count": 7,
-      "failed_count": 6
-    },
-    "animation": {
-      "log_odds": 1.0771,
+      "raw_log_odds": 1.0771,
       "success_count": 7,
       "failed_count": 6
     },
     "background": {
       "log_odds": 1.0771,
+      "raw_log_odds": 1.0771,
       "success_count": 7,
       "failed_count": 6
     },
-    "protocol": {
-      "log_odds": -1.0714,
-      "success_count": 1,
-      "failed_count": 14
-    },
-    "ai_coding": {
-      "log_odds": -1.0714,
-      "success_count": 1,
-      "failed_count": 14
+    "animation": {
+      "log_odds": 1.0771,
+      "raw_log_odds": 1.0771,
+      "success_count": 7,
+      "failed_count": 6
     },
     "links": {
       "log_odds": -1.0714,
+      "raw_log_odds": -1.0714,
       "success_count": 1,
       "failed_count": 14
     },
     "weekend": {
       "log_odds": -1.0714,
+      "raw_log_odds": -1.0714,
       "success_count": 3,
       "failed_count": 29
     },
-    "notifications": {
+    "protocol": {
       "log_odds": -1.0714,
+      "raw_log_odds": -1.0714,
       "success_count": 1,
       "failed_count": 14
     },
-    "computer": {
+    "ai_coding": {
+      "log_odds": -1.0714,
+      "raw_log_odds": -1.0714,
+      "success_count": 1,
+      "failed_count": 14
+    },
+    "notifications": {
+      "log_odds": -1.0714,
+      "raw_log_odds": -1.0714,
+      "success_count": 1,
+      "failed_count": 14
+    },
+    "home": {
       "log_odds": 1.0613,
+      "raw_log_odds": 1.0613,
       "success_count": 8,
       "failed_count": 7
     },
     "lines_of": {
       "log_odds": 1.0613,
+      "raw_log_odds": 1.0613,
       "success_count": 8,
       "failed_count": 7
     },
-    "home": {
+    "computer": {
       "log_odds": 1.0613,
+      "raw_log_odds": 1.0613,
       "success_count": 8,
       "failed_count": 7
     },
     "hn_build": {
       "log_odds": -1.0489,
+      "raw_log_odds": -1.0489,
       "success_count": 2,
       "failed_count": 21
     },
     "monitoring": {
       "log_odds": -1.0489,
+      "raw_log_odds": -1.0489,
       "success_count": 2,
       "failed_count": 21
     },
     "ml": {
       "log_odds": -1.0489,
+      "raw_log_odds": -1.0489,
       "success_count": 2,
       "failed_count": 21
     },
     "claude": {
       "log_odds": -1.0424,
+      "raw_log_odds": -1.0424,
       "success_count": 6,
       "failed_count": 50
     },
     "testing": {
       "log_odds": -1.0375,
+      "raw_log_odds": -1.0375,
       "success_count": 3,
       "failed_count": 28
     },
     "postgres": {
       "log_odds": 1.0236,
+      "raw_log_odds": 1.0236,
       "success_count": 12,
       "failed_count": 11
     },
     "books": {
       "log_odds": 1.0177,
+      "raw_log_odds": 1.0177,
       "success_count": 13,
       "failed_count": 12
     },
-    "hn_community": {
+    "hn_small": {
       "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "ai_tools": {
-      "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "forms": {
-      "log_odds": -1.0024,
-      "success_count": 1,
-      "failed_count": 13
-    },
-    "story": {
-      "log_odds": -1.0024,
-      "success_count": 1,
-      "failed_count": 13
-    },
-    "keys": {
-      "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "demo_of": {
-      "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "in_chrome": {
-      "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "mobile_app": {
-      "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "developed": {
-      "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "fonts": {
-      "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "globe": {
-      "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "trying_to": {
-      "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "understand": {
-      "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "shortcuts": {
-      "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "covid": {
-      "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "existing": {
-      "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "core": {
-      "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "simplified": {
-      "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "earn": {
-      "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "auto": {
-      "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "prompt": {
-      "log_odds": -1.0024,
-      "success_count": 2,
-      "failed_count": 20
-    },
-    "mit": {
-      "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "for_chrome": {
-      "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "syntax": {
-      "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "dashboard_for": {
-      "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "to_pdf": {
-      "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "manage_your": {
-      "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "insights": {
-      "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "pipelines": {
-      "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "added": {
-      "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "weekly_newsletter": {
-      "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "gamified": {
-      "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "directory": {
-      "log_odds": -1.0024,
-      "success_count": 1,
-      "failed_count": 13
-    },
-    "with_ease": {
-      "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "investors": {
-      "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "memory_for": {
-      "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "world_cup": {
-      "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "food": {
-      "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "kafka": {
-      "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "for_google": {
-      "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "deck": {
-      "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "generator_with": {
-      "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "material_design": {
-      "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "flag": {
-      "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "hn_monitor": {
-      "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "your_inbox": {
-      "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "pass": {
-      "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "develop": {
-      "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "figma": {
-      "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "hn_llm": {
-      "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "series": {
-      "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "aggregator": {
-      "log_odds": -1.0024,
-      "success_count": 1,
-      "failed_count": 13
-    },
-    "cat": {
-      "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "interesting": {
-      "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "create_your": {
-      "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "management_for": {
-      "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "pull_request": {
-      "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "scheduler": {
-      "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "reporting": {
-      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
       "success_count": 0,
       "failed_count": 6
     },
     "nano_banana": {
       "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
       "success_count": 0,
       "failed_count": 6
     },
-    "trivia": {
+    "hn_community": {
       "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
       "success_count": 0,
       "failed_count": 6
     },
-    "messaging": {
+    "story": {
       "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "your_online": {
-      "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "translator": {
-      "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "player": {
-      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
       "success_count": 1,
       "failed_count": 13
     },
+    "insights": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
+    "scheduler": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
+    "auto": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
+    "pipelines": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
+    "manage_your": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
+    "investors": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
     "extensible": {
       "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
       "success_count": 0,
       "failed_count": 6
     },
     "hn_text": {
       "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
       "success_count": 0,
       "failed_count": 6
     },
-    "ever": {
+    "pull_request": {
       "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
       "success_count": 0,
       "failed_count": 6
     },
-    "to-do": {
+    "for_google": {
       "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
       "success_count": 0,
       "failed_count": 6
     },
-    "your_team": {
+    "hn_better": {
       "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
       "success_count": 0,
       "failed_count": 6
-    },
-    "workflow": {
-      "log_odds": -1.0024,
-      "success_count": 1,
-      "failed_count": 13
     },
     "mcp_servers": {
       "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
+    "directory": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 1,
+      "failed_count": 13
+    },
+    "kafka": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
+    "generator_with": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
       "success_count": 0,
       "failed_count": 6
     },
     "themed": {
       "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
       "success_count": 0,
       "failed_count": 6
     },
-    "landing_page": {
+    "ever": {
       "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "npm": {
-      "log_odds": -1.0024,
-      "success_count": 0,
-      "failed_count": 6
-    },
-    "your_product": {
-      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
       "success_count": 0,
       "failed_count": 6
     },
     "facebook": {
       "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
       "success_count": 1,
       "failed_count": 13
     },
-    "vscode": {
+    "your_team": {
       "log_odds": -1.0024,
-      "success_count": 1,
-      "failed_count": 13
-    },
-    "extraction": {
-      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
       "success_count": 0,
       "failed_count": 6
     },
-    "hn_small": {
+    "mobile_app": {
       "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
       "success_count": 0,
       "failed_count": 6
     },
-    "to_get": {
+    "to-do": {
       "log_odds": -1.0024,
-      "success_count": 1,
-      "failed_count": 13
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
     },
-    "hn_better": {
+    "develop": {
       "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
+    "trivia": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
+    "demo_of": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
+    "pass": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
+    "weekly_newsletter": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
+    "earn": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
+    "create_your": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
+    "shortcuts": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
+    "to_pdf": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
+    "messaging": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
+    "npm": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
+    "deck": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
       "success_count": 0,
       "failed_count": 6
     },
     "audit": {
       "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
+    "interesting": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
+    "keys": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
+    "to_get": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 1,
+      "failed_count": 13
+    },
+    "fonts": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
+    "simplified": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
+    "reporting": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
+    "with_ease": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
+    "trying_to": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
+    "memory_for": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
+    "understand": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
+    "mit": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
+    "world_cup": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
+    "hn_monitor": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
+    "for_chrome": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
+    "aggregator": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 1,
+      "failed_count": 13
+    },
+    "dashboard_for": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
+    "your_product": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
+    "workflow": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 1,
+      "failed_count": 13
+    },
+    "developed": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
+    "syntax": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
+    "globe": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
+    "extraction": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
+    "in_chrome": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
+    "core": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
+    "translator": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
+    "player": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 1,
+      "failed_count": 13
+    },
+    "forms": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 1,
+      "failed_count": 13
+    },
+    "ai_tools": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
+    "series": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
+    "cat": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
+    "food": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
+    "your_inbox": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
+    "management_for": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
+    "prompt": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 2,
+      "failed_count": 20
+    },
+    "landing_page": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
+    "existing": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
+    "material_design": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
+    "added": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
+    "covid": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
+    "vscode": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 1,
+      "failed_count": 13
+    },
+    "flag": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
+    "gamified": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
+    "your_online": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
+    "hn_llm": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
+      "success_count": 0,
+      "failed_count": 6
+    },
+    "figma": {
+      "log_odds": -1.0024,
+      "raw_log_odds": -1.0024,
       "success_count": 0,
       "failed_count": 6
     },
     "to_your": {
       "log_odds": -0.966,
+      "raw_log_odds": -0.966,
       "success_count": 3,
       "failed_count": 26
     },
     "for_free": {
       "log_odds": -0.9536,
+      "raw_log_odds": -0.9536,
       "success_count": 2,
       "failed_count": 19
     },
-    "pure": {
+    "physics": {
       "log_odds": 0.9435,
-      "success_count": 5,
-      "failed_count": 5
-    },
-    "minimalist": {
-      "log_odds": 0.9435,
-      "success_count": 6,
-      "failed_count": 6
-    },
-    "classic": {
-      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
       "success_count": 4,
       "failed_count": 4
-    },
-    "site_to": {
-      "log_odds": 0.9435,
-      "success_count": 5,
-      "failed_count": 5
-    },
-    "learn_how": {
-      "log_odds": 0.9435,
-      "success_count": 3,
-      "failed_count": 3
-    },
-    "ip": {
-      "log_odds": 0.9435,
-      "success_count": 3,
-      "failed_count": 3
-    },
-    "optimized": {
-      "log_odds": 0.9435,
-      "success_count": 3,
-      "failed_count": 3
-    },
-    "in-browser": {
-      "log_odds": 0.9435,
-      "success_count": 4,
-      "failed_count": 4
-    },
-    "that_can": {
-      "log_odds": 0.9435,
-      "success_count": 5,
-      "failed_count": 5
-    },
-    "hn_meet": {
-      "log_odds": 0.9435,
-      "success_count": 3,
-      "failed_count": 3
-    },
-    "hardware": {
-      "log_odds": 0.9435,
-      "success_count": 5,
-      "failed_count": 5
-    },
-    "operating_system": {
-      "log_odds": 0.9435,
-      "success_count": 3,
-      "failed_count": 3
-    },
-    "end-to-end_encrypted": {
-      "log_odds": 0.9435,
-      "success_count": 3,
-      "failed_count": 3
-    },
-    "street_view": {
-      "log_odds": 0.9435,
-      "success_count": 3,
-      "failed_count": 3
-    },
-    "hn_time": {
-      "log_odds": 0.9435,
-      "success_count": 4,
-      "failed_count": 4
-    },
-    "creator": {
-      "log_odds": 0.9435,
-      "success_count": 6,
-      "failed_count": 6
-    },
-    "years_ago": {
-      "log_odds": 0.9435,
-      "success_count": 3,
-      "failed_count": 3
-    },
-    "picker": {
-      "log_odds": 0.9435,
-      "success_count": 4,
-      "failed_count": 4
-    },
-    "built_on": {
-      "log_odds": 0.9435,
-      "success_count": 6,
-      "failed_count": 6
-    },
-    "sort": {
-      "log_odds": 0.9435,
-      "success_count": 3,
-      "failed_count": 3
-    },
-    "browser_with": {
-      "log_odds": 0.9435,
-      "success_count": 4,
-      "failed_count": 4
-    },
-    "client_for": {
-      "log_odds": 0.9435,
-      "success_count": 6,
-      "failed_count": 6
-    },
-    "coffee": {
-      "log_odds": 0.9435,
-      "success_count": 3,
-      "failed_count": 3
-    },
-    "token": {
-      "log_odds": 0.9435,
-      "success_count": 5,
-      "failed_count": 5
-    },
-    "ai_voice": {
-      "log_odds": 0.9435,
-      "success_count": 3,
-      "failed_count": 3
-    },
-    "made_site": {
-      "log_odds": 0.9435,
-      "success_count": 6,
-      "failed_count": 6
-    },
-    "right": {
-      "log_odds": 0.9435,
-      "success_count": 3,
-      "failed_count": 3
-    },
-    "component": {
-      "log_odds": 0.9435,
-      "success_count": 7,
-      "failed_count": 7
-    },
-    "hackable": {
-      "log_odds": 0.9435,
-      "success_count": 3,
-      "failed_count": 3
-    },
-    "doom": {
-      "log_odds": 0.9435,
-      "success_count": 3,
-      "failed_count": 3
     },
     "note-taking": {
       "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
       "success_count": 4,
       "failed_count": 4
     },
-    "knowledge_base": {
+    "to_discover": {
       "log_odds": 0.9435,
-      "success_count": 3,
-      "failed_count": 3
-    },
-    "offline": {
-      "log_odds": 0.9435,
-      "success_count": 12,
-      "failed_count": 12
-    },
-    "minute": {
-      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
       "success_count": 4,
       "failed_count": 4
     },
-    "vue_js": {
+    "in-browser": {
       "log_odds": 0.9435,
-      "success_count": 3,
-      "failed_count": 3
-    },
-    "working": {
-      "log_odds": 0.9435,
-      "success_count": 10,
-      "failed_count": 10
-    },
-    "printer": {
-      "log_odds": 0.9435,
-      "success_count": 3,
-      "failed_count": 3
-    },
-    "to_read": {
-      "log_odds": 0.9435,
-      "success_count": 3,
-      "failed_count": 3
-    },
-    "experimental": {
-      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
       "success_count": 4,
       "failed_count": 4
     },
-    "beginners": {
+    "picker": {
       "log_odds": 0.9435,
-      "success_count": 3,
-      "failed_count": 3
-    },
-    "graphics": {
-      "log_odds": 0.9435,
-      "success_count": 4,
-      "failed_count": 4
-    },
-    "recipes": {
-      "log_odds": 0.9435,
-      "success_count": 4,
-      "failed_count": 4
-    },
-    "location": {
-      "log_odds": 0.9435,
-      "success_count": 4,
-      "failed_count": 4
-    },
-    "google_analytics": {
-      "log_odds": 0.9435,
-      "success_count": 4,
-      "failed_count": 4
-    },
-    "web_application": {
-      "log_odds": 0.9435,
-      "success_count": 4,
-      "failed_count": 4
-    },
-    "emulator": {
-      "log_odds": 0.9435,
-      "success_count": 5,
-      "failed_count": 5
-    },
-    "exploring": {
-      "log_odds": 0.9435,
-      "success_count": 4,
-      "failed_count": 4
-    },
-    "search_engine": {
-      "log_odds": 0.9435,
-      "success_count": 16,
-      "failed_count": 16
-    },
-    "made_with": {
-      "log_odds": 0.9435,
-      "success_count": 3,
-      "failed_count": 3
-    },
-    "released": {
-      "log_odds": 0.9435,
-      "success_count": 7,
-      "failed_count": 7
-    },
-    "street": {
-      "log_odds": 0.9435,
-      "success_count": 3,
-      "failed_count": 3
-    },
-    "vs_code": {
-      "log_odds": 0.9435,
-      "success_count": 5,
-      "failed_count": 5
-    },
-    "lua": {
-      "log_odds": 0.9435,
-      "success_count": 3,
-      "failed_count": 3
-    },
-    "after": {
-      "log_odds": 0.9435,
-      "success_count": 10,
-      "failed_count": 10
-    },
-    "end-to-end": {
-      "log_odds": 0.9435,
-      "success_count": 5,
-      "failed_count": 5
-    },
-    "for_all": {
-      "log_odds": 0.9435,
-      "success_count": 3,
-      "failed_count": 3
-    },
-    "real_time": {
-      "log_odds": 0.9435,
-      "success_count": 3,
-      "failed_count": 3
-    },
-    "blocks": {
-      "log_odds": 0.9435,
-      "success_count": 3,
-      "failed_count": 3
-    },
-    "the_go": {
-      "log_odds": 0.9435,
-      "success_count": 4,
-      "failed_count": 4
-    },
-    "with_my": {
-      "log_odds": 0.9435,
-      "success_count": 3,
-      "failed_count": 3
-    },
-    "webassembly": {
-      "log_odds": 0.9435,
-      "success_count": 4,
-      "failed_count": 4
-    },
-    "scientific": {
-      "log_odds": 0.9435,
-      "success_count": 3,
-      "failed_count": 3
-    },
-    "range": {
-      "log_odds": 0.9435,
-      "success_count": 3,
-      "failed_count": 3
-    },
-    "pages": {
-      "log_odds": 0.9435,
-      "success_count": 11,
-      "failed_count": 11
-    },
-    "visualization": {
-      "log_odds": 0.9435,
-      "success_count": 5,
-      "failed_count": 5
-    },
-    "remember": {
-      "log_odds": 0.9435,
-      "success_count": 3,
-      "failed_count": 3
-    },
-    "retro": {
-      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
       "success_count": 4,
       "failed_count": 4
     },
     "logo": {
       "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
       "success_count": 5,
       "failed_count": 5
     },
-    "vc": {
+    "hn_meet": {
       "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
       "success_count": 3,
       "failed_count": 3
     },
-    "to_code": {
+    "made_site": {
       "log_odds": 0.9435,
-      "success_count": 5,
-      "failed_count": 5
-    },
-    "matrix": {
-      "log_odds": 0.9435,
-      "success_count": 3,
-      "failed_count": 3
-    },
-    "just": {
-      "log_odds": 0.9435,
-      "success_count": 17,
-      "failed_count": 17
+      "raw_log_odds": 0.9435,
+      "success_count": 6,
+      "failed_count": 6
     },
     "sync": {
       "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
       "success_count": 7,
       "failed_count": 7
     },
-    "physics": {
+    "svg": {
       "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 8,
+      "failed_count": 8
+    },
+    "ip": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 3,
+      "failed_count": 3
+    },
+    "released": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 7,
+      "failed_count": 7
+    },
+    "graphics": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
       "success_count": 4,
       "failed_count": 4
     },
-    "made_free": {
+    "hn_time": {
       "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 4,
+      "failed_count": 4
+    },
+    "end-to-end_encrypted": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
       "success_count": 3,
       "failed_count": 3
     },
-    "react_and": {
+    "game_to": {
       "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 6,
+      "failed_count": 6
+    },
+    "after": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 10,
+      "failed_count": 10
+    },
+    "coffee": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
       "success_count": 3,
       "failed_count": 3
     },
-    "annotations": {
+    "optimized": {
       "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 3,
+      "failed_count": 3
+    },
+    "removal": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 3,
+      "failed_count": 3
+    },
+    "matrix": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
       "success_count": 3,
       "failed_count": 3
     },
     "notebooks": {
       "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
       "success_count": 4,
       "failed_count": 4
     },
-    "portable": {
+    "made_free": {
       "log_odds": 0.9435,
-      "success_count": 5,
-      "failed_count": 5
-    },
-    "long": {
-      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
       "success_count": 3,
       "failed_count": 3
     },
-    "your_mac": {
+    "with_my": {
       "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 3,
+      "failed_count": 3
+    },
+    "annotations": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 3,
+      "failed_count": 3
+    },
+    "the_go": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 4,
+      "failed_count": 4
+    },
+    "knowledge_base": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 3,
+      "failed_count": 3
+    },
+    "token": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 5,
+      "failed_count": 5
+    },
+    "doom": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 3,
+      "failed_count": 3
+    },
+    "printer": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 3,
+      "failed_count": 3
+    },
+    "of_my": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 4,
+      "failed_count": 4
+    },
+    "to_read": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 3,
+      "failed_count": 3
+    },
+    "remember": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 3,
+      "failed_count": 3
+    },
+    "search_engine": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 16,
+      "failed_count": 16
+    },
+    "long": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 3,
+      "failed_count": 3
+    },
+    "blocks": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 3,
+      "failed_count": 3
+    },
+    "webassembly": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 4,
+      "failed_count": 4
+    },
+    "component": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 7,
+      "failed_count": 7
+    },
+    "made_with": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 3,
+      "failed_count": 3
+    },
+    "pages": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 11,
+      "failed_count": 11
+    },
+    "experimental": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 4,
+      "failed_count": 4
+    },
+    "offline": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 12,
+      "failed_count": 12
+    },
+    "colors": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 5,
+      "failed_count": 5
+    },
+    "hardware": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 5,
+      "failed_count": 5
+    },
+    "classic": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 4,
+      "failed_count": 4
+    },
+    "hackable": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 3,
+      "failed_count": 3
+    },
+    "networks": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 4,
+      "failed_count": 4
+    },
+    "minute": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 4,
+      "failed_count": 4
+    },
+    "location": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 4,
+      "failed_count": 4
+    },
+    "to_code": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 5,
+      "failed_count": 5
+    },
+    "years_ago": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
       "success_count": 3,
       "failed_count": 3
     },
     "look": {
       "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
       "success_count": 7,
       "failed_count": 7
     },
-    "game_to": {
+    "portable": {
       "log_odds": 0.9435,
-      "success_count": 6,
-      "failed_count": 6
+      "raw_log_odds": 0.9435,
+      "success_count": 5,
+      "failed_count": 5
     },
-    "news_in": {
+    "time_tracking": {
       "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
       "success_count": 3,
       "failed_count": 3
     },
-    "svg": {
+    "operating_system": {
       "log_odds": 0.9435,
-      "success_count": 8,
-      "failed_count": 8
+      "raw_log_odds": 0.9435,
+      "success_count": 3,
+      "failed_count": 3
     },
-    "to_discover": {
+    "learn_how": {
       "log_odds": 0.9435,
-      "success_count": 4,
-      "failed_count": 4
+      "raw_log_odds": 0.9435,
+      "success_count": 3,
+      "failed_count": 3
+    },
+    "visualization": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 5,
+      "failed_count": 5
     },
     "implemented_in": {
       "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 3,
+      "failed_count": 3
+    },
+    "hn_decentralized": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 3,
+      "failed_count": 3
+    },
+    "your_mac": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 3,
+      "failed_count": 3
+    },
+    "recipes": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 4,
+      "failed_count": 4
+    },
+    "lisp": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 6,
+      "failed_count": 6
+    },
+    "site_to": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 5,
+      "failed_count": 5
+    },
+    "end-to-end": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 5,
+      "failed_count": 5
+    },
+    "minimalist": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 6,
+      "failed_count": 6
+    },
+    "street": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 3,
+      "failed_count": 3
+    },
+    "retro": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 4,
+      "failed_count": 4
+    },
+    "street_view": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 3,
+      "failed_count": 3
+    },
+    "client_for": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 6,
+      "failed_count": 6
+    },
+    "react_and": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 3,
+      "failed_count": 3
+    },
+    "ai_voice": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 3,
+      "failed_count": 3
+    },
+    "that_can": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 5,
+      "failed_count": 5
+    },
+    "news_in": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 3,
+      "failed_count": 3
+    },
+    "sort": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
       "success_count": 3,
       "failed_count": 3
     },
     "display": {
       "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
       "success_count": 6,
       "failed_count": 6
     },
-    "networks": {
+    "vs_code": {
       "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 5,
+      "failed_count": 5
+    },
+    "google_analytics": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
       "success_count": 4,
       "failed_count": 4
     },
-    "of_my": {
+    "beginners": {
       "log_odds": 0.9435,
-      "success_count": 4,
-      "failed_count": 4
-    },
-    "hn_decentralized": {
-      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
       "success_count": 3,
       "failed_count": 3
     },
-    "time_tracking": {
+    "real_time": {
       "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 3,
+      "failed_count": 3
+    },
+    "just": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 17,
+      "failed_count": 17
+    },
+    "web_application": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 4,
+      "failed_count": 4
+    },
+    "exploring": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 4,
+      "failed_count": 4
+    },
+    "vc": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 3,
+      "failed_count": 3
+    },
+    "for_all": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 3,
+      "failed_count": 3
+    },
+    "range": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 3,
+      "failed_count": 3
+    },
+    "pure": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 5,
+      "failed_count": 5
+    },
+    "built_on": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 6,
+      "failed_count": 6
+    },
+    "vue_js": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 3,
+      "failed_count": 3
+    },
+    "lua": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 3,
+      "failed_count": 3
+    },
+    "scientific": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
       "success_count": 3,
       "failed_count": 3
     },
     "html": {
       "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
       "success_count": 30,
       "failed_count": 30
     },
-    "removal": {
+    "creator": {
       "log_odds": 0.9435,
-      "success_count": 3,
-      "failed_count": 3
-    },
-    "lisp": {
-      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
       "success_count": 6,
       "failed_count": 6
     },
-    "colors": {
+    "browser_with": {
       "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 4,
+      "failed_count": 4
+    },
+    "emulator": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
       "success_count": 5,
       "failed_count": 5
     },
+    "working": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 10,
+      "failed_count": 10
+    },
+    "right": {
+      "log_odds": 0.9435,
+      "raw_log_odds": 0.9435,
+      "success_count": 3,
+      "failed_count": 3
+    },
     "STRUCT_open_source": {
       "log_odds": 0.9298,
+      "raw_log_odds": 0.9298,
       "success_count": 144,
       "failed_count": 146
     },
-    "health": {
+    "events": {
       "log_odds": -0.9283,
-      "success_count": 1,
-      "failed_count": 12
-    },
-    "install": {
-      "log_odds": -0.9283,
-      "success_count": 1,
-      "failed_count": 12
-    },
-    "team": {
-      "log_odds": -0.9283,
-      "success_count": 1,
-      "failed_count": 12
-    },
-    "request": {
-      "log_odds": -0.9283,
-      "success_count": 1,
-      "failed_count": 12
-    },
-    "mode": {
-      "log_odds": -0.9283,
-      "success_count": 1,
-      "failed_count": 12
-    },
-    "setup": {
-      "log_odds": -0.9283,
-      "success_count": 1,
-      "failed_count": 12
-    },
-    "hn_video": {
-      "log_odds": -0.9283,
-      "success_count": 1,
-      "failed_count": 12
-    },
-    "podcast": {
-      "log_odds": -0.9283,
-      "success_count": 1,
-      "failed_count": 12
-    },
-    "customer": {
-      "log_odds": -0.9283,
+      "raw_log_odds": -0.9283,
       "success_count": 1,
       "failed_count": 12
     },
     "weekly": {
       "log_odds": -0.9283,
+      "raw_log_odds": -0.9283,
       "success_count": 1,
       "failed_count": 12
     },
-    "complex": {
+    "team": {
       "log_odds": -0.9283,
+      "raw_log_odds": -0.9283,
       "success_count": 1,
       "failed_count": 12
     },
     "services": {
       "log_odds": -0.9283,
+      "raw_log_odds": -0.9283,
       "success_count": 1,
       "failed_count": 12
     },
-    "events": {
+    "complex": {
       "log_odds": -0.9283,
+      "raw_log_odds": -0.9283,
+      "success_count": 1,
+      "failed_count": 12
+    },
+    "mode": {
+      "log_odds": -0.9283,
+      "raw_log_odds": -0.9283,
+      "success_count": 1,
+      "failed_count": 12
+    },
+    "health": {
+      "log_odds": -0.9283,
+      "raw_log_odds": -0.9283,
+      "success_count": 1,
+      "failed_count": 12
+    },
+    "customer": {
+      "log_odds": -0.9283,
+      "raw_log_odds": -0.9283,
+      "success_count": 1,
+      "failed_count": 12
+    },
+    "install": {
+      "log_odds": -0.9283,
+      "raw_log_odds": -0.9283,
+      "success_count": 1,
+      "failed_count": 12
+    },
+    "setup": {
+      "log_odds": -0.9283,
+      "raw_log_odds": -0.9283,
+      "success_count": 1,
+      "failed_count": 12
+    },
+    "hn_video": {
+      "log_odds": -0.9283,
+      "raw_log_odds": -0.9283,
+      "success_count": 1,
+      "failed_count": 12
+    },
+    "podcast": {
+      "log_odds": -0.9283,
+      "raw_log_odds": -0.9283,
+      "success_count": 1,
+      "failed_count": 12
+    },
+    "request": {
+      "log_odds": -0.9283,
+      "raw_log_odds": -0.9283,
       "success_count": 1,
       "failed_count": 12
     },
     "built_an": {
       "log_odds": 0.9027,
+      "raw_log_odds": 0.9027,
       "success_count": 23,
       "failed_count": 24
     },
     "but": {
       "log_odds": 0.8923,
+      "raw_log_odds": 0.8923,
       "success_count": 18,
       "failed_count": 19
     },
     "next": {
       "log_odds": -0.889,
+      "raw_log_odds": -0.889,
       "success_count": 3,
       "failed_count": 24
     },
     "add": {
       "log_odds": -0.889,
+      "raw_log_odds": -0.889,
       "success_count": 3,
       "failed_count": 24
     },
     "building": {
       "log_odds": 0.881,
+      "raw_log_odds": 0.881,
       "success_count": 30,
       "failed_count": 32
     },
     "an_open": {
       "log_odds": 0.879,
+      "raw_log_odds": 0.879,
       "success_count": 14,
       "failed_count": 15
     },
-    "hn_simple": {
-      "log_odds": -0.8688,
-      "success_count": 7,
-      "failed_count": 48
-    },
     "service": {
       "log_odds": -0.8688,
+      "raw_log_odds": -0.8688,
       "success_count": 7,
       "failed_count": 48
     },
-    "us": {
-      "log_odds": 0.8635,
-      "success_count": 11,
-      "failed_count": 12
+    "hn_simple": {
+      "log_odds": -0.8688,
+      "raw_log_odds": -0.8688,
+      "success_count": 7,
+      "failed_count": 48
     },
     "database": {
       "log_odds": 0.8635,
+      "raw_log_odds": 0.8635,
       "success_count": 23,
       "failed_count": 25
     },
-    "no_code": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
+    "us": {
+      "log_odds": 0.8635,
+      "raw_log_odds": 0.8635,
+      "success_count": 11,
+      "failed_count": 12
     },
-    "ai_tool": {
+    "clipboard": {
       "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "outputs": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "build_an": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "boilerplate": {
-      "log_odds": -0.8482,
-      "success_count": 1,
-      "failed_count": 11
-    },
-    "analysis_in": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "layer": {
-      "log_odds": -0.8482,
-      "success_count": 1,
-      "failed_count": 11
-    },
-    "of_google": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "elasticsearch": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "one_command": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "poc": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "ocean": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "now_open": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "export": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "businesses": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "for_product": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "traffic": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "mermaid": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "matching": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "xml": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "gen": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "actions": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "agent_that": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "with_browser": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "lean": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "solve": {
-      "log_odds": -0.8482,
-      "success_count": 1,
-      "failed_count": 11
-    },
-    "what_you": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "human": {
-      "log_odds": -0.8482,
-      "success_count": 1,
-      "failed_count": 11
-    },
-    "to_validate": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "hn_code": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "telegram_bot": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "datasets": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "reads": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "tools_and": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "hn_mcp": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "lock": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "boost": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "follow": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "emails": {
-      "log_odds": -0.8482,
-      "success_count": 1,
-      "failed_count": 11
-    },
-    "hub": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "product": {
-      "log_odds": -0.8482,
-      "success_count": 4,
-      "failed_count": 29
-    },
-    "tag": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "name_generator": {
-      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
       "success_count": 0,
       "failed_count": 5
     },
     "sending": {
       "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "backups": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "lovers": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "reminder": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "writer": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "bulk": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "plugin_to": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "soundcloud": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "delivery": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "rss_feed": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "error": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "detect": {
-      "log_odds": -0.8482,
-      "success_count": 1,
-      "failed_count": 11
-    },
-    "tags": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "snake_game": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "ar": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "signup": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "gold": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "you_want": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "for_online": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "project_to": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "reminders": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "ai_for": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "seed": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "wallpaper": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "still": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "task": {
-      "log_odds": -0.8482,
-      "success_count": 1,
-      "failed_count": 11
-    },
-    "for_wordpress": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "in_beta": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "combine": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "atom": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "classes": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "stats": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "analyze": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "scrolling": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "deterministic": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "blocker": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "bitcoin": {
-      "log_odds": -0.8482,
-      "success_count": 2,
-      "failed_count": 17
-    },
-    "demand": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "cover": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "linking": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "headers": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "ui_to": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "jquery": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "exchange": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "santa": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "commit": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "calculate": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "data_into": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "analyzer": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "happy": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "cold": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "again": {
-      "log_odds": -0.8482,
-      "success_count": 1,
-      "failed_count": 11
-    },
-    "listings": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "sdk_for": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "bot_that": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "learns": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "management_platform": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "gem": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "packages": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "coding_agent": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "clipboard": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "chinese": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "ai_app": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "builder_for": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "enterprise": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "habits": {
-      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
       "success_count": 0,
       "failed_count": 5
     },
     "endless": {
       "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
       "success_count": 0,
       "failed_count": 5
     },
-    "hn_chat": {
+    "deterministic": {
       "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "easy_way": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "ps": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "language_learning": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "ai_code": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "bot_for": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "smarter": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "hn_track": {
-      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
       "success_count": 0,
       "failed_count": 5
     },
     "classification": {
       "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
       "success_count": 0,
       "failed_count": 5
     },
-    "api_testing": {
+    "reads": {
       "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "on_google": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "driven": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "within": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "code_generator": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "template_for": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "is_an": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "looking_for": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "powerful": {
-      "log_odds": -0.8482,
-      "success_count": 1,
-      "failed_count": 11
-    },
-    "with_gpt": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "running": {
-      "log_odds": 0.8482,
-      "success_count": 9,
-      "failed_count": 10
-    },
-    "graphql_api": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "batch": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "to_track": {
-      "log_odds": -0.8482,
-      "success_count": 1,
-      "failed_count": 11
-    },
-    "and_ai": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "ci": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "in_an": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "hn_learning": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "to_do": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "keyword": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "for_ruby": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "linter": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "race": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "prevent": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "google's": {
-      "log_odds": -0.8482,
-      "success_count": 0,
-      "failed_count": 5
-    },
-    "inbox": {
-      "log_odds": -0.8482,
-      "success_count": 1,
-      "failed_count": 11
-    },
-    "webapp": {
-      "log_odds": -0.8482,
-      "success_count": 1,
-      "failed_count": 11
-    },
-    "bookmarklet": {
-      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
       "success_count": 0,
       "failed_count": 5
     },
     "hook": {
       "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
       "success_count": 0,
       "failed_count": 5
     },
     "to_plan": {
       "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "layer": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 1,
+      "failed_count": 11
+    },
+    "calculate": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "scrolling": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "language_learning": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "blocker": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "boilerplate": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 1,
+      "failed_count": 11
+    },
+    "again": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 1,
+      "failed_count": 11
+    },
+    "smarter": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "writer": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "to_validate": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "with_gpt": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "gold": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "api_testing": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "on_google": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "telegram_bot": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "elasticsearch": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "ui_to": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "seed": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "bot_for": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "reminder": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "atom": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "hn_mcp": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "one_command": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "ai_tool": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "looking_for": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "ar": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "linking": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "hn_code": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "happy": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "build_an": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "code_generator": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "error": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "follow": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "boost": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "packages": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "still": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "webapp": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 1,
+      "failed_count": 11
+    },
+    "agent_that": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "learns": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "linter": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "soundcloud": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "tags": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "cover": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "jquery": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "demand": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "bulk": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "datasets": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "emails": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 1,
+      "failed_count": 11
+    },
+    "bookmarklet": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "product": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 4,
+      "failed_count": 29
+    },
+    "backups": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "for_wordpress": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "plugin_to": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "lovers": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "matching": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "inbox": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 1,
+      "failed_count": 11
+    },
+    "task": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 1,
+      "failed_count": 11
+    },
+    "ai_for": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "poc": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "classes": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "to_track": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 1,
+      "failed_count": 11
+    },
+    "analysis_in": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "in_an": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "for_product": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "lock": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "bitcoin": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 2,
+      "failed_count": 17
+    },
+    "ci": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "builder_for": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "export": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "hub": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "combine": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "wallpaper": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "google's": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "you_want": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "gen": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "human": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 1,
+      "failed_count": 11
+    },
+    "template_for": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "detect": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 1,
+      "failed_count": 11
+    },
+    "to_do": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "what_you": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "for_online": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "habits": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "now_open": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "stats": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "santa": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "running": {
+      "log_odds": 0.8482,
+      "raw_log_odds": 0.8482,
+      "success_count": 9,
+      "failed_count": 10
+    },
+    "race": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "within": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "no_code": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "hn_learning": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "data_into": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "solve": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 1,
+      "failed_count": 11
+    },
+    "commit": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "powerful": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 1,
+      "failed_count": 11
+    },
+    "of_google": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "delivery": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "businesses": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "hn_track": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "snake_game": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "listings": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "enterprise": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "bot_that": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "outputs": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "gem": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "sdk_for": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "coding_agent": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "cold": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "driven": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "and_ai": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "reminders": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "headers": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "ps": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "for_ruby": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "name_generator": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "actions": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "management_platform": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "analyze": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "hn_chat": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "chinese": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "ai_code": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "lean": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "ocean": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "tools_and": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "with_browser": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "exchange": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "keyword": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "in_beta": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "tag": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "signup": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "traffic": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "prevent": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "mermaid": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "batch": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "xml": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "easy_way": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "is_an": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "project_to": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "graphql_api": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "rss_feed": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "analyzer": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
+      "success_count": 0,
+      "failed_count": 5
+    },
+    "ai_app": {
+      "log_odds": -0.8482,
+      "raw_log_odds": -0.8482,
       "success_count": 0,
       "failed_count": 5
     },
     "STRUCT_first_person_I": {
       "log_odds": 0.8301,
+      "raw_log_odds": 0.8301,
       "success_count": 332,
       "failed_count": 372
     },
-    "cross-platform": {
+    "faster": {
       "log_odds": 0.8258,
-      "success_count": 7,
-      "failed_count": 8
+      "raw_log_odds": 0.8258,
+      "success_count": 15,
+      "failed_count": 17
     },
     "raspberry_pi": {
       "log_odds": 0.8258,
+      "raw_log_odds": 0.8258,
+      "success_count": 7,
+      "failed_count": 8
+    },
+    "cross-platform": {
+      "log_odds": 0.8258,
+      "raw_log_odds": 0.8258,
       "success_count": 7,
       "failed_count": 8
     },
     "raspberry": {
       "log_odds": 0.8258,
+      "raw_log_odds": 0.8258,
       "success_count": 7,
       "failed_count": 8
     },
-    "faster": {
-      "log_odds": 0.8258,
-      "success_count": 15,
-      "failed_count": 17
-    },
     "STRUCT_AI_token": {
       "log_odds": -0.8226,
+      "raw_log_odds": -0.8226,
       "success_count": 98,
       "failed_count": 578
     },
     "test": {
       "log_odds": -0.8143,
+      "raw_log_odds": -0.8143,
       "success_count": 4,
       "failed_count": 28
     },
     "analysis": {
       "log_odds": -0.8143,
+      "raw_log_odds": -0.8143,
       "success_count": 4,
       "failed_count": 28
     },
-    "hn_game": {
-      "log_odds": 0.81,
-      "success_count": 6,
-      "failed_count": 7
-    },
-    "finance": {
-      "log_odds": 0.81,
-      "success_count": 6,
-      "failed_count": 7
-    },
     "two": {
       "log_odds": 0.81,
-      "success_count": 6,
-      "failed_count": 7
-    },
-    "has": {
-      "log_odds": 0.81,
-      "success_count": 6,
-      "failed_count": 7
-    },
-    "camera": {
-      "log_odds": 0.81,
+      "raw_log_odds": 0.81,
       "success_count": 6,
       "failed_count": 7
     },
     "type": {
       "log_odds": 0.81,
+      "raw_log_odds": 0.81,
+      "success_count": 6,
+      "failed_count": 7
+    },
+    "camera": {
+      "log_odds": 0.81,
+      "raw_log_odds": 0.81,
+      "success_count": 6,
+      "failed_count": 7
+    },
+    "programming_language": {
+      "log_odds": 0.81,
+      "raw_log_odds": 0.81,
+      "success_count": 6,
+      "failed_count": 7
+    },
+    "has": {
+      "log_odds": 0.81,
+      "raw_log_odds": 0.81,
       "success_count": 6,
       "failed_count": 7
     },
     "old": {
       "log_odds": 0.81,
+      "raw_log_odds": 0.81,
       "success_count": 6,
       "failed_count": 7
     },
-    "print": {
+    "but_for": {
       "log_odds": 0.81,
+      "raw_log_odds": 0.81,
+      "success_count": 6,
+      "failed_count": 7
+    },
+    "hn_game": {
+      "log_odds": 0.81,
+      "raw_log_odds": 0.81,
       "success_count": 6,
       "failed_count": 7
     }

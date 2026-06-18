@@ -29,11 +29,9 @@ FIXTURES_PATH = Path(__file__).resolve().parent / "fixtures.json"
 # Rules whose `check` field cannot be evaluated by this runner.
 NL_CHECK_RULES = {
     "title-case-everything",
-    "all-caps-emphasis",
     "we-without-team",
     "no-context-link",
     "url-missing",
-    "concept-without-product-name",
 }
 
 
@@ -91,7 +89,34 @@ def evaluate_check(rule_id: str, text: str, scope: str) -> bool:
         return word_count(text) < 100
     if rule_id == "metrics-flex":
         return bool(re.search(r"\$\d+[kKmM]?|\d{2,}[kKmM]?\+? users|grew \d+", text))
+    if rule_id == "all-caps-emphasis":
+        # Find any token that is all-caps with length >= 3.
+        rule = next((r for r in _CACHED_RULES if r["id"] == "all-caps-emphasis"), {})
+        whitelist = set(rule.get("acronym_whitelist", []))
+        for token in re.findall(r"\b[A-Za-z0-9]+\b", text):
+            if re.match(r"^[A-Z]{3,}$", token) and token not in whitelist:
+                return True
+        return False
+    if rule_id == "concept-without-product-name" and scope == "title":
+        rule = next((r for r in _CACHED_RULES if r["id"] == "concept-without-product-name"), {})
+        anti = rule.get("anti_patterns", [])
+        for raw in anti:
+            m = re.match(r"^/(.*)/([a-z]*)$", raw)
+            if not m:
+                continue
+            body, flags_str = m.group(1), m.group(2)
+            flags = re.IGNORECASE if "i" in flags_str else 0
+            try:
+                if re.search(body, text, flags):
+                    return False  # anti-pattern matched → escape hatch → no hit
+            except re.error:
+                continue
+        return True  # no anti-pattern matched → fire
     return False
+
+
+# Cached rules list so check helpers can access metadata
+_CACHED_RULES: list = []
 
 
 def check_blocklist(blocklist: list[str], text: str) -> bool:
@@ -172,6 +197,8 @@ def main() -> int:
 
     rules_doc = json.loads(RULES_PATH.read_text(encoding="utf-8"))
     rules = rules_doc["rules"]
+    _CACHED_RULES.clear()
+    _CACHED_RULES.extend(rules)
     fixtures_doc = json.loads(FIXTURES_PATH.read_text(encoding="utf-8"))
     cases = fixtures_doc["cases"]
 

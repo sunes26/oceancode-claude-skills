@@ -1,6 +1,6 @@
 ---
 name: show-hn-writer
-description: Draft Show HN posts using 999 real high-scoring submissions as the pattern corpus. Produces 3 title variants from distinct proven formulas, drafts a 4-section body, and runs an anti-pattern lint pass before output. Use when the user wants to launch a project on Hacker News, asks to write a Show HN post, or requests title variants for an HN submission.
+description: Draft Show HN posts grounded in the full historical Show HN corpus (196,847 posts, 2009-2026). Produces 3 title variants from distinct proven formulas, a 4-section body, an optional author first-comment block, a Naive-Bayes title signal score (0-100), and a 30-rule lint pass (em-dash / AI saturation / hype words / HN-tone offenses / domain-conditional blocklists). Use when the user wants to launch a project on Hacker News, asks for Show HN title variants, or wants help drafting an HN submission.
 ---
 
 # show-hn-writer
@@ -144,6 +144,27 @@ Return as a single markdown block:
 - [ ] Posted Tue/Wed/Thu, 8:00-12:00 ET (corpus-derived window — 9 of top 10 (dow, hour) buckets fall here; KST = 22:00 prior day to 02:00 next day). See `patterns/posting-time.md` for caveats.
 - [ ] No emoji, no rocket, no "revolutionary"
 ```
+
+## Output safety notes
+
+### En-dash autocorrect risk
+If any variant uses an en-dash (`–`, U+2013, Formula 2 separator), warn the user inline: "Copy carefully — Mac and iOS autocorrect can replace `–` with `-`. Verify the final title in the HN submission form before posting." This warning is mandatory for any variant containing `–`.
+
+### Override conditions per warn rule
+When a warn rule fires, present the user with the trade-off, not a unilateral "fix it" instruction. The decision matrix:
+
+| Rule | Auto-override OK if... |
+|---|---|
+| `ai-saturation` | Product is literally an LLM tool / observability / API gateway for LLMs. In this case the AI mention is honest. Still suggest body alternative. |
+| `competitor-callout` | User explicitly wants to position against a named incumbent (rare; flag as strategic decision). |
+| `we-without-team` | User confirmed team is multi-person. |
+| `body-too-short` | User wants minimal post (e.g., hardware demo with video). Suggest padding the "How it works" section anyway. |
+| `lurker-coming-out` | Never override. Always cut. |
+| `apology-self-promo` | Never override. Always cut. |
+| `upvote-begging` | Never override. Always cut. |
+| Generic `hype-words` | Never override. Always cut. |
+
+Reject-level rules are not overridable. Warn-level rules are conversational: the skill explains the data, the user decides.
 
 ## What this skill does NOT do
 

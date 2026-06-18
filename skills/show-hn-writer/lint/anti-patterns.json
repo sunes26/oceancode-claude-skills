@@ -104,7 +104,30 @@
       "scope": "both",
       "description": "ALL CAPS words used for emphasis (not product/acronym)",
       "rationale": "19% of corpus has all-caps tokens, but ONLY for product names or acronyms (API, CLI, HN, etc.). Emphasis caps are downvote bait.",
-      "check": "all-caps word > 2 chars that is not in known_acronyms or product_name"
+      "check": "any token matches /^[A-Z]{3,}$/ AND token NOT in acronym_whitelist AND token != input.product_name",
+      "acronym_whitelist": [
+        "AI", "API", "APIs", "AGI", "ANSI", "ARM", "ASR", "AWS", "BGP", "BYOK", "BSD",
+        "CDN", "CI", "CLI", "CPU", "CRDT", "CSS", "CSV", "CTO", "CRM",
+        "DDD", "DDL", "DEX", "DNS", "DOM", "DSL", "DSP", "DSPy", "DVD", "DX",
+        "ELK", "EOL", "ESLint", "ETL", "FAQ", "FFI", "FPGA", "FTP",
+        "GB", "GBP", "GCC", "GDB", "GDPR", "GHC", "GIF", "GIS", "GPG", "GPL", "GPT", "GPU", "GraphQL", "gRPC",
+        "HDR", "HIPAA", "HLS", "HN", "HSL", "HTML", "HTTP", "HTTPS",
+        "IaC", "IDE", "IM", "IMAP", "iOS", "IoT", "IP", "IPC", "IPv4", "IPv6", "ISP", "ISO",
+        "JS", "JSON", "JSX", "JVM", "JWT",
+        "KB", "KMS", "KPI", "KVM", "L1", "L2", "L3", "LAN", "LDAP", "LISP", "LLM", "LSP",
+        "MAC", "MB", "MCP", "MIT", "ML", "MMA", "MongoDB", "MP3", "MP4", "MQTT", "MRR", "MVP", "MySQL",
+        "NaN", "NAS", "NLP", "NN", "NoSQL", "NPM", "NPM", "NSFW", "NTP",
+        "OAuth", "OAuth2", "OS", "OCR", "OOM", "OOP", "OpenAI", "OpenGL", "OS", "OTP",
+        "P0", "P1", "P50", "P75", "P90", "P95", "P99", "PaaS", "PCAP", "PDF", "PII", "PNG", "POSIX", "PR", "PWA",
+        "QA", "QR", "RAG", "RAID", "RAM", "RBAC", "RDF", "REPL", "REST", "RGB", "RNN", "RPC", "RSA", "RSS",
+        "S3", "SaaS", "SAML", "SCIM", "SDK", "SDR", "SEO", "SHA", "SIEM", "SIMD", "SMS", "SMTP", "SNMP", "SOA", "SOC2", "SQL", "SQLite", "SQS", "SRE", "SSH", "SSL", "SSO", "SSR", "SVG", "SWE",
+        "TCP", "TLA", "TLS", "TOML", "TPU", "TS", "TSX", "TTL", "TUI", "TXT",
+        "UDP", "UI", "URI", "URL", "USB", "UTC", "UUID", "UX",
+        "VLAN", "VLM", "VM", "VR", "VS", "VSCode", "VPN", "VPS",
+        "WAF", "WASM", "WebGL", "WebGPU", "WebSocket", "WiFi", "WSL",
+        "XML", "XSS", "XSL", "XSLT", "YAML", "YOLO", "ZIP", "Zsh"
+      ],
+      "note": "Provider names (OpenAI, Anthropic, Gemini, Vertex, Bedrock) are treated as proper nouns, not acronyms — they pass /^[A-Z]{3,}$/ regex by not being all-caps. No special handling needed."
     },
     {
       "id": "we-without-team",
@@ -166,7 +189,12 @@
         "/\\bunlike [A-Z][A-Za-z]+/",
         "/\\bvs\\.? [A-Z][A-Za-z]+/i"
       ],
-      "fix": "Replace 'alternative to X' with the capability ('self-hosted LLM observability'). Save the comparison for the first author comment if asked."
+      "fix": "Replace 'alternative to X' with the capability ('self-hosted LLM observability'). Save the comparison for the first author comment if asked.",
+      "intentional_pass_examples": [
+        "Show HN: Self-hosted observability for OpenAI, Anthropic, and Gemini",
+        "Show HN: Drop-in proxy for OpenAI calls"
+      ],
+      "intentional_pass_note": "Listing supported providers ('for OpenAI', 'works with Anthropic', 'wraps Gemini') is NOT a competitor callout — it is a feature disclosure. The rule fires only on rivalry framing ('alternative to', 'better than', 'unlike', 'vs')."
     },
     {
       "id": "non-english-content",
@@ -210,10 +238,17 @@
       "id": "concept-without-product-name",
       "severity": "warn",
       "scope": "title",
-      "description": "Title has no product name (capitalized noun) and no first-person verb",
-      "rationale": "Failed-corpus pattern: 'Local personal data redaction for any AI tools' type titles. Concept without an anchor. Successful titles either name a product or claim authorship ('I built X').",
-      "check": "no token matches /^[A-Z][a-zA-Z0-9-]+$/ that is not at sentence start AND title does not contain 'I built|I made|I created|I wrote|My weekend|My side'",
-      "fix": "Name the product (even a placeholder), or convert to Formula 1 ('I built ...')."
+      "description": "Title is concept-only — no product name, no first-person authorship, no Self-hosted/Open-source anchor",
+      "rationale": "Failed-corpus pattern: 'Local personal data redaction for any AI tools' style. Concept without an anchor leaves the reader nothing to remember. Successful titles either: (a) name the product (capitalized non-acronym noun), (b) claim authorship via first-person, or (c) lead with a category anchor like 'Self-hosted X' or 'Open-source X' (both top winning patterns).",
+      "anti_patterns": [
+        "/\\bI(?:'ve|'m)?\\s+(?:[a-z]+ly\\s+)?(built|made|created|wrote|spent|coded|got|grew|launched|shipped|finished|finally|hacked|reverse-engineered|rewrote|open-sourced|published)\\b/",
+        "/\\bHow I\\s+\\w+/",
+        "/\\b[Mm]y\\s+(weekend|side|hobby|first|new|tiny|little)\\s*\\w*\\s*project\\b/i",
+        "/^(Show HN:\\s*)?(Self-hosted|Open-source|Open source)\\b/i",
+        "/^(Show HN:\\s*)\\(?[A-Z][a-zA-Z0-9]{2,}\\)?\\s*[–\\-,:]/"
+      ],
+      "rule": "If NONE of anti_patterns match the title, fire the warn. The anti_patterns are escape hatches: any one matching means the title has an anchor. The fourth anti_pattern matches 'ProductName – ...' or 'ProductName,' style openers (Formula 2).",
+      "fix": "Pick one anchor: (a) prepend 'I built ' or 'Self-hosted ' or 'Open-source ', or (b) lead with the product name in Formula 2 shape ('Spanlens – ...')."
     },
     {
       "id": "upvote-begging",

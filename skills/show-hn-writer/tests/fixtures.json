@@ -1,5 +1,5 @@
 {
-  "description": "Test fixtures for lint rules. Each fixture asserts that running the full lint pass produces a specific set of rule hits. Rules with blocklist or regex are tested automatically; rules with natural-language `check` get a 'manual' marker.\n\nNotes on expected hits:\n- Short body fixtures expect body-too-short alongside the rule under test (intentional — real bodies need ≥100 words).\n- 'clean' body fixtures are padded to ~110 words to avoid body-too-short noise.\n- Title fixtures intentionally compose multiple violations to catch interaction bugs.",
+  "description": "Test fixtures for lint rules. Each fixture asserts that running the full lint pass produces a specific set of rule hits. blocklist/regex/simple-check rules are tested automatically; rules with NL `check` get a 'manual' marker.\n\nNote on concept-without-product-name: this rule fires when the title has NO anchor (no product name in Formula 2 shape, no first-person, no Self-hosted/Open-source prefix). Many short violation fixtures intentionally include it as an expected hit.",
   "cases": [
     {
       "name": "clean-formula-1-title",
@@ -14,6 +14,12 @@
       "expect_hits": []
     },
     {
+      "name": "clean-formula-11-self-hosted",
+      "scope": "title",
+      "input": "Show HN: Self-hosted observability for OpenAI, Anthropic, and Gemini",
+      "expect_hits": []
+    },
+    {
       "name": "ai-tool-honest-mention",
       "scope": "title",
       "input": "Show HN: I built a self-hosted LLM cost tracker (MIT)",
@@ -24,31 +30,31 @@
       "name": "title-too-long",
       "scope": "title",
       "input": "Show HN: An incredibly comprehensive end-to-end observability platform for modern distributed engineering teams",
-      "expect_hits": ["title-too-long", "title-too-many-words"]
+      "expect_hits": ["title-too-long", "title-too-many-words", "concept-without-product-name"]
     },
     {
       "name": "emoji-rejected",
       "scope": "title",
       "input": "Show HN: 🚀 Foo, a faster bar",
-      "expect_hits": ["emoji"]
+      "expect_hits": ["emoji", "concept-without-product-name"]
     },
     {
       "name": "em-dash-rejected",
       "scope": "title",
       "input": "Show HN: Foo — a tiny thing",
-      "expect_hits": ["em-dash"]
+      "expect_hits": ["em-dash", "concept-without-product-name"]
     },
     {
       "name": "missing-prefix",
       "scope": "title",
       "input": "show hn: foo",
-      "expect_hits": ["missing-show-hn-prefix"]
+      "expect_hits": ["missing-show-hn-prefix", "concept-without-product-name"]
     },
     {
       "name": "multiple-exclamation-title",
       "scope": "title",
       "input": "Show HN: Foo!! The new thing!!",
-      "expect_hits": ["multiple-exclamation"]
+      "expect_hits": ["multiple-exclamation", "concept-without-product-name"]
     },
     {
       "name": "hype-words-generic",
@@ -60,7 +66,7 @@
       "name": "ai-saturation",
       "scope": "title",
       "input": "Show HN: An AI tool that helps developers",
-      "expect_hits": ["ai-saturation"]
+      "expect_hits": ["ai-saturation", "concept-without-product-name"]
     },
     {
       "name": "buzzword-stack-2026",
@@ -123,10 +129,17 @@
       "expect_hits": ["competitor-callout"]
     },
     {
+      "name": "provider-list-not-competitor",
+      "scope": "title",
+      "input": "Show HN: Self-hosted observability for OpenAI",
+      "expect_hits": [],
+      "note": "Listing a supported provider is feature disclosure, not a competitor callout. Rule fires only on rivalry framing."
+    },
+    {
       "name": "question-title",
       "scope": "title",
       "input": "Show HN: Why is Postgres slow on writes?",
-      "expect_hits": ["question-title"]
+      "expect_hits": ["question-title", "concept-without-product-name"]
     },
     {
       "name": "non-english-content",
@@ -152,6 +165,26 @@
       "scope": "title",
       "input": "Show HN: How I got 10000 users in 6 months",
       "expect_hits": ["metrics-flex"]
+    },
+    {
+      "name": "concept-only-no-anchor",
+      "scope": "title",
+      "input": "Show HN: Local data redaction for any AI tools",
+      "expect_hits": ["concept-without-product-name", "ai-saturation"],
+      "note": "Failed-corpus archetype: concept + AI saturation. No product name, no first-person, no Self-hosted/Open-source prefix."
+    },
+    {
+      "name": "all-caps-emphasis-rejected",
+      "scope": "title",
+      "input": "Show HN: An AMAZING tool for engineers",
+      "expect_hits": ["all-caps-emphasis", "concept-without-product-name", "hype-words"]
+    },
+    {
+      "name": "all-caps-acronym-allowed",
+      "scope": "title",
+      "input": "Show HN: Self-hosted REST API gateway with JWT auth",
+      "expect_hits": [],
+      "note": "REST, API, JWT all in acronym whitelist. all-caps-emphasis should NOT fire."
     }
   ]
 }

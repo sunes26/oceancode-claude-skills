@@ -48,6 +48,14 @@ ALPHA = 1.0
 MIN_FREQ = 5
 # Cap the saved feature list to this many top-magnitude weights.
 MAX_FEATURES = 800
+# Per-feature log-odds cap. Prevents single-feature saturation.
+# +/- 1.5 corresponds to ~82% probability shift from a single feature alone.
+# Without this cap a single rare feature could swing the score from 5 to 95.
+PER_FEATURE_CAP = 1.5
+# Total log-odds cap applied at scoring time.
+# +/- 3.0 bounds output to ~5%-95% range. Multiple features can still
+# combine but cannot push past these soft limits.
+TOTAL_LOGODDS_CAP = 3.0
 
 
 def title_body(title: str) -> str:
@@ -120,9 +128,12 @@ def train(success: list[dict], failed: list[dict]) -> dict:
         # Smoothed log-likelihood ratio.
         p_s = (cs + ALPHA) / (n_s + 2 * ALPHA)
         p_f = (cf + ALPHA) / (n_f + 2 * ALPHA)
-        log_odds = math.log(p_s / p_f)
+        raw_log_odds = math.log(p_s / p_f)
+        # Cap to prevent any single feature from dominating the score.
+        capped = max(-PER_FEATURE_CAP, min(PER_FEATURE_CAP, raw_log_odds))
         weights[feat] = {
-            "log_odds": round(log_odds, 4),
+            "log_odds": round(capped, 4),
+            "raw_log_odds": round(raw_log_odds, 4),
             "success_count": cs,
             "failed_count": cf,
         }
@@ -144,6 +155,8 @@ def train(success: list[dict], failed: list[dict]) -> dict:
             "failed_n": n_f,
             "min_feature_freq": MIN_FREQ,
             "alpha": ALPHA,
+            "per_feature_cap": PER_FEATURE_CAP,
+            "total_logodds_cap": TOTAL_LOGODDS_CAP,
             "feature_count_kept": len(trimmed),
             "intercept": round(intercept, 4),
         },
@@ -165,9 +178,11 @@ def score_title(title: str, model: dict) -> float:
     for feat in feats:
         if feat in weights:
             log_odds += weights[feat]["log_odds"]
-    # Sigmoid → 0..1 → 0..100. The training-set imbalance means raw sigmoid
-    # is over-optimistic; we leave it as-is and label the output as a
-    # relative signal in the prose.
+    # Cap total log-odds so multiple correlated features cannot saturate
+    # the sigmoid beyond the soft probability band. The cap is model-driven
+    # (training metadata), with a stdlib fallback if absent.
+    cap = model["training"].get("total_logodds_cap", 3.0)
+    log_odds = max(-cap, min(cap, log_odds))
     p = 1.0 / (1.0 + math.exp(-log_odds))
     return round(100 * p, 1)
 
