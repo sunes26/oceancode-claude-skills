@@ -2,97 +2,85 @@
 
 ## Methodology
 
-Two corpora compared:
+Two corpora compared, both derived from the full Show HN corpus (n=196,847 entries, 2009-03 to 2026-06):
 
 | Corpus | Source | n | Definition |
 |---|---|---|---|
-| Success | `corpus.json` | 999 | Show HN posts with >676 points (top 25% historically) |
-| Failed | `failed-corpus.json` | 861 | Recent Show HN posts with ≤5 points (mode of the distribution) |
+| Success | `corpus.json` | 1,945 | Show HN posts with ≥262 points = true top 1% of the full distribution |
+| Failed | `failed-corpus.json` | 5,000 | Random sample of ≤5 point posts (74.3% of the full corpus is in this bucket — this is the modal Show HN outcome) |
 
-Failed corpus pulled via `https://hn.algolia.com/api/v1/search_by_date?tags=show_hn`, 1000 most recent Show HN. After filtering for points ≤ 5: 861 posts. Median = 2 points, p75 = 4 points. These are not borderline cases; they are posts that landed and died.
+Distribution of the full Show HN corpus (n=196,847):
+- ≤1pt: 28.3%
+- ≤5pt: 74.3%
+- ≥30pt: 9.0%
+- ≥100pt: 3.8%
+- ≥262pt: 1.0% (success cutoff)
+- ≥500pt: 0.3%
+- ≥1000pt: <0.05%
 
-## Caveat — temporal confound
-
-Success corpus spans HN history (oldest 2008, newest 2026). Failed corpus is recent (last ~3-6 weeks). Differences could reflect:
-
-- A genuine signal: the pattern is bad regardless of era
-- An era shift: the pattern was fine in 2020 but is exhausted in 2026
-
-Where the data suggests an era shift, this file flags it. To resolve, re-fetch a recent-only success cohort and compare (TODO).
+Both corpora are stable across refreshes at this size. Prior versions of this file used n=999 vs n=862 from a relevance-ranked top-1000 query, which introduced selection bias toward Algolia's relevance algorithm rather than honest point ranking. The new corpus uses date-chunked exhaustive fetching and selects by points.
 
 ## Lift table — patterns that discriminate
 
-Lift = success_freq / failed_freq. >1.5 = success-favored. <0.67 = failure-favored.
+Lift = success_freq / failed_freq. >1.5 = success-favored, <0.67 = failure-favored.
 
 ### Strong success signals (lift ≥ 2.0)
 
 | Pattern | Success% | Failed% | Lift |
 |---|---|---|---|
-| `I made/built X` | 12.9% | 3.5% | **3.70** |
-| First-person `I` | 21.5% | 6.2% | **3.49** |
-| First-person `we` | 1.7% | 0.6% | 2.93 |
-| `modern` in title | 1.2% | 0.3% | 3.44 (small n) |
-| `easy` in title | 0.5% | 0.2% | 2.15 (small n) |
+| `self-hosted` in title | 1.4% | 0.4% | **3.79** |
+| `open-source` in title | 7.4% | 2.9% | 2.54 |
+| First-person `I` | 17.1% | 7.4% | **2.29** |
+| `I made/built/wrote` | 10.6% | 4.9% | **2.18** |
+| First-person `we` (when used) | 1.4% | 0.9% | 1.56 |
 
-**Takeaway:** Solo builder voice ("I built/made X") is the single most discriminating winning signal. Confirms Formula 1 strength.
+**Takeaways:**
+
+1. **Self-hosted is the single strongest title signal** when honest. Only 1.4% of winners use it (small category), but those who do beat the failure rate by 3.79x. Prior smaller-sample analysis missed this.
+2. First-person builder voice ("I built/made X") remains a top signal but at 2.18x — less dominant than the prior 3.70x estimate. The earlier number was inflated by relevance-ranking bias in the old corpus.
+3. Open-source mention is genuinely a strong signal at 2.54x lift. Pair with license badge (Formula 12a) for compounding effect.
 
 ### Strong failure signals (lift ≤ 0.5)
 
 | Pattern | Success% | Failed% | Lift |
 |---|---|---|---|
-| `AI` / `LLM` / `GPT` in title | 4.5% | **21.4%** | **0.21** |
-| `agentic` / `agent` | 0.1% | 0.8% | 0.12 |
-| `RAG` | 0.1% | 0.7% | 0.14 |
-| Hype words (revolutionary, seamless, etc.) | 0.1% | 0.3% | 0.29 |
-| Colon inside title body (not the `Show HN:` prefix) | 1.1% | 2.3% | 0.47 |
+| Generic hype words (revolutionary, seamless, etc.) | 0.1% | 0.3% | **0.17** |
+| `em-dash` (—) in title | 0.1% | 0.1% | 0.43 |
+| `AI` / `LLM` / `GPT` in title | 5.0% | 11.6% | 0.44 |
+| `RAG` in title | 0.1% | 0.2% | 0.51 |
 
-**Takeaway:** AI/LLM/GPT in the title is a strong negative signal in 2026. Possible explanations:
-- Saturation: HN front page already covers AI heavily, novelty bar is high
-- Reader fatigue: title with "AI" gets skipped by readers who have seen 50 this month
-- Selection: posts that ONLY mention AI in the title often have nothing else distinctive
+**Takeaways:**
 
-Likely all three. Practical guidance: if your project uses LLMs, lead with what it DOES, not that it uses AI. Compare:
+1. **Hype words remain catastrophic** — 0.17x lift is the most extreme negative signal in the data. The reject-level rule is correct.
+2. **AI saturation moderated**: prior corpus showed 0.21x lift, true corpus shows 0.44x. AI in title is still a negative signal but not as catastrophic as previously documented. Rule severity stays at `warn`, not `reject`.
 
-- Failed: `Show HN: Reyn – local-first AI that journals and recalls your work` (4 pts)
-- Hypothetical reframe: `Show HN: Reyn – a local-first journal that remembers what you actually did`
+### Reframed patterns vs prior assumptions
 
-The AI is incidental; the user-facing capability is the lede.
+| Pattern | Prior estimate | True lift | Change |
+|---|---|---|---|
+| `agentic` / `agent` | 0.12x (strong failure) | 0.73x (near-neutral) | Prior was a small-sample artifact. Loosen rule. |
+| En-dash separator (`–`) | 0.64x (failure-coded) | 1.12x (slight winner) | **Reversal.** Formula 2 is a genuine baseline, not a failure pattern. |
 
-### Reframed patterns (lift inversion vs prior assumption)
+The earlier en-dash finding ("failed posts use it MORE") was an artifact of n=999 vs n=862 with Algolia relevance bias. With n=1,945 vs n=5,000 the pattern is approximately neutral or slightly winner-favored. Formula 2 status restored in `title-formulas.md`.
 
-| Pattern | Prior assumption | Reality |
-|---|---|---|
-| En-dash separator (`–`) | Winning formula (32.8% of success) | Used MORE in failed (50.9%). It is the default HN title format; success comes from departing from defaults. |
-
-**Implication for Formula 2 (`Product – one-line value`):** still acceptable, still common, but no longer presented as a winning shortcut. Formula 1 (first-person builder) is the stronger lever.
-
-## Title length validates the hard cap
+## Title length — minor signal at this scale
 
 | Metric | Success | Failed |
 |---|---|---|
-| Median chars | 50 | 59 |
-| Median words | 8 | 9 |
-| % over 60 chars | 27.3% | 44.5% |
+| Median chars | 50 | 52 |
+| Median words | 8 | 8 |
+| % over 60 chars | 27.5% | 29.4% |
 
-Posts over 60 chars are 1.6x more likely to be in the failed bucket than the success bucket. The `title-too-long` lint reject at >60 is data-validated.
+Length difference is small (27.5% vs 29.4% over 60 chars). The hard cap remains at 60 chars for readability and mobile rendering, not because the data alone strongly justifies it.
 
-## Qualitative review — 20 failed titles
+## New lint rule adjustments
 
-Most failed titles fall into 2-3 patterns:
+Three rule adjustments derived from the expanded data:
 
-1. **Buzzword pile-up:** `Righthand – Autonomous AI assistants with skills, goals, and a CLI` (2 pts). Three trend-words in 9 words. No anchor.
-2. **Concept-only, no artifact:** `Local personal data redaction for any AI tools` (3 pts). No product name, no concrete demo.
-3. **Niche without bridge:** `Pitch-by-pitch baseball simulation app to simulate games and seasons` (2 pts). Audience is small; title does not pull a non-baseball reader in.
-4. **AI-incidental:** `Reyn – local-first AI that journals and recalls your work` (4 pts). The AI is not the product; the journaling is. Title buries the lede.
+1. **`buzzword-stack-2026` softened**: `agentic` is no longer a strong negative on its own (lift 0.73). Keep the rule but lower confidence in the rationale. Re-evaluate annually.
+2. **`ai-saturation` retained at warn**: still 0.44x lift, but the prior 0.21x figure overstated the penalty. Rule severity stays at `warn`, fix text updated.
+3. **New positive signals to celebrate, not lint**: `self-hosted` (3.79x) and `open-source` (2.54x) are not currently surfaced in the title scorer's structural features — already covered by the NB unigram weights. No new rules needed; the scorer captures them automatically.
 
-## New lint rules derived
+## Methodology note: corpus refresh
 
-Three rules added to `lint/anti-patterns.json`:
-
-- `ai-saturation`: warn if title contains `AI`, `LLM`, `GPT`, `ChatGPT` as a standalone token. Suggested fix: lead with what the product does.
-- `buzzword-stack-2026`: warn on `agentic`, `RAG`, `LLM-native`, `AI-powered`, `AI-first`. These are 2026-specific era markers; revisit annually.
-- `concept-without-product-name`: warn if title contains no capitalized noun that could be a product name and no first-person verb (`I built`). Catches "Local personal data redaction for any AI tools" type titles.
-
-## Refresh
-
-`tools/refresh-corpus.py` updated to also fetch the recent sample and write `failed-corpus.json`. Re-running the script quarterly keeps failure signals current as the HN zeitgeist shifts.
+Run `tools/fetch-corpus-full.py` quarterly to refresh `all-corpus.json`, then `tools/fetch-truncated.py` to recover any 1000-cap weeks, then `tools/build-corpora.py` to derive `corpus.json` and `failed-corpus.json` at honest top-1% / bottom-mass thresholds. The final step retrains the scorer via `tools/train-scorer.py`. All four scripts are idempotent.

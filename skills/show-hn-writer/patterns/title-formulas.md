@@ -6,9 +6,9 @@ All formulas assume `Show HN: ` prefix already prepended. Bodies stay ≤ 60 cha
 
 ---
 
-## Formula 1 — "I built/made X" (first-person builder) ★ STRONGEST WINNING SIGNAL
+## Formula 1 — "I built/made X" (first-person builder) ★ TOP-TIER WINNING SIGNAL
 
-**Frequency:** 21.5% of success corpus vs 6.2% of failed corpus. Lift = 3.49. The `I made/built` substring specifically: 12.9% vs 3.5%, lift = 3.70. This is the single most discriminating winning pattern in the data. Prefer this formula when honest.
+**Frequency:** 17.1% of success corpus (n=1,945) vs 7.4% of failed corpus (n=5,000). Lift = 2.29. The `I made/built` substring specifically: 10.6% vs 4.9%, lift = 2.18. Strong, consistent winning pattern across the full historical corpus. The single strongest title token is actually `self-hosted` (lift 3.79), but `I built X` covers far more cases.
 
 **Shape:** `I <verb> <product> [to <reason>] [from scratch]`
 
@@ -25,7 +25,9 @@ All formulas assume `Show HN: ` prefix already prepended. Bodies stay ≤ 60 cha
 
 ## Formula 2 — "Product – one-line value" (en-dash separator)
 
-**Frequency:** 32.8% of success corpus, 50.9% of failed corpus. Lift = 0.64. **This is the default HN title format — failed posts use it MORE than successful ones.** It is not a winning shortcut; it is the baseline that gets you in the door. Use it when no better formula applies, but prefer Formula 1 when authorship voice is honest.
+**Frequency:** 35.0% of success corpus vs 31.3% of failed corpus (n=1,945 vs 5,000). Lift = 1.12. The standard HN title format. Roughly neutral with a slight winner lean — neither magic nor handicap. Use when product name is memorable and value prop fits in 5-6 words after the dash.
+
+(Earlier versions of this file claimed this formula was failure-coded based on a small-sample analysis. The expanded corpus shows the prior finding was a selection artifact.)
 
 **Shape:** `<ProductName> – <concrete value or differentiator>`
 

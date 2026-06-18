@@ -6,13 +6,16 @@ Claude Code skills authored from real datasets, not vibes. Each skill ships with
 
 ### `show-hn-writer`
 
-Drafts Show HN posts grounded in 999 high-scoring submissions plus an 862-post failure corpus. Outputs 3 title variants from distinct formulas, drafts a 4-section body, runs a 30-rule lint pass with domain-conditional hype blocklists, and optionally drafts a first-comment block.
+Drafts Show HN posts grounded in the **entire historical Show HN dataset** — 196,847 posts from 2009 to 2026. Outputs 3 title variants from distinct proven formulas, drafts a 4-section body, runs a 30-rule lint pass with domain-conditional hype blocklists, computes a Naive Bayes signal score per variant, and optionally drafts a first-comment block.
 
 Key data:
 
-- Success corpus: 999 Show HN posts above 676 points (top 25%)
-- Failure corpus: 862 recent Show HN posts at or below 5 points
+- Full Show HN corpus: **196,847 posts** spanning 2009-03 to 2026-06 (51MB, gitignored)
+- Success corpus: **1,945 posts** with ≥262 points = true top 1% of the distribution
+- Failure corpus: **5,000 posts** sampled from the ≤5 point mass (74.3% of all Show HN ends here)
+- Top 100 reference set with cutoff at ~930 points
 - 30 lint rules: 7 reject, 23 warn
+- Title signal scorer: Naive Bayes on 800 features (unigrams + bigrams + structural)
 - Test coverage: 24 fixture cases passing, 1 manual-only marker
 
 See [skills/show-hn-writer/SKILL.md](skills/show-hn-writer/SKILL.md) for the full workflow and [skills/show-hn-writer/patterns/failure-signals.md](skills/show-hn-writer/patterns/failure-signals.md) for the comparative analysis that drives the lint rules.

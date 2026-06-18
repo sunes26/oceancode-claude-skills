@@ -15,3 +15,7 @@ Thumbs.db
 .pytest_cache/
 .coverage
 htmlcov/
+
+# Large raw corpus (51MB+). Regenerate via tools/fetch-corpus-full.py.
+# Derived files (corpus.json, failed-corpus.json) ship in the repo.
+skills/show-hn-writer/patterns/all-corpus.json

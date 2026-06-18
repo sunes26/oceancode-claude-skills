@@ -5,7 +5,9 @@
     "title": "Show HN: This up votes itself",
     "url": "http://news.ycombinator.com/vote?for=3742902&dir=up&whence=%6e%65%77%65%73%74",
     "created_at": "2012-03-23T00:40:39Z",
-    "id": "3742902"
+    "created_at_i": 1332463239,
+    "id": "3742902",
+    "author": "olalonde"
   },
   {
     "points": 3346,
@@ -13,7 +15,9 @@
     "title": "Show HN: Gemini Pro 3 imagines the HN front page 10 years from now",
     "url": "https://dosaygo-studio.github.io/hn-front-page-2035/news",
     "created_at": "2025-12-09T15:00:38Z",
-    "id": "46205632"
+    "created_at_i": 1765292438,
+    "id": "46205632",
+    "author": "keepamovin"
   },
   {
     "points": 3237,
@@ -21,7 +25,9 @@
     "title": "Show HN: I made an open-source laptop from scratch",
     "url": "https://www.byran.ee/posts/creation/",
     "created_at": "2025-01-22T20:41:52Z",
-    "id": "42797260"
+    "created_at_i": 1737578512,
+    "id": "42797260",
+    "author": "Hello9999901"
   },
   {
     "points": 2741,
@@ -29,7 +35,9 @@
     "title": "Show HN: If YouTube had actual channels",
     "url": "https://ytch.xyz",
     "created_at": "2024-08-14T15:10:06Z",
-    "id": "41247023"
+    "created_at_i": 1723648206,
+    "id": "41247023",
+    "author": "hadisafa"
   },
   {
     "points": 2690,
@@ -37,7 +45,9 @@
     "title": "Show HN: A retro video game console I've been working on in my free time",
     "url": "https://internalregister.github.io/2019/03/14/Homebrew-Console.html",
     "created_at": "2019-03-14T20:25:03Z",
-    "id": "19393279"
+    "created_at_i": 1552595103,
+    "id": "19393279",
+    "author": "pkiller"
   },
   {
     "points": 1998,
@@ -45,7 +55,9 @@
     "title": "Show HN: Redbean – Single-file distributable web server",
     "url": "https://justine.lol/redbean/index.html",
     "created_at": "2021-02-26T03:33:56Z",
-    "id": "26271117"
+    "created_at_i": 1614310436,
+    "id": "26271117",
+    "author": "jart"
   },
   {
     "points": 1943,
@@ -53,7 +65,9 @@
     "title": "Show HN: Non.io, a Reddit-like platform Ive been working on for the last 4 years",
     "url": "https://non.io",
     "created_at": "2023-06-12T16:54:38Z",
-    "id": "36296695"
+    "created_at_i": 1686588878,
+    "id": "36296695",
+    "author": "jjcm"
   },
   {
     "points": 1859,
@@ -61,7 +75,9 @@
     "title": "Show HN: I may have created a new type of puzzle",
     "url": "http://www.dogbunnypuzzle.com/",
     "created_at": "2022-09-18T04:37:58Z",
-    "id": "32884467"
+    "created_at_i": 1663475878,
+    "id": "32884467",
+    "author": "drcode"
   },
   {
     "points": 1752,
@@ -69,7 +85,9 @@
     "title": "Show HN: I 3D scanned the interior of the Great Pyramid at Giza",
     "url": "https://giza.mused.org/en/guided/266/inside-the-great-pyramid",
     "created_at": "2022-10-27T13:31:25Z",
-    "id": "33357197"
+    "created_at_i": 1666877485,
+    "id": "33357197",
+    "author": "lukehollis"
   },
   {
     "points": 1624,
@@ -77,7 +95,9 @@
     "title": "Show HN: Web Design in 4 minutes",
     "url": "http://jgthms.com/web-design-in-4-minutes/",
     "created_at": "2016-07-26T16:17:42Z",
-    "id": "12166687"
+    "created_at_i": 1469549862,
+    "id": "12166687",
+    "author": "bbx"
   },
   {
     "points": 1589,
@@ -85,7 +105,9 @@
     "title": "Show HN: I made a site where you practice typing by retyping entire novels",
     "url": "http://typelit.io",
     "created_at": "2020-10-06T11:37:53Z",
-    "id": "24696658"
+    "created_at_i": 1601984273,
+    "id": "24696658",
+    "author": "Octouroboros"
   },
   {
     "points": 1581,
@@ -93,7 +115,9 @@
     "title": "Show HN: I got laid off from Meta and created a minor hit on Steam",
     "url": null,
     "created_at": "2025-02-26T18:19:05Z",
-    "id": "43186406"
+    "created_at_i": 1740593945,
+    "id": "43186406",
+    "author": "newobj"
   },
   {
     "points": 1557,
@@ -101,7 +125,9 @@
     "title": "Show HN: Jmail – Google Suite for Epstein files",
     "url": "https://www.jmail.world",
     "created_at": "2025-12-20T21:00:05Z",
-    "id": "46339600"
+    "created_at_i": 1766264405,
+    "id": "46339600",
+    "author": "lukeigel"
   },
   {
     "points": 1539,
@@ -109,7 +135,9 @@
     "title": "Show HN: I'm an airline pilot – I built interactive graphs/globes of my flights",
     "url": "https://jameshard.ing/pilot",
     "created_at": "2025-06-27T13:06:54Z",
-    "id": "44396518"
+    "created_at_i": 1751029614,
+    "id": "44396518",
+    "author": "jamesharding"
   },
   {
     "points": 1535,
@@ -117,7 +145,9 @@
     "title": "Show HN: Airmash – Multiplayer Missile Warfare HTML5 Game",
     "url": "https://airma.sh/",
     "created_at": "2017-12-10T16:23:16Z",
-    "id": "15892066"
+    "created_at_i": 1512922996,
+    "id": "15892066",
+    "author": "fivesigma"
   },
   {
     "points": 1521,
@@ -125,15 +155,19 @@
     "title": "Show HN: Beeper Mini – iMessage client for Android",
     "url": "https://www.beeper.com/",
     "created_at": "2023-12-05T15:06:21Z",
-    "id": "38531759"
+    "created_at_i": 1701788781,
+    "id": "38531759",
+    "author": "erohead"
   },
   {
-    "points": 1475,
+    "points": 1476,
     "comments": 362,
     "title": "Show HN: Homebrew 6.0.0",
     "url": "https://brew.sh/2026/06/11/homebrew-6.0.0/",
     "created_at": "2026-06-11T13:24:29Z",
-    "id": "48490024"
+    "created_at_i": 1781184269,
+    "id": "48490024",
+    "author": "mikemcquaid"
   },
   {
     "points": 1422,
@@ -141,7 +175,9 @@
     "title": "Show HN: Can’t afford Bloomberg Terminal? No prob, I built the next best thing",
     "url": "https://github.com/DidierRLopes/GamestonkTerminal",
     "created_at": "2021-02-25T01:47:30Z",
-    "id": "26258773"
+    "created_at_i": 1614217650,
+    "id": "26258773",
+    "author": "sexy_year"
   },
   {
     "points": 1401,
@@ -149,7 +185,9 @@
     "title": "Show HN: GPT-4-powered web searches for developers",
     "url": "https://www.phind.com",
     "created_at": "2023-04-12T17:44:08Z",
-    "id": "35543668"
+    "created_at_i": 1681321448,
+    "id": "35543668",
+    "author": "rushingcreek"
   },
   {
     "points": 1392,
@@ -157,7 +195,9 @@
     "title": "Show HN: I built a Rotten Tomatoes-style platform for durable products",
     "url": "https://www.buyforlifeproducts.com/",
     "created_at": "2020-10-07T12:14:38Z",
-    "id": "24707407"
+    "created_at_i": 1602072878,
+    "id": "24707407",
+    "author": "hubraumhugo"
   },
   {
     "points": 1386,
@@ -165,7 +205,9 @@
     "title": "Show HN: Meteor, a realtime JavaScript framework",
     "url": "http://www.meteor.com",
     "created_at": "2012-04-10T22:55:40Z",
-    "id": "3824908"
+    "created_at_i": 1334098540,
+    "id": "3824908",
+    "author": "geoffschmidt"
   },
   {
     "points": 1380,
@@ -173,7 +215,9 @@
     "title": "Show HN: Obsidian Canvas – An infinite space for your ideas",
     "url": "https://obsidian.md/canvas",
     "created_at": "2022-12-20T15:04:48Z",
-    "id": "34066824"
+    "created_at_i": 1671548688,
+    "id": "34066824",
+    "author": "ericax"
   },
   {
     "points": 1359,
@@ -181,7 +225,9 @@
     "title": "Show HN: 40k HN comments mentioning books, extracted using deep learning",
     "url": "https://hacker-recommended-books.vercel.app/category/0/all-time/page/0/0",
     "created_at": "2021-09-20T16:58:45Z",
-    "id": "28595967"
+    "created_at_i": 1632157125,
+    "id": "28595967",
+    "author": "tracyhenry"
   },
   {
     "points": 1335,
@@ -189,7 +235,9 @@
     "title": "Show HN: I'm building an open-source Amazon",
     "url": "https://openship.org/",
     "created_at": "2022-09-02T13:19:53Z",
-    "id": "32690410"
+    "created_at_i": 1662124793,
+    "id": "32690410",
+    "author": "theturtletalks"
   },
   {
     "points": 1325,
@@ -197,7 +245,9 @@
     "title": "Show HN: isometric.nyc – giant isometric pixel art map of NYC",
     "url": "https://cannoneyed.com/isometric-nyc/",
     "created_at": "2026-01-22T16:52:35Z",
-    "id": "46721802"
+    "created_at_i": 1769100755,
+    "id": "46721802",
+    "author": "cannoneyed"
   },
   {
     "points": 1302,
@@ -205,7 +255,9 @@
     "title": "Show HN: Show HN",
     "url": "https://news.ycombinator.com/show",
     "created_at": "2014-07-03T18:35:51Z",
-    "id": "7984826"
+    "created_at_i": 1404412551,
+    "id": "7984826",
+    "author": "dang"
   },
   {
     "points": 1290,
@@ -213,7 +265,9 @@
     "title": "Show HN: Portable Secret – How I store my secrets and communicate privately",
     "url": "https://mprimi.github.io/portable-secret/",
     "created_at": "2022-12-21T17:10:28Z",
-    "id": "34083366"
+    "created_at_i": 1671642628,
+    "id": "34083366",
+    "author": "mprime1"
   },
   {
     "points": 1289,
@@ -221,7 +275,9 @@
     "title": "Show HN: Tetris in a PDF",
     "url": "https://th0mas.nl/downloads/pdftris.pdf",
     "created_at": "2025-01-09T13:31:33Z",
-    "id": "42645218"
+    "created_at_i": 1736429493,
+    "id": "42645218",
+    "author": "ThomasRinsma"
   },
   {
     "points": 1288,
@@ -229,7 +285,9 @@
     "title": "Show HN: Bel",
     "url": "http://paulgraham.com/bel.html",
     "created_at": "2019-10-12T07:14:55Z",
-    "id": "21231208"
+    "created_at_i": 1570864495,
+    "id": "21231208",
+    "author": "pg"
   },
   {
     "points": 1278,
@@ -237,7 +295,9 @@
     "title": "Show HN: I built a synth for my daughter",
     "url": "https://bitsnpieces.dev/posts/a-synth-for-my-daughter/",
     "created_at": "2025-11-12T14:12:13Z",
-    "id": "45900425"
+    "created_at_i": 1762956733,
+    "id": "45900425",
+    "author": "random_moonwalk"
   },
   {
     "points": 1274,
@@ -245,7 +305,9 @@
     "title": "Show HN: 3 years and 1M users later, I just open-sourced my \"Internet OS\"",
     "url": "https://github.com/HeyPuter/puter",
     "created_at": "2024-03-04T22:31:15Z",
-    "id": "39597030"
+    "created_at_i": 1709591475,
+    "id": "39597030",
+    "author": "ent101"
   },
   {
     "points": 1264,
@@ -253,15 +315,9 @@
     "title": "Show HN: Sorting Two Metric Tons of Lego",
     "url": "https://jacquesmattheij.com/sorting-two-metric-tons-of-lego",
     "created_at": "2017-04-29T15:13:04Z",
-    "id": "14226889"
-  },
-  {
-    "points": 1241,
-    "comments": 170,
-    "title": "Show HN: Looptap – A minimal game to waste your time",
-    "url": "https://looptap.vasanthv.com/",
-    "created_at": "2022-01-13T15:01:17Z",
-    "id": "29921419"
+    "created_at_i": 1493478784,
+    "id": "14226889",
+    "author": "jacquesm"
   },
   {
     "points": 1241,
@@ -269,7 +325,19 @@
     "title": "Show HN: SHA-256 explained step-by-step visually",
     "url": "https://sha256algorithm.com/",
     "created_at": "2022-02-07T13:31:11Z",
-    "id": "30244534"
+    "created_at_i": 1644240671,
+    "id": "30244534",
+    "author": "manceraio"
+  },
+  {
+    "points": 1241,
+    "comments": 170,
+    "title": "Show HN: Looptap – A minimal game to waste your time",
+    "url": "https://looptap.vasanthv.com/",
+    "created_at": "2022-01-13T15:01:17Z",
+    "created_at_i": 1642086077,
+    "id": "29921419",
+    "author": "vasanthv"
   },
   {
     "points": 1226,
@@ -277,7 +345,9 @@
     "title": "Show HN: Wave function collapse algorithm",
     "url": "https://github.com/mxgmn/WaveFunctionCollapse",
     "created_at": "2016-09-30T13:20:43Z",
-    "id": "12612246"
+    "created_at_i": 1475241643,
+    "id": "12612246",
+    "author": "ExUtumno"
   },
   {
     "points": 1216,
@@ -285,7 +355,9 @@
     "title": "Show HN: Imba – I have spent 7 years creating a programming language for the web",
     "url": null,
     "created_at": "2021-08-17T08:55:29Z",
-    "id": "28207662"
+    "created_at_i": 1629190529,
+    "id": "28207662",
+    "author": "somebee"
   },
   {
     "points": 1215,
@@ -293,7 +365,9 @@
     "title": "Show HN: Spot the Drowning Child",
     "url": "http://spotthedrowningchild.com",
     "created_at": "2015-07-28T15:23:40Z",
-    "id": "9962185"
+    "created_at_i": 1438097020,
+    "id": "9962185",
+    "author": "omegaworks"
   },
   {
     "points": 1214,
@@ -301,7 +375,9 @@
     "title": "Show HN: Make your site’s pages instant in one minute",
     "url": "https://instant.page/",
     "created_at": "2019-02-09T15:30:00Z",
-    "id": "19122727"
+    "created_at_i": 1549726200,
+    "id": "19122727",
+    "author": "dieulot"
   },
   {
     "points": 1203,
@@ -309,7 +385,9 @@
     "title": "Show HN: I built an app to stop me doomscrolling by touching grass",
     "url": "https://touchgrass.now/",
     "created_at": "2025-02-24T12:15:58Z",
-    "id": "43158660"
+    "created_at_i": 1740399358,
+    "id": "43158660",
+    "author": "risquer"
   },
   {
     "points": 1192,
@@ -317,7 +395,9 @@
     "title": "Show HN: Lofi.cafe",
     "url": "https://lofi.cafe",
     "created_at": "2021-04-14T11:42:41Z",
-    "id": "26805702"
+    "created_at_i": 1618400561,
+    "id": "26805702",
+    "author": "linuz90"
   },
   {
     "points": 1184,
@@ -325,7 +405,9 @@
     "title": "Show HN: A store that generates products from anything you type in search",
     "url": "https://anycrap.shop/",
     "created_at": "2025-09-13T12:02:11Z",
-    "id": "45231378"
+    "created_at_i": 1757764931,
+    "id": "45231378",
+    "author": "kafked"
   },
   {
     "points": 1183,
@@ -333,7 +415,9 @@
     "title": "Show HN: Privacy-focused, ad-free, non-tracking torrent search engine",
     "url": "https://www.skytorrents.in",
     "created_at": "2017-01-18T03:01:20Z",
-    "id": "13423629"
+    "created_at_i": 1484708480,
+    "id": "13423629",
+    "author": "kasumis_"
   },
   {
     "points": 1180,
@@ -341,7 +425,9 @@
     "title": "Show HN: We built an end-to-end encrypted alternative to Google Photos",
     "url": null,
     "created_at": "2021-08-29T15:23:50Z",
-    "id": "28347439"
+    "created_at_i": 1630250630,
+    "id": "28347439",
+    "author": "vishnumohandas"
   },
   {
     "points": 1179,
@@ -349,7 +435,9 @@
     "title": "Show HN: Performative-UI – A react component library of design tropes",
     "url": "https://vorpus.github.io/performativeUI/",
     "created_at": "2026-06-08T14:05:16Z",
-    "id": "48445554"
+    "created_at_i": 1780927516,
+    "id": "48445554",
+    "author": "lizhang"
   },
   {
     "points": 1176,
@@ -357,7 +445,9 @@
     "title": "Show HN: Six Degrees of Wikipedia",
     "url": "https://www.sixdegreesofwikipedia.com",
     "created_at": "2018-02-26T19:29:44Z",
-    "id": "16468196"
+    "created_at_i": 1519673384,
+    "id": "16468196",
+    "author": "jwngr"
   },
   {
     "points": 1172,
@@ -365,7 +455,9 @@
     "title": "Show HN: Make a programmable mirror",
     "url": "https://github.com/HannahMitt/HomeMirror",
     "created_at": "2015-09-11T14:58:44Z",
-    "id": "10204018"
+    "created_at_i": 1441983524,
+    "id": "10204018",
+    "author": "hannahmitt"
   },
   {
     "points": 1170,
@@ -373,7 +465,9 @@
     "title": "Show HN: Alacritty, a GPU-accelerated terminal emulator written in Rust",
     "url": "http://blog.jwilm.io/announcing-alacritty/",
     "created_at": "2017-01-06T18:08:19Z",
-    "id": "13338592"
+    "created_at_i": 1483726099,
+    "id": "13338592",
+    "author": "jwilm"
   },
   {
     "points": 1166,
@@ -381,7 +475,9 @@
     "title": "Show HN: Boring Report, a news app that uses AI to desensationalize the news",
     "url": "https://www.boringreport.org/",
     "created_at": "2023-05-11T17:32:41Z",
-    "id": "35905437"
+    "created_at_i": 1683826361,
+    "id": "35905437",
+    "author": "aquaVitae"
   },
   {
     "points": 1157,
@@ -389,7 +485,9 @@
     "title": "Show HN: A friend and I spent 6 years making a simulation game, finally released",
     "url": null,
     "created_at": "2022-06-01T19:31:47Z",
-    "id": "31586833"
+    "created_at_i": 1654111907,
+    "id": "31586833",
+    "author": "iliketrains"
   },
   {
     "points": 1150,
@@ -397,7 +495,9 @@
     "title": "Show HN: I created an After Effects alternative",
     "url": "https://pikimov.com/",
     "created_at": "2024-07-01T08:57:26Z",
-    "id": "40843867"
+    "created_at_i": 1719824246,
+    "id": "40843867",
+    "author": "clementpiki"
   },
   {
     "points": 1149,
@@ -405,7 +505,9 @@
     "title": "Show HN: Trading cards made with e-ink displays",
     "url": "https://www.wyldcard.io/blog/introducing-wyldcard",
     "created_at": "2022-11-30T00:24:09Z",
-    "id": "33795296"
+    "created_at_i": 1669767849,
+    "id": "33795296",
+    "author": "jonahss"
   },
   {
     "points": 1145,
@@ -413,7 +515,9 @@
     "title": "Show HN: I spent 6 years building a ridiculous wooden pixel display",
     "url": "https://benholmen.com/blog/kilopixel/",
     "created_at": "2025-08-04T16:16:21Z",
-    "id": "44787902"
+    "created_at_i": 1754324181,
+    "id": "44787902",
+    "author": "benholmen"
   },
   {
     "points": 1145,
@@ -421,7 +525,9 @@
     "title": "Show HN: InstantDB – A Modern Firebase",
     "url": "https://github.com/instantdb/instant",
     "created_at": "2024-08-22T17:08:50Z",
-    "id": "41322281"
+    "created_at_i": 1724346530,
+    "id": "41322281",
+    "author": "nezaj"
   },
   {
     "points": 1135,
@@ -429,7 +535,9 @@
     "title": "Show HN: I made a web game called Almost Pong",
     "url": "https://www.lessmilk.com/almost-pong/",
     "created_at": "2022-03-01T18:09:25Z",
-    "id": "30517626"
+    "created_at_i": 1646158165,
+    "id": "30517626",
+    "author": "lessmilk"
   },
   {
     "points": 1122,
@@ -437,7 +545,9 @@
     "title": "Show HN: Clippy – 90s UI for local LLMs",
     "url": "https://felixrieseberg.github.io/clippy/",
     "created_at": "2025-05-06T15:02:22Z",
-    "id": "43905942"
+    "created_at_i": 1746543742,
+    "id": "43905942",
+    "author": "felixrieseberg"
   },
   {
     "points": 1117,
@@ -445,7 +555,9 @@
     "title": "Show HN: I built a(nother) house optimized for LAN parties",
     "url": "https://lanparty.house/",
     "created_at": "2024-11-16T15:52:39Z",
-    "id": "42156977"
+    "created_at_i": 1731772359,
+    "id": "42156977",
+    "author": "kentonv"
   },
   {
     "points": 1117,
@@ -453,7 +565,9 @@
     "title": "Show HN: A visual guide to the most popular CSS properties",
     "url": "http://cssreference.io/#hn",
     "created_at": "2016-11-24T17:32:41Z",
-    "id": "13031492"
+    "created_at_i": 1480008761,
+    "id": "13031492",
+    "author": "bbx"
   },
   {
     "points": 1102,
@@ -461,7 +575,9 @@
     "title": "Show HN: I wrote my own RTS game engine in C",
     "url": "https://github.com/eduard-permyakov/permafrost-engine",
     "created_at": "2021-05-12T16:44:44Z",
-    "id": "27132334"
+    "created_at_i": 1620837884,
+    "id": "27132334",
+    "author": "epermyakov"
   },
   {
     "points": 1100,
@@ -469,7 +585,9 @@
     "title": "Show HN: Get Paid to Build Your Next Side Project",
     "url": "https://www.demandrush.com",
     "created_at": "2017-06-14T13:43:40Z",
-    "id": "14552615"
+    "created_at_i": 1497447820,
+    "id": "14552615",
+    "author": "hackerews"
   },
   {
     "points": 1098,
@@ -477,7 +595,9 @@
     "title": "Show HN: New AI edits images based on text instructions",
     "url": "https://github.com/brycedrennan/imaginAIry/blob/master/README.md",
     "created_at": "2023-01-22T04:25:45Z",
-    "id": "34474270"
+    "created_at_i": 1674361545,
+    "id": "34474270",
+    "author": "bryced"
   },
   {
     "points": 1097,
@@ -485,7 +605,9 @@
     "title": "Show HN: Monica, an open-source CRM to manage friends and family",
     "url": "https://monicahq.com",
     "created_at": "2017-06-06T14:07:45Z",
-    "id": "14497295"
+    "created_at_i": 1496758065,
+    "id": "14497295",
+    "author": "robinhood"
   },
   {
     "points": 1094,
@@ -493,7 +615,9 @@
     "title": "Show HN: Term.everything – Run any GUI app in the terminal",
     "url": "https://github.com/mmulet/term.everything",
     "created_at": "2025-09-09T13:16:30Z",
-    "id": "45181535"
+    "created_at_i": 1757423790,
+    "id": "45181535",
+    "author": "mmulet"
   },
   {
     "points": 1093,
@@ -501,7 +625,9 @@
     "title": "Show HN: Open Hunt – an open and community-run alternative to Product Hunt",
     "url": "https://www.openhunt.co",
     "created_at": "2015-12-18T18:12:21Z",
-    "id": "10759879"
+    "created_at_i": 1450462341,
+    "id": "10759879",
+    "author": "mhurwi"
   },
   {
     "points": 1087,
@@ -509,7 +635,9 @@
     "title": "Show HN: Obsidian – A knowledge base that works on local Markdown files",
     "url": "https://obsidian.md/",
     "created_at": "2020-05-27T15:16:29Z",
-    "id": "23324598"
+    "created_at_i": 1590592589,
+    "id": "23324598",
+    "author": "ericax"
   },
   {
     "points": 1087,
@@ -517,7 +645,9 @@
     "title": "Show HN: RoughJS – Create hand-drawn graphics using JavaScript",
     "url": "http://roughjs.com/",
     "created_at": "2018-03-12T21:28:17Z",
-    "id": "16571827"
+    "created_at_i": 1520890097,
+    "id": "16571827",
+    "author": "shihn"
   },
   {
     "points": 1079,
@@ -525,7 +655,9 @@
     "title": "Show HN: I taught my little brother JS, and he made this videogame in a week",
     "url": "https://s-poony.github.io/Ultra-Square-Catcher-USC-/jeuvideo.html",
     "created_at": "2019-01-09T17:13:59Z",
-    "id": "18866500"
+    "created_at_i": 1547054039,
+    "id": "18866500",
+    "author": "lovasoa"
   },
   {
     "points": 1077,
@@ -533,7 +665,9 @@
     "title": "Show HN: My wife is pregnant; naturally I made a baby-name app to prepare",
     "url": "https://nomdebebe.app/",
     "created_at": "2021-11-05T13:19:22Z",
-    "id": "29118785"
+    "created_at_i": 1636118362,
+    "id": "29118785",
+    "author": "hamaluik"
   },
   {
     "points": 1072,
@@ -541,7 +675,9 @@
     "title": "Show HN: I'm 12, learning JS, and wrote Wolfram's cellular automaton in Node",
     "url": "https://bitbucket.org/liamilan/wolfram-cellular-automata",
     "created_at": "2018-08-29T19:55:24Z",
-    "id": "17871313"
+    "created_at_i": 1535572524,
+    "id": "17871313",
+    "author": "liamilan"
   },
   {
     "points": 1070,
@@ -549,7 +685,9 @@
     "title": "Show HN: Web browser to help programmers think clearly",
     "url": "https://bonsaibrowser.com",
     "created_at": "2021-09-07T15:41:15Z",
-    "id": "28446147"
+    "created_at_i": 1631029275,
+    "id": "28446147",
+    "author": "hyferg"
   },
   {
     "points": 1070,
@@ -557,7 +695,9 @@
     "title": "Show HN: Markov chains explained visually",
     "url": "http://setosa.io/blog/2014/07/26/markov-chains/index.html",
     "created_at": "2014-07-29T16:49:20Z",
-    "id": "8103240"
+    "created_at_i": 1406652560,
+    "id": "8103240",
+    "author": "vicapow"
   },
   {
     "points": 1063,
@@ -565,7 +705,9 @@
     "title": "Show HN: Heynote – A dedicated scratchpad for developers",
     "url": "https://heynote.com/",
     "created_at": "2023-12-22T13:33:51Z",
-    "id": "38733968"
+    "created_at_i": 1703252031,
+    "id": "38733968",
+    "author": "jonatanheyman"
   },
   {
     "points": 1054,
@@ -573,7 +715,9 @@
     "title": "Show HN: I made a puzzle game that gently introduces my favorite math mysteries",
     "url": "https://www.rahulilango.com/coloring/",
     "created_at": "2024-06-20T15:45:19Z",
-    "id": "40740021"
+    "created_at_i": 1718898319,
+    "id": "40740021",
+    "author": "MCSP"
   },
   {
     "points": 1053,
@@ -581,7 +725,9 @@
     "title": "Show HN: SHA-256 Animation",
     "url": "https://github.com/in3rsha/sha256-animation",
     "created_at": "2020-05-13T10:13:30Z",
-    "id": "23165333"
+    "created_at_i": 1589364810,
+    "id": "23165333",
+    "author": "inersha"
   },
   {
     "points": 1032,
@@ -589,7 +735,9 @@
     "title": "Show HN: I recreated Windows XP as my portfolio",
     "url": "https://mitchivin.com/",
     "created_at": "2025-09-07T01:44:19Z",
-    "id": "45154609"
+    "created_at_i": 1757209459,
+    "id": "45154609",
+    "author": "mitchivin"
   },
   {
     "points": 1030,
@@ -597,7 +745,9 @@
     "title": "Show HN: Tinder but it's only pictures of my wife and I can only swipe right",
     "url": "https://trytender.app/",
     "created_at": "2025-07-23T22:53:27Z",
-    "id": "44664873"
+    "created_at_i": 1753311207,
+    "id": "44664873",
+    "author": "risquer"
   },
   {
     "points": 1020,
@@ -605,7 +755,9 @@
     "title": "Show HN: htmz – a low power tool for HTML",
     "url": "https://leanrada.com/htmz/",
     "created_at": "2024-02-19T13:12:18Z",
-    "id": "39429370"
+    "created_at_i": 1708348338,
+    "id": "39429370",
+    "author": "Kalabasa"
   },
   {
     "points": 1020,
@@ -613,7 +765,9 @@
     "title": "Show HN: OneBody Church Directory software I've been hacking on for 7 years",
     "url": "https://github.com/churchio/onebody",
     "created_at": "2014-07-25T14:05:11Z",
-    "id": "8085213"
+    "created_at_i": 1406297111,
+    "id": "8085213",
+    "author": "timmorgan"
   },
   {
     "points": 1013,
@@ -621,7 +775,9 @@
     "title": "Show HN: I got hacked, felt paranoid, made an app – GlassWire",
     "url": "https://www.glasswire.com/",
     "created_at": "2014-08-25T17:05:22Z",
-    "id": "8222652"
+    "created_at_i": 1408986322,
+    "id": "8222652",
+    "author": "greenwalls"
   },
   {
     "points": 1004,
@@ -629,7 +785,9 @@
     "title": "Show HN: Generating fantasy maps – an interactive exploration",
     "url": "http://mewo2.com/notes/terrain/",
     "created_at": "2016-08-10T11:17:41Z",
-    "id": "12260794"
+    "created_at_i": 1470827861,
+    "id": "12260794",
+    "author": "mewo2"
   },
   {
     "points": 1003,
@@ -637,7 +795,9 @@
     "title": "Show HN: Kitten TTS – 25MB CPU-Only, Open-Source TTS Model",
     "url": "https://github.com/KittenML/KittenTTS",
     "created_at": "2025-08-06T05:04:36Z",
-    "id": "44807868"
+    "created_at_i": 1754456676,
+    "id": "44807868",
+    "author": "divamgupta"
   },
   {
     "points": 993,
@@ -645,7 +805,9 @@
     "title": "Show HN: Workout.lol – a web app to easily create a workout routine",
     "url": "https://workout.lol",
     "created_at": "2023-07-10T06:01:59Z",
-    "id": "36662655"
+    "created_at_i": 1688968919,
+    "id": "36662655",
+    "author": "Vincenius"
   },
   {
     "points": 985,
@@ -653,7 +815,9 @@
     "title": "Show HN: I'm 48 and finally learning how to be a game developer",
     "url": "https://apps.apple.com/us/app/slingshot-effect/id1537916631",
     "created_at": "2021-11-09T21:14:47Z",
-    "id": "29167580"
+    "created_at_i": 1636492487,
+    "id": "29167580",
+    "author": "bananabat"
   },
   {
     "points": 983,
@@ -661,7 +825,9 @@
     "title": "Show HN: I built a hardware processor that runs Python",
     "url": "https://www.runpyxl.com/gpio",
     "created_at": "2025-04-28T11:44:54Z",
-    "id": "43820228"
+    "created_at_i": 1745840694,
+    "id": "43820228",
+    "author": "hwpythonner"
   },
   {
     "points": 979,
@@ -669,7 +835,9 @@
     "title": "Show HN: I made a modern web UI for Wikipedia",
     "url": "https://www.modernwiki.app/",
     "created_at": "2021-12-06T16:28:05Z",
-    "id": "29461735"
+    "created_at_i": 1638808085,
+    "id": "29461735",
+    "author": "sjdz"
   },
   {
     "points": 971,
@@ -677,7 +845,9 @@
     "title": "Show HN: A basketball hoop to maximize shots that go in [video]",
     "url": "https://www.youtube.com/watch?v=vtN4tkvcBMA",
     "created_at": "2020-04-17T13:12:40Z",
-    "id": "22898653"
+    "created_at_i": 1587129160,
+    "id": "22898653",
+    "author": "swighton"
   },
   {
     "points": 968,
@@ -685,7 +855,9 @@
     "title": "Show HN: I made a privacy-first minimalist Google Analytics",
     "url": "https://simpleanalytics.io",
     "created_at": "2018-09-19T14:12:56Z",
-    "id": "18024277"
+    "created_at_i": 1537366376,
+    "id": "18024277",
+    "author": "AdriaanvRossum"
   },
   {
     "points": 967,
@@ -693,7 +865,9 @@
     "title": "Show HN: Browsh – A modern, text-based browser",
     "url": "https://www.brow.sh",
     "created_at": "2018-07-09T02:28:04Z",
-    "id": "17487552"
+    "created_at_i": 1531103284,
+    "id": "17487552",
+    "author": "tombh"
   },
   {
     "points": 964,
@@ -701,7 +875,9 @@
     "title": "Show HN: A game where you build a GPU",
     "url": "https://jaso1024.com/mvidia/",
     "created_at": "2026-04-04T16:45:54Z",
-    "id": "47640728"
+    "created_at_i": 1775321154,
+    "id": "47640728",
+    "author": "Jaso1024"
   },
   {
     "points": 963,
@@ -709,7 +885,9 @@
     "title": "Show HN: I made a website to find best bus seat to avoid the sun while traveling",
     "url": "https://sitinshade.com",
     "created_at": "2024-01-17T02:59:17Z",
-    "id": "39022693"
+    "created_at_i": 1705460357,
+    "id": "39022693",
+    "author": "Amithv"
   },
   {
     "points": 962,
@@ -717,7 +895,9 @@
     "title": "Show HN: Beeper – All Your Chats in One App",
     "url": "https://www.beeperhq.com/?hn",
     "created_at": "2021-01-20T16:24:21Z",
-    "id": "25848278"
+    "created_at_i": 1611159861,
+    "id": "25848278",
+    "author": "erohead"
   },
   {
     "points": 958,
@@ -725,7 +905,9 @@
     "title": "Show HN: Ten years of running every day, visualized",
     "url": "https://nodaysoff.run",
     "created_at": "2025-07-10T16:21:13Z",
-    "id": "44522683"
+    "created_at_i": 1752164473,
+    "id": "44522683",
+    "author": "friggeri"
   },
   {
     "points": 956,
@@ -733,7 +915,9 @@
     "title": "Show HN: This Word Does Not Exist",
     "url": "https://www.thisworddoesnotexist.com/",
     "created_at": "2020-05-13T18:21:52Z",
-    "id": "23169962"
+    "created_at_i": 1589394112,
+    "id": "23169962",
+    "author": "turtlesoup"
   },
   {
     "points": 948,
@@ -741,7 +925,9 @@
     "title": "Show HN: XKCD-inspired StackSort",
     "url": "http://gkoberger.github.com/stacksort/?",
     "created_at": "2013-03-18T17:01:21Z",
-    "id": "5395463"
+    "created_at_i": 1363626081,
+    "id": "5395463",
+    "author": "gkoberger"
   },
   {
     "points": 947,
@@ -749,7 +935,9 @@
     "title": "Show HN: EdgeDB 1.0",
     "url": "https://www.edgedb.com/blog/edgedb-1-0",
     "created_at": "2022-02-10T18:13:03Z",
-    "id": "30290225"
+    "created_at_i": 1644516783,
+    "id": "30290225",
+    "author": "colinmcd"
   },
   {
     "points": 946,
@@ -757,7 +945,9 @@
     "title": "Show HN: Warp, a Rust-based terminal",
     "url": "https://www.warp.dev?ref=showhn",
     "created_at": "2022-04-05T16:40:25Z",
-    "id": "30921231"
+    "created_at_i": 1649176825,
+    "id": "30921231",
+    "author": "zachlloyd"
   },
   {
     "points": 938,
@@ -765,7 +955,9 @@
     "title": "Show HN: I made an alternative platform for professional profiles",
     "url": "https://read.cv",
     "created_at": "2021-01-04T17:04:08Z",
-    "id": "25634192"
+    "created_at_i": 1609779848,
+    "id": "25634192",
+    "author": "_andychung"
   },
   {
     "points": 937,
@@ -773,15 +965,9 @@
     "title": "Show HN: Hacker News user blogroll",
     "url": "https://dm.hn",
     "created_at": "2023-07-05T19:06:43Z",
-    "id": "36605493"
-  },
-  {
-    "points": 935,
-    "comments": 351,
-    "title": "Show HN: Sublime Merge – A Git client from the makers of Sublime Text",
-    "url": "https://www.sublimemerge.com",
-    "created_at": "2018-09-20T07:36:57Z",
-    "id": "18030446"
+    "created_at_i": 1688584003,
+    "id": "36605493",
+    "author": "deathbypenguin"
   },
   {
     "points": 935,
@@ -789,7 +975,19 @@
     "title": "Show HN: Draw a fish and watch it swim with the others",
     "url": "https://drawafish.com",
     "created_at": "2025-07-29T04:57:22Z",
-    "id": "44719222"
+    "created_at_i": 1753765042,
+    "id": "44719222",
+    "author": "hallak"
+  },
+  {
+    "points": 935,
+    "comments": 351,
+    "title": "Show HN: Sublime Merge – A Git client from the makers of Sublime Text",
+    "url": "https://www.sublimemerge.com",
+    "created_at": "2018-09-20T07:36:57Z",
+    "created_at_i": 1537429017,
+    "id": "18030446",
+    "author": "jskinner"
   },
   {
     "points": 930,
@@ -797,6 +995,8 @@
     "title": "Show HN: Unsure Calculator – back-of-a-napkin probabilistic calculator",
     "url": "https://filiph.github.io/unsure/",
     "created_at": "2025-04-15T08:22:59Z",
-    "id": "43690289"
+    "created_at_i": 1744705379,
+    "id": "43690289",
+    "author": "filiph"
   }
 ]

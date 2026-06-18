@@ -154,11 +154,14 @@ Return as a single markdown block:
 
 ## Data provenance
 
-`patterns/corpus.json` fetched 2026-06-18 from HN Algolia API:
-```
-https://hn.algolia.com/api/v1/search?tags=show_hn&hitsPerPage=1000
-```
-1000 hits, sorted by points desc. 999 actual Show HN titles after filtering. 250th-percentile = 676 points. Refresh quarterly via `tools/refresh-corpus.py` (not yet built).
+`patterns/corpus.json` and `patterns/failed-corpus.json` derived from `patterns/all-corpus.json`, a date-chunked exhaustive Show HN fetch via the HN Algolia API:
+
+- `all-corpus.json` (gitignored, ~52MB): 196,847 Show HN entries from 2009-03 to 2026-06, fetched via `tools/fetch-corpus-full.py` (1-week chunks under the 1000-cap; `tools/fetch-truncated.py` re-fetches any chunks that still hit the cap at half-week resolution).
+- `corpus.json` (success, 1,945 entries): all posts with ≥262 points = true top 1% of the Show HN distribution, deduped on github.com/owner/repo.
+- `failed-corpus.json` (failed, 5,000 entries): random sample (seed=20260618) of ≤5 point posts. 74.3% of all Show HN posts land in this bucket — this is the modal outcome.
+- `top-100.json` (top 100 by points, cutoff ~930pt): example reference.
+
+Refresh pipeline: `fetch-corpus-full.py` → `fetch-truncated.py` → `build-corpora.py` → `train-scorer.py`. Run quarterly.
 
 ## Anti-bloat rules for the skill itself
 
