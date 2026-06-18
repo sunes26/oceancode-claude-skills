@@ -73,6 +73,12 @@ Constraints per variant:
 - Title must include the product name OR a concrete differentiator
 - Always prefix with `Show HN:` exactly (no lowercase, no missing colon)
 
+### Step 2.5 — Signal-score each variant
+
+Apply the title scorer per `lint/scorer.md` to each generated title. Each variant gets a 0-100 score plus a one-line interpretation label (see scorer.md's calibration table). Display alongside lint result.
+
+Use the score as a tie-breaker after Step 5 lint, not as a generation gate. A high-scoring variant with a lint reject still needs regeneration. A low-scoring variant with clean lint stays in the candidate set.
+
 ### Step 3 — Draft body
 
 Follow `patterns/body-structure.md` exactly:
@@ -115,6 +121,7 @@ Return as a single markdown block:
 > Show HN: <title>
 - chars: <N> / words: <N>
 - lint: ✓ passes
+- signal score: <N>/100 (<interpretation label>)
 
 ### Variant B — Formula <N>: <formula name>
 > Show HN: <title>
@@ -141,7 +148,7 @@ Return as a single markdown block:
 ## What this skill does NOT do
 
 - No posting to HN. Output is text only. User submits manually.
-- No A/B prediction. Variants ranked by formula match strength, not predicted points.
+- No point prediction. The signal score (0-100) is a relative confidence based on title tokens only — see `lint/scorer.md` for limits. It is NOT "this will get N points".
 - No comment reply drafting. Separate concern.
 - No SEO optimization. HN is not Google.
 
